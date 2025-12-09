@@ -195,7 +195,6 @@ h1 {
     background-color: var(--color-primary);
     color: white;
     border-color: var(--color-primary);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
@@ -203,7 +202,6 @@ h1 {
 .word-tile.group-selected {
     background-color: var(--color-primary);
     color: #fff;
-    transform: translateY(-8px) scale(1.03);
     box-shadow: var(--shadow-md);
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
@@ -212,45 +210,24 @@ h1 {
 .word-tile.group-selected {
     background-color: var(--color-primary);
     color: #fff;
-    transform: translateY(-8px) scale(1.03);
     box-shadow: var(--shadow-md);
     transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.word-tile.group-selected.correct-resolve {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.9);
-}
-/* Shuffle animation */
-.word-tile.shuffling {
-    animation: shuffle-wiggle 0.8s ease;
-}
 
 /* Wrong guess animation */
 .word-tile.wrong-guess {
-    background-color: #fbe9e7;
-    color: var(--color-text);
-    transform: scale(0.95);
+    /* Important: override any other transform */
+    animation: wrongShake 0.3s ease;
 }
 
-@keyframes wrongPulse {
-    0%   { transform: scale(1); }
-    30%  { transform: scale(0.93); }
-    60%  { transform: scale(1.02); }
-    100% { transform: scale(1); }
-}
-
-.word-tile.wrong-guess {
-    animation: wrongPulse 0.25s ease;
-}
-
-
-@keyframes shuffle-wiggle {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-4px); }
-    50% { transform: translateY(2px); }
-    75% { transform: translateY(-2px); }
-    100% { transform: translateY(0); }
+@keyframes wrongShake {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(-6px); }
+    40%  { transform: translateX(6px); }
+    60%  { transform: translateX(-4px); }
+    80%  { transform: translateX(4px); }
+    100% { transform: translateX(0); }
 }
 
 .controls {

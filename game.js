@@ -177,6 +177,10 @@ function highlightSelectedGroup() {
 }
 
 // Submit guess with small animation
+const PRE_CHECK_DELAY = 150;   // before checking the guess
+const CORRECT_DELAY   = 800;   // time to show "Correct" + tiles highlighted
+const WRONG_DELAY     = 450;   // time to show "Not quite" before reset
+
 function submitGuess() {
     if (selectedWords.length !== 4) return;
     if (mistakes >= 4) return;
@@ -207,15 +211,30 @@ function submitGuess() {
             );
 
             selectedWords = [];
-            setTimeout(() => updateDisplay(), 1200);
-        } else {
-            mistakes++;
-            showMessage('Not quite! Try again.', 'incorrect');
-            selectedWords = [];
-            setTimeout(() => updateDisplay(), 1200);
+            setTimeout(() => updateDisplay(), CORRECT_DELAY);
+} else {
+    mistakes++;
+    showMessage('Not quite! Try again.', 'incorrect');
+
+    const tiles = document.querySelectorAll('.word-tile');
+    tiles.forEach(tile => {
+        if (selectedWords.includes(tile.textContent)) {
+            tile.classList.add('wrong-guess');  // horizontal shake
         }
-    }, 250);
+    });
+
+    const JIGGLE_DURATION = 300;   // length of the shake animation (ms)
+    const EXTRA_READ_TIME = 500;   // extra time for user to read
+
+    setTimeout(() => {
+        selectedWords = [];
+        updateDisplay();           // clears selection and removes class
+    }, JIGGLE_DURATION + EXTRA_READ_TIME);
 }
+
+    }, PRE_CHECK_DELAY);
+}
+
 
 // Show message
 function showMessage(text, type) {
