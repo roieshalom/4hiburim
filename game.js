@@ -112,11 +112,6 @@ function shuffleArray(array) {
 // Update display
 function updateDisplay() {
     document.getElementById('mistakes').textContent = mistakes;
-
-    const messageEl = document.getElementById('message');
-    messageEl.textContent = '';
-    messageEl.className = 'message';
-
     const solvedContainer = document.getElementById('solved-categories');
     solvedContainer.innerHTML = '';
     solvedCategories.forEach(cat => {
@@ -219,18 +214,35 @@ function submitGuess() {
     const tiles = document.querySelectorAll('.word-tile');
     tiles.forEach(tile => {
         if (selectedWords.includes(tile.textContent)) {
-            tile.classList.add('wrong-guess');  // horizontal shake
+            tile.classList.add('wrong-guess');
         }
     });
 
-    const JIGGLE_DURATION = 300;   // length of the shake animation (ms)
-    const EXTRA_READ_TIME = 500;   // extra time for user to read
+    const JIGGLE_DURATION = 300;
+    const EXTRA_READ_TIME = 1000;  // message stays visible for 1 second after jiggle
 
     setTimeout(() => {
+        // 1) remove the jiggle class so background can fade back
+        tiles.forEach(tile => {
+            tile.classList.remove('wrong-guess');
+        });
+
+        // 2) clear selection visuals without rebuilding the grid
+        tiles.forEach(tile => {
+            tile.classList.remove('selected', 'group-selected');
+        });
         selectedWords = [];
-        updateDisplay();           // clears selection and removes class
+
+        // 3) now update the mistakes display only
+        document.getElementById('mistakes').textContent = mistakes;
+    }, JIGGLE_DURATION + EXTRA_READ_TIME);
+
+    // 4) clear the error message after the same duration
+    setTimeout(() => {
+        showMessage('', '');
     }, JIGGLE_DURATION + EXTRA_READ_TIME);
 }
+
 
     }, PRE_CHECK_DELAY);
 }

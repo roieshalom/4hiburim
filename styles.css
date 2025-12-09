@@ -4,7 +4,7 @@
 
 /* Colors */
 :root {
-    --color-primary: #333;
+    --color-primary: #7919ff;
     --color-primary-hover: #555;
     --color-bg-main: #fdfbfb;
     --color-bg-gradient: radial-gradient(circle at top, #fdfbfb 0%, #ebedee 60%, #dfe4ea 100%);
@@ -160,7 +160,7 @@ h1 {
 
 .word-tile {
     background: var(--color-surface);
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     text-align: center;
     cursor: pointer;
     border-radius: var(--radius-md);
@@ -193,8 +193,8 @@ h1 {
 
 .word-tile.selected {
     background-color: var(--color-primary);
+    border: 1px solid var(--color-surface);
     color: white;
-    border-color: var(--color-primary);
     box-shadow: var(--shadow-md);
 }
 
@@ -268,7 +268,7 @@ button {
 #shuffle-btn {
     background-color: var(--color-surface);
     color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 #deselect-btn:hover,
