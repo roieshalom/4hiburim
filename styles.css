@@ -157,11 +157,15 @@ h1 {
 .game-board {
     font-family: var(--font-primary);
     display: grid;
-    grid-template-columns: repeat(4, 120px);  /* explicit tile size */
+    grid-template-columns: repeat(4, 120px);
     gap: var(--spacing-sm);
     margin: var(--spacing-lg) auto;
     justify-content: center;
+    width: 100%;
+    max-width: 510px;
+    overflow-x: hidden;
 }
+
 
 .word-tile {
     background: var(--color-surface);
@@ -325,23 +329,18 @@ button {
    RESPONSIVE
    ========================================== */
 @media (max-width: 600px) {
-    
-    .container {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-}
     body {
-        padding: 30px 5px;  /* Reduced from 20px to 5px on sides */
+        padding: 30px 5px;
     }
-    
+
     .game-board {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px;  /* You can also reduce the gap between tiles */
-    width: 100%;
-    max-width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        width: 100%;
+        max-width: 510px;
+        margin: var(--spacing-lg) auto;
     }
-    
+
     .word-tile {
         width: 100%;
         height: auto;
@@ -349,11 +348,11 @@ button {
         font-size: 13px;
         padding: 4px;
     }
-    
+
     h1 {
         font-size: 6em;
     }
-    
+
     .solved-category {
         height: auto;
         min-height: 80px;
