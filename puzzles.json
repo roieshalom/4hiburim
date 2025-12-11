@@ -81,86 +81,333 @@
         }
       ]
     },
-    {
-      "id": "3",
-      "date": "12.12.2025",
-      "language": "en",
-      "categories": [
-        {
-          "name": "Social Media Apps",
-          "words": ["TWITTER", "FACEBOOK", "INSTAGRAM", "TIKTOK"],
-          "difficulty": "yellow"
-        },
-        {
-          "name": "Weather Conditions",
-          "words": ["RAIN", "SNOW", "WIND", "FOG"],
-          "difficulty": "green"
-        },
-        {
-          "name": "ROCK ___",
-          "words": ["STAR", "BOTTOM", "SOLID", "MUSIC"],
-          "difficulty": "blue"
-        },
-        {
-          "name": "Words That Sound Like Numbers",
-          "words": ["WON", "TOO", "FOR", "ATE"],
-          "difficulty": "purple"
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "date": "09.12.2025",
-      "language": "en",
-      "categories": [
-        {
-          "name": "Pizza Toppings",
-          "words": ["CHEESE", "PEPPERONI", "MUSHROOM", "OLIVE"],
-          "difficulty": "yellow"
-        },
-        {
-          "name": "Ocean Animals",
-          "words": ["SHARK", "WHALE", "DOLPHIN", "OCTOPUS"],
-          "difficulty": "green"
-        },
-        {
-          "name": "___ BALL",
-          "words": ["FOOT", "BASE", "BASKET", "SNOW"],
-          "difficulty": "blue"
-        },
-        {
-          "name": "Four-Letter Words Starting with B",
-          "words": ["BEAR", "BOAT", "BIRD", "BOOK"],
-          "difficulty": "purple"
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "date": "14.12.2025",
-      "language": "en",
-      "categories": [
-        {
-          "name": "Colors",
-          "words": ["RED", "BLUE", "GREEN", "YELLOW"],
-          "difficulty": "yellow"
-        },
-        {
-          "name": "Musical Instruments",
-          "words": ["PIANO", "GUITAR", "DRUMS", "VIOLIN"],
-          "difficulty": "green"
-        },
-        {
-          "name": "BREAK ___",
-          "words": ["FAST", "DOWN", "THROUGH", "DANCE"],
-          "difficulty": "blue"
-        },
-        {
-          "name": "Double Letters",
-          "words": ["BOOK", "DOOR", "KEEP", "POOL"],
-          "difficulty": "purple"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "id": "3",
+    "date": "12.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Types of Trees",
+        "words": [
+          "OAK",
+          "PINE",
+          "BIRCH",
+          "MAPLE"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Words that can follow 'Light'",
+        "words": [
+          "HOUSE",
+          "YEAR",
+          "SPEED",
+          "BULB"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Mythological Creatures",
+        "words": [
+          "HYDRA",
+          "PHOENIX",
+          "GRIFFIN",
+          "SPHINX"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Words forming compounds with 'Star'",
+        "words": [
+          "FISH",
+          "DUST",
+          "GATE",
+          "WARS"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "date": "13.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Common farm animals",
+        "words": [
+          "COW",
+          "SHEEP",
+          "GOAT",
+          "CHICKEN"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Words that can follow 'Head' to form a phrase",
+        "words": [
+          "ACHE",
+          "LIGHT",
+          "LINE",
+          "STONE"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Classical music composers",
+        "words": [
+          "MOZART",
+          "BEETHOVEN",
+          "BACH",
+          "VIVALDI"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Idioms with 'Break'",
+        "words": [
+          "NECK",
+          "GROUND",
+          "ICE",
+          "RECORD"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "date": "14.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Types of pasta",
+        "words": [
+          "FUSILLI",
+          "PENNE",
+          "LINGUINE",
+          "FARFALLE"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Words that can follow 'Blue'",
+        "words": [
+          "MOON",
+          "PRINT",
+          "BELL",
+          "BERRY"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Shakespearean characters",
+        "words": [
+          "OPHELIA",
+          "MACBETH",
+          "IAGO",
+          "CORDELIA"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Words containing chemical element symbols",
+        "words": [
+          "BACON",
+          "COBALT",
+          "NICKEL",
+          "FRANCIUM"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "date": "15.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Types of hats",
+        "words": [
+          "FEDORA",
+          "BERET",
+          "BOWLER",
+          "PANAMA"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Words that can follow the word 'Cold'",
+        "words": [
+          "WAR",
+          "BREW",
+          "SNAP",
+          "SHOULDER"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Classical music composers",
+        "words": [
+          "MOZART",
+          "BACH",
+          "CHOPIN",
+          "DEBUSSY"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Phrasal verbs with 'Out'",
+        "words": [
+          "BUG OUT",
+          "FLIP OUT",
+          "FREAK OUT",
+          "WIG OUT"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "date": "16.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Colors",
+        "words": [
+          "CYAN",
+          "MAGENTA",
+          "YELLOW",
+          "BLACK"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Things You Can Catch",
+        "words": [
+          "COLD",
+          "BALL",
+          "FIRE",
+          "BREATH"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Famous Mythological Creatures",
+        "words": [
+          "HYDRA",
+          "PHOENIX",
+          "MINOTAUR",
+          "GRIFFIN"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Words That Can Precede 'Book'",
+        "words": [
+          "NOTEBOOK",
+          "GUIDE",
+          "COOK",
+          "FACEBOOK"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "date": "17.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Types of hats",
+        "words": [
+          "FEDORA",
+          "BEANIE",
+          "BERET",
+          "SOMBRERO"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Words that can follow 'light'",
+        "words": [
+          "HOUSE",
+          "YEAR",
+          "FOOT",
+          "SPEED"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Classical music composers",
+        "words": [
+          "MOZART",
+          "BACH",
+          "VIVALDI",
+          "HANDEL"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Idioms with 'break'",
+        "words": [
+          "FAST",
+          "SILENCE",
+          "NECK",
+          "RECORD"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "date": "18.12.2025",
+    "language": "en",
+    "categories": [
+      {
+        "name": "Common pets",
+        "words": [
+          "DOG",
+          "CAT",
+          "PARROT",
+          "HAMSTER"
+        ],
+        "difficulty": "yellow"
+      },
+      {
+        "name": "Words that can follow 'Light'",
+        "words": [
+          "YEAR",
+          "HOUSE",
+          "BULB",
+          "SPEED"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Types of fabric",
+        "words": [
+          "DENIM",
+          "SATIN",
+          "LINEN",
+          "VELVET"
+        ],
+        "difficulty": "green"
+      },
+      {
+        "name": "Words associated with mythology",
+        "words": [
+          "APOLLO",
+          "HYDRA",
+          "MIDAS",
+          "PEGASUS"
+        ],
+        "difficulty": "blue"
+      }
+    ]
+  }
+]}
