@@ -198,10 +198,10 @@ function submitGuess() {
     if (selectedWords.length !== 4) return;
     if (mistakes >= 4) return;
 
-    // Check for already tried combination (order independent)
+    // Already tried check (order independent)
     const comboKey = selectedWords.slice().sort().join('|');
     if (triedCombinations.has(comboKey)) {
-        showMessage('Already tried this combination.', 'incorrect');
+        showMessage('Already tried', 'incorrect', 1200);
         return; // no animation, no mistake
     }
     triedCombinations.add(comboKey);
@@ -210,17 +210,19 @@ function submitGuess() {
     document.getElementById('submit-btn').disabled = true;
 
     setTimeout(() => {
+        const selectedUpper = selectedWords.map(w => w.toUpperCase());
+
+        // Check exact correct category
         const category = currentPuzzle.categories.find(cat => {
             const catWords = cat.words.map(w => w.toUpperCase());
-            const selected = selectedWords.map(w => w.toUpperCase());
             return (
-                selected.every(w => catWords.includes(w)) &&
-                selected.length === catWords.length
+                selectedUpper.every(w => catWords.includes(w)) &&
+                selectedUpper.length === catWords.length
             );
         });
 
         if (category) {
-            showMessage('Correct!', 'correct');
+            showMessage('Correct!', 'correct', 800);
 
             const tiles = document.querySelectorAll('.word-tile');
 
@@ -268,7 +270,6 @@ function submitGuess() {
 
                 selectedWords = [];
 
-                // if puzzle fully solved: lock + save solved state
                 if (remainingWords.length === 0) {
                     lockTodayPuzzle();
                     saveFinalState({
@@ -283,8 +284,21 @@ function submitGuess() {
             }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
 
         } else {
+            // compute how close the guess is
+            let maxOverlap = 0;
+            currentPuzzle.categories.forEach(cat => {
+                const catWordsUpper = cat.words.map(w => w.toUpperCase());
+                const overlap = selectedUpper.filter(w => catWordsUpper.includes(w)).length;
+                if (overlap > maxOverlap) maxOverlap = overlap;
+            });
+
+            if (maxOverlap === 3) {
+                showMessage('One away', 'incorrect', 1200);
+            } else {
+                showMessage('', '', 0); // just jiggle
+            }
+
             mistakes++;
-            showMessage('Not quite! Try again.', 'incorrect');
 
             const tiles = document.querySelectorAll('.word-tile');
             tiles.forEach(tile => {
@@ -300,10 +314,7 @@ function submitGuess() {
                 tiles.forEach(tile => {
                     tile.classList.remove('wrong-guess');
                     // keep selection so user can edit the 4 tiles
-                    // tile.classList.remove('selected', 'group-selected');
                 });
-                // keep selectedWords so user can modify selection
-                // selectedWords = [];
 
                 document.getElementById('mistakes').textContent = mistakes;
 
@@ -327,7 +338,7 @@ function submitGuess() {
                     solvedCategories = finalState.solvedCategories;
                     remainingWords = [];
                     updateDisplay();
-                    showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect');
+                    showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect', 1500);
 
                     // freeze UI
                     document.getElementById('submit-btn').disabled = true;
@@ -343,7 +354,9 @@ function submitGuess() {
             }, JIGGLE_DURATION + EXTRA_READ_TIME);
 
             setTimeout(() => {
-                showMessage('', '');
+                if (mistakes < 4) {
+                    showMessage('', '');
+                }
             }, JIGGLE_DURATION + EXTRA_READ_TIME);
         }
 
@@ -352,10 +365,46 @@ function submitGuess() {
 
 // ------------------ UTILS ------------------
 
-function showMessage(text, type) {
-    const messageEl = document.getElementById('message');
-    messageEl.textContent = text;
-    messageEl.className = `message ${type}`;
+function showMessage(text, type = 'info', duration = 1200) {
+    const overlay = document.getElementById('message-overlay');
+    if (!overlay) return;
+
+    if (!text) {
+        overlay.classList.remove('visible', 'correct', 'incorrect', 'info');
+        return;
+    }
+
+    overlay.textContent = text;
+
+    overlay.classList.remove('correct', 'incorrect', 'info');
+    if (type === 'correct') overlay.classList.add('correct');
+    else if (type === 'incorrect') overlay.classList.add('incorrect');
+    else overlay.classList.add('info');
+
+    // position relative to current board location
+    positionMessageOverBoard();
+
+    overlay.classList.add('visible');
+
+    if (duration > 0) {
+        setTimeout(() => {
+            overlay.classList.remove('visible');
+        }, duration);
+    }
+}
+
+function positionMessageOverBoard() {
+    const overlay = document.getElementById('message-overlay');
+    const board = document.getElementById('game-board');
+    if (!overlay || !board) return;
+
+    const boardRect = board.getBoundingClientRect();
+    const containerRect = document.querySelector('.container').getBoundingClientRect();
+
+    const boardCenterY = boardRect.top + boardRect.height / 2;
+    const offsetFromContainerTop = boardCenterY - containerRect.top;
+
+    overlay.style.top = offsetFromContainerTop + 'px';
 }
 
 function deselectAll() {

@@ -86,26 +86,16 @@ h1 {
    GAME COMPONENTS
    ========================================== */
 
-.message {
-    text-align: center;
-    min-height: 30px;
-    margin-bottom: var(--spacing-sm);
-    font-weight: bold;
-    font-size: var(--font-size-large);
-}
-
-.message.correct { color: var(--color-correct); }
-.message.incorrect { color: var(--color-incorrect); }
-
 .solved-categories {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     width: 100%;
     max-width: 510px;
 }
 
 .solved-category {
     padding: var(--spacing-md);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm
+    );
     border-radius: var(--radius-md);
     text-align: center;
     height: 120px;
@@ -146,7 +136,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 120px);
     gap: var(--spacing-sm);
-    margin: var(--spacing-lg) auto;
+    margin-bottom: var(--spacing-lg);
     justify-content: center;
     width: 100%;
     max-width: 510px;
@@ -291,6 +281,61 @@ button {
     font-size: var(--font-size-large);
     color: var(--color-text-muted);
 }
+
+/* ==========================================
+   MESSAGE
+   ========================================== */
+
+.container {
+    position: relative;
+}
+
+/* Anchor overlay to the board area on any screen */
+.message-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* we will set top in JS */
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.message-overlay.visible {
+    opacity: 1;
+}
+
+
+
+/* generic visible state */
+.message-overlay.visible {
+    opacity: 1;
+}
+
+/* status variants */
+.message-overlay.correct {
+    background: rgba(76, 175, 80, 0.95);      /* green */
+    border-color: #2e7d32;
+}
+
+.message-overlay.incorrect {
+    background: rgba(244, 67, 54, 0.95);      /* red */
+    border-color: #b71c1c;
+}
+
+.message-overlay.info {
+    background: rgba(0, 0, 0, 0.85);
+    border-color: #555;
+}
+
 
 /* ==========================================
    RESPONSIVE (merged single media query)
