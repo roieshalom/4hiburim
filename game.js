@@ -134,7 +134,7 @@ function updateDisplay() {
     });
 
     if (remainingWords.length === 0) {
-        showMessage('🎉 Congratulations! You solved the puzzle!', 'correct');
+        showMessage('🎉Congratulations,<br>You solved the puzzle!', 'correct');
 
         // Disable interactions but keep the board visible
         document.getElementById('submit-btn').disabled = true;
@@ -256,32 +256,45 @@ function submitGuess() {
                 });
             }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP);
 
-            // 4) update state
-            setTimeout(() => {
-                solvedCategories.push({
-                    name: category.name,
-                    words: category.words,
-                    difficulty: category.difficulty
-                });
+    // 4) update state
+    setTimeout(() => {
+        solvedCategories.push({
+            name: category.name,
+            words: category.words,
+            difficulty: category.difficulty
+        });
 
-                remainingWords = remainingWords.filter(
-                    item => !selectedWords.includes(item.word)
-                );
+        remainingWords = remainingWords.filter(
+            item => !selectedWords.includes(item.word)
+        );
 
-                selectedWords = [];
+        selectedWords = [];
 
-                if (remainingWords.length === 0) {
-                    lockTodayPuzzle();
-                    saveFinalState({
-                        type: 'solved',
-                        solvedCategories: solvedCategories.slice(),
-                        mistakes
-                    });
-                }
+        const wasLastGroup = remainingWords.length === 0;
 
-                updateDisplay();
-                showMessage('', '');
-            }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
+        if (wasLastGroup) {
+            lockTodayPuzzle();
+            saveFinalState({
+                type: 'solved',
+                solvedCategories: solvedCategories.slice(),
+                mistakes
+            });
+        }
+
+        updateDisplay();
+
+        if (wasLastGroup) {
+            // show long final message here (10s)
+            showMessage(
+                '🎉 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
+                'correct',
+                4000
+            );
+        } else {
+            // only clear message if puzzle not solved
+            showMessage('', '');
+        }
+    }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
 
         } else {
             // compute how close the guess is
@@ -354,7 +367,7 @@ function submitGuess() {
             }, JIGGLE_DURATION + EXTRA_READ_TIME);
 
             setTimeout(() => {
-                if (mistakes < 4) {
+                if (mistakes < 4 && remainingWords.length > 0) {
                     showMessage('', '');
                 }
             }, JIGGLE_DURATION + EXTRA_READ_TIME);
@@ -365,33 +378,40 @@ function submitGuess() {
 
 // ------------------ UTILS ------------------
 
+let currentMessageTimeout = null;
+
 function showMessage(text, type = 'info', duration = 1200) {
     const overlay = document.getElementById('message-overlay');
     if (!overlay) return;
+
+    // cancel previous hide timer
+    if (currentMessageTimeout) {
+        clearTimeout(currentMessageTimeout);
+        currentMessageTimeout = null;
+    }
 
     if (!text) {
         overlay.classList.remove('visible', 'correct', 'incorrect', 'info');
         return;
     }
 
-    overlay.textContent = text;
+    overlay.innerHTML = text;
 
     overlay.classList.remove('correct', 'incorrect', 'info');
     if (type === 'correct') overlay.classList.add('correct');
     else if (type === 'incorrect') overlay.classList.add('incorrect');
     else overlay.classList.add('info');
 
-    // remove this line:
-    // positionMessageOverBoard();
-
     overlay.classList.add('visible');
 
     if (duration > 0) {
-        setTimeout(() => {
+        currentMessageTimeout = setTimeout(() => {
             overlay.classList.remove('visible');
+            currentMessageTimeout = null;
         }, duration);
     }
 }
+
 
 
 function positionMessageOverBoard() {
@@ -474,7 +494,7 @@ async function startGame() {
             remainingWords = [];
             mistakes = state.mistakes;
             updateDisplay();
-            showMessage('🎉 Congratulations! You solved the puzzle!', 'correct');
+            showMessage('🎉 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle', 'correct', 4000);
         } else if (state && state.type === 'failed') {
             solvedCategories = state.solvedCategories;
             remainingWords = [];
