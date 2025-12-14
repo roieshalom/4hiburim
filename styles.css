@@ -171,9 +171,12 @@ h1 {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-.word-tile:hover {
-    background-color: #f0f0f0;
+@media (hover: hover) and (pointer: fine) {
+    .word-tile:hover {
+        background-color: #f0f0f0;
+    }
 }
+
 
 .word-tile:active {
     transform: scale(0.97);
