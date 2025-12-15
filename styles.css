@@ -86,28 +86,30 @@ body {
   max-width: 510px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: baseline;   /* key line: align by text baseline */
 }
+
 
 h1 {
   font-family: var(--font-h1);
   margin-bottom: var(--spacing-sm);
   color: var(--color-text);
-  font-size: 86px;
+  font-size: 5em;
   text-align: left;
 }
 
 .solve-counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;   /* share baseline with the number */
   justify-content: flex-end;
+  gap: 4px;
   line-height: 1;
 }
 
 .solve-counter__icon {
-  font-size: 56px;
+  font-size: 32px;
 }
 
 .solve-counter__value {
@@ -115,8 +117,9 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   color: var(--color-text-muted);
-  margin-top: 4px;
 }
+
+
 
 /* ==========================================
    GAME COMPONENTS
@@ -185,7 +188,9 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--spacing-sm);
-  margin: var(--spacing-lg) auto;
+  margin-left: var(--spacing-lg) auto;
+  margin-right: var(--spacing-lg) auto;
+  margin-bottom: 2em;
   justify-content: center;
   width: 100%;
   max-width: 510px;
@@ -369,6 +374,9 @@ button {
 
 .container {
   position: relative;
+  width: 100%;
+  max-width: 510px;
+  margin: 20px auto 0;  /*top gap, centered */
 }
 
 .message-overlay {
@@ -428,9 +436,8 @@ button {
   }
 
   .solve-counter__icon {
-    font-size: 34px;
+    font-size: 24px;
   }
-
   .solve-counter__value {
     font-size: 14px;
   }
@@ -439,7 +446,7 @@ button {
   position: relative;
   width: 100%;
   max-width: 510px;
-  margin: 0 auto;
+  margin: 20px auto 0;  /*top gap, centered */
 }
 
   .game-board {
