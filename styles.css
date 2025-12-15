@@ -65,8 +65,8 @@
 html, body {
     width: 100%;
     max-width: 100%;
-    overflow: hidden;
-}
+    overflow-x: hidden;  /* prevent sideways scroll */
+    overflow-y: auto;    /* allow vertical scroll */}
 
 body {
     background: var(--color-bg-gradient);
