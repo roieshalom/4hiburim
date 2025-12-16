@@ -1,6 +1,5 @@
 console.log('game.js loaded');
 
-
 let puzzles = [];
 let currentPuzzleIndex = 0;
 let currentPuzzle = null;
@@ -9,7 +8,6 @@ let mistakes = 0;
 let solvedCategories = [];
 let remainingWords = [];
 let triedCombinations = new Set();
-
 
 // ------------------ DATE + PUZZLES ------------------
 
@@ -25,14 +23,11 @@ async function loadPuzzles() {
     const res = await fetch('2025_puzzles.json');
     const data = await res.json();
     const today = getTodayDDMMYYYY();
-    console.log('today:', today, 'data:', data);   // keep for debugging
+    console.log('today:', today, 'data:', data);
 
     puzzles = data.puzzles.filter(p => p.date === today);
     console.log('filtered puzzles:', puzzles);
 }
-
-
-
 
 // ------------------ STORAGE KEYS ------------------
 
@@ -77,14 +72,63 @@ function loadFinalState() {
     }
 }
 
+// ----- in‑progress state -----
+
+function getTodayProgressKey() {
+    const today = getTodayDDMMYYYY();
+    const puzzleId = puzzles[0]?.id;
+    return `4hiburim-progress-${today}-${puzzleId}`;
+}
+
+function saveProgressState() {
+    const key = getTodayProgressKey();
+    const state = {
+        mistakes,
+        solvedCategories,
+        remainingWords,
+        selectedWords: selectedWords || [],
+    };
+    localStorage.setItem(key, JSON.stringify(state));
+}
+
+function loadProgressState() {
+    const key = getTodayProgressKey();
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
+    try {
+        return JSON.parse(raw);
+    } catch {
+        return null;
+    }
+}
+
+function clearProgressState() {
+    const key = getTodayProgressKey();
+    localStorage.removeItem(key);
+}
+
 // ------------------ GAME INITIALIZATION ------------------
 
 function initGame() {
     currentPuzzle = puzzles[currentPuzzleIndex];
+
+    const saved = loadProgressState();
+    if (saved) {
+        mistakes = saved.mistakes || 0;
+        solvedCategories = saved.solvedCategories || [];
+        remainingWords = saved.remainingWords || [];
+        selectedWords = [];              // clear any stale selection
+        triedCombinations = new Set();
+
+        updateDisplay();
+        return;
+    }
+
+
     mistakes = 0;
     solvedCategories = [];
     selectedWords = [];
-    triedCombinations = new Set();   // reset tried combos
+    triedCombinations = new Set();
 
     remainingWords = currentPuzzle.categories.flatMap(cat =>
         cat.words.map(word => ({
@@ -96,7 +140,6 @@ function initGame() {
     shuffleArray(remainingWords);
     updateDisplay();
 }
-
 
 // Shuffle array util
 function shuffleArray(array) {
@@ -110,6 +153,7 @@ function shuffleArray(array) {
 
 function updateDisplay() {
     document.getElementById('mistakes').textContent = mistakes;
+    saveProgressState();
 
     const solvedContainer = document.getElementById('solved-categories');
     solvedContainer.innerHTML = '';
@@ -132,9 +176,18 @@ function updateDisplay() {
         tile.addEventListener('click', () => toggleWord(item.word, tile));
         board.appendChild(tile);
     });
+    
+    document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
+
 
     if (remainingWords.length === 0) {
         showMessage('🎉Congratulations,<br>You solved the puzzle!', 'correct');
+
+        clearProgressState();
+        saveFinalState({
+            mistakes,
+            solvedCategories,
+        });
 
         // Disable interactions but keep the board visible
         document.getElementById('submit-btn').disabled = true;
@@ -170,7 +223,7 @@ function toggleWord(word, tileElement) {
     } else {
         // Only allow selecting a new tile if currently fewer than 4 are selected
         if (selectedWords.length >= 4) {
-            return; // ignore extra clicks until user deselects one
+            return;
         }
         selectedWords.push(word);
         tileElement.classList.add('selected');
@@ -178,7 +231,6 @@ function toggleWord(word, tileElement) {
 
     document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
 }
-
 
 function highlightSelectedGroup() {
     const tiles = document.querySelectorAll('.word-tile');
@@ -202,7 +254,7 @@ function submitGuess() {
     const comboKey = selectedWords.slice().sort().join('|');
     if (triedCombinations.has(comboKey)) {
         showMessage('Already tried', 'incorrect', 1200);
-        return; // no animation, no mistake
+        return;
     }
     triedCombinations.add(comboKey);
 
@@ -256,45 +308,43 @@ function submitGuess() {
                 });
             }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP);
 
-    // 4) update state
-    setTimeout(() => {
-        solvedCategories.push({
-            name: category.name,
-            words: category.words,
-            difficulty: category.difficulty
-        });
+            // 4) update state
+            setTimeout(() => {
+                solvedCategories.push({
+                    name: category.name,
+                    words: category.words,
+                    difficulty: category.difficulty
+                });
 
-        remainingWords = remainingWords.filter(
-            item => !selectedWords.includes(item.word)
-        );
+                remainingWords = remainingWords.filter(
+                    item => !selectedWords.includes(item.word)
+                );
 
-        selectedWords = [];
+                selectedWords = [];
 
-        const wasLastGroup = remainingWords.length === 0;
+                const wasLastGroup = remainingWords.length === 0;
 
-        if (wasLastGroup) {
-            lockTodayPuzzle();
-            saveFinalState({
-                type: 'solved',
-                solvedCategories: solvedCategories.slice(),
-                mistakes
-            });
-        }
+                if (wasLastGroup) {
+                    lockTodayPuzzle();
+                    saveFinalState({
+                        type: 'solved',
+                        solvedCategories: solvedCategories.slice(),
+                        mistakes
+                    });
+                }
 
-        updateDisplay();
+                updateDisplay();
 
-        if (wasLastGroup) {
-            // show long final message here (10s)
-            showMessage(
-                '🎉 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
-                'correct',
-                4000
-            );
-        } else {
-            // only clear message if puzzle not solved
-            showMessage('', '');
-        }
-    }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
+                if (wasLastGroup) {
+                    showMessage(
+                        '🎉 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
+                        'correct',
+                        4000
+                    );
+                } else {
+                    showMessage('', '');
+                }
+            }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
 
         } else {
             // compute how close the guess is
@@ -308,10 +358,11 @@ function submitGuess() {
             if (maxOverlap === 3) {
                 showMessage('One away', 'incorrect', 1200);
             } else {
-                showMessage('', '', 0); // just jiggle
+                showMessage('', '', 0);
             }
 
             mistakes++;
+            saveProgressState();
 
             const tiles = document.querySelectorAll('.word-tile');
             tiles.forEach(tile => {
@@ -320,19 +371,18 @@ function submitGuess() {
                 }
             });
 
+
             const JIGGLE_DURATION = 300;
             const EXTRA_READ_TIME = 1000;
 
             setTimeout(() => {
                 tiles.forEach(tile => {
                     tile.classList.remove('wrong-guess');
-                    // keep selection so user can edit the 4 tiles
                 });
 
                 document.getElementById('mistakes').textContent = mistakes;
 
                 if (mistakes >= 4) {
-                    // lock and save full solution
                     lockTodayPuzzle();
                     const fullSolution = currentPuzzle.categories.map(cat => ({
                         name: cat.name,
@@ -347,13 +397,11 @@ function submitGuess() {
                     };
                     saveFinalState(finalState);
 
-                    // show solution immediately
                     solvedCategories = finalState.solvedCategories;
                     remainingWords = [];
                     updateDisplay();
                     showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect', 1500);
 
-                    // freeze UI
                     document.getElementById('submit-btn').disabled = true;
                     document.getElementById('deselect-btn').disabled = true;
                     document.getElementById('shuffle-btn').disabled = true;
@@ -384,7 +432,6 @@ function showMessage(text, type = 'info', duration = 1200) {
     const overlay = document.getElementById('message-overlay');
     if (!overlay) return;
 
-    // cancel previous hide timer
     if (currentMessageTimeout) {
         clearTimeout(currentMessageTimeout);
         currentMessageTimeout = null;
@@ -412,8 +459,6 @@ function showMessage(text, type = 'info', duration = 1200) {
     }
 }
 
-
-
 function positionMessageOverBoard() {
     const overlay = document.getElementById('message-overlay');
     const board = document.getElementById('game-board');
@@ -431,6 +476,7 @@ function positionMessageOverBoard() {
 function deselectAll() {
     selectedWords = [];
     updateDisplay();
+    saveProgressState();
 }
 
 function shuffleBoard() {
@@ -438,13 +484,6 @@ function shuffleBoard() {
 
     const tiles = document.querySelectorAll('.word-tile');
     tiles.forEach(tile => tile.classList.add('shuffling'));
-
-    setTimeout(() => {
-        tiles.forEach(tile => tile.classList.remove('shuffling'));
-        shuffleArray(remainingWords);
-        selectedWords = [];
-        updateDisplay();
-    }, 250);
 }
 
 function handleResize() {
@@ -458,7 +497,6 @@ window.addEventListener('orientationchange', () => {
 
 window.addEventListener('resize', handleResize);
 
-// Next puzzle (not really used with daily lock, but kept)
 function nextPuzzle() {
     currentPuzzleIndex = (currentPuzzleIndex + 1) % puzzles.length;
     initGame();
@@ -466,7 +504,6 @@ function nextPuzzle() {
 
 // ------------------ STARTUP ------------------
 
-// Event listeners
 document.getElementById('submit-btn').addEventListener('click', submitGuess);
 document.getElementById('deselect-btn').addEventListener('click', deselectAll);
 document.getElementById('shuffle-btn').addEventListener('click', shuffleBoard);
@@ -503,7 +540,6 @@ async function startGame() {
             showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect');
         }
 
-        // freeze UI
         document.getElementById('submit-btn').disabled = true;
         document.getElementById('deselect-btn').disabled = true;
         document.getElementById('shuffle-btn').disabled = true;
@@ -516,5 +552,4 @@ async function startGame() {
     }
 }
 
-// IMPORTANT: this must be after the function is defined
 startGame();
