@@ -181,7 +181,7 @@ function updateDisplay() {
 
 
     if (remainingWords.length === 0) {
-        showMessage('🎉Congratulations,<br>You solved the puzzle!', 'correct');
+        showMessage('🏆Congratulations,<br>You solved the puzzle!', 'correct');
 
         clearProgressState();
         saveFinalState({
@@ -337,7 +337,7 @@ function submitGuess() {
 
                 if (wasLastGroup) {
                     showMessage(
-                        '🎉 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
+                        '🏆 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
                         'correct',
                         4000
                     );
@@ -396,11 +396,13 @@ function submitGuess() {
                         mistakes
                     };
                     saveFinalState(finalState);
+                    clearProgressState();
+
 
                     solvedCategories = finalState.solvedCategories;
                     remainingWords = [];
                     updateDisplay();
-                    showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect', 1500);
+                    showMessage('Better luck tomorrow!<br>Here’s today solution.', 'incorrect', 4000);
 
                     document.getElementById('submit-btn').disabled = true;
                     document.getElementById('deselect-btn').disabled = true;
@@ -531,7 +533,7 @@ async function startGame() {
             remainingWords = [];
             mistakes = state.mistakes;
             updateDisplay();
-            showMessage('🎉 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle', 'correct', 4000);
+            showMessage('🏆 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle', 'correct', 4000);
         } else if (state && state.type === 'failed') {
             solvedCategories = state.solvedCategories;
             remainingWords = [];
