@@ -198,24 +198,40 @@ h1 {
 .word-tile {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  text-align: center;
-  cursor: pointer;
   border-radius: var(--radius-md);
-  font-weight: 600;
-  font-size: clamp(13px, 2.1vw, 18px);
-  text-transform: uppercase;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    background-color 0.15s ease, opacity 0.2s ease;
+  cursor: pointer;
+  text-transform: uppercase;
 
   width: 100%;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6px;
-  text-wrap: balance;
+
+  padding-inline: 6px;
+  padding-block: 6px;
 }
+ 
+.word-text {
+  font-family: var(--font-primary);
+  font-weight: 600;
+
+  /* base size: same for almost all tiles */
+  font-size: 15px;
+
+  /* default: keep on one line */
+  white-space: nowrap;
+}
+
+/* multi-word phrases may wrap if needed */
+.word-text.has-space {
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;      /* center multi-line phrases */
+  display: inline-block;   /* ensure text-align works inside span */
+}
+
 
 @keyframes tileIn {
   0% {
@@ -446,26 +462,40 @@ background-color: #f0f0f0;
     font-size: 14px;
   }
 
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 420px;
-  margin: 20px auto 0;  /*top gap, centered */
-  padding: 0 8px;
-}
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto 0;  /* top gap, centered */
+    padding: 0 8px;
+  }
 
-.game-board {
-  gap: 6px;
-  width: 100%;
-  margin: var(--spacing-lg) auto;
-}
+  .game-board {
+    gap: 6px;
+    width: 100%;
+    margin: var(--spacing-lg) auto;
+  }
 
   .word-tile {
     width: 100%;
-    height: auto;
     aspect-ratio: 1;
-    font-size: clamp(11px, 3vw, 14px);
-    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 8px;
+    padding-block: 6px;
+  }
+
+  /* base mobile size: same for almost all tiles */
+  .word-text {
+    font-size: 13px;
+    line-height: 1.1;
+  }
+
+  /* phrases are allowed to wrap to 2 lines */
+  .word-text.has-space {
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
   .solved-category {
@@ -473,14 +503,14 @@ background-color: #f0f0f0;
     min-height: 80px;
   }
 
-.solved-categories,
-.game-board,
-.controls,
-.stats {
-  width: 100%;
-  max-width: 95%;
-  margin: 0 auto var(--spacing-sm);  /* center + bottom gap */
-}
+  .solved-categories,
+  .game-board,
+  .controls,
+  .stats {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto var(--spacing-sm);  /* center + bottom gap */
+  }
 
   .controls {
     flex-wrap: wrap;

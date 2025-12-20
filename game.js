@@ -74,7 +74,6 @@ function loadFinalState() {
 
 const TROPHY_KEY = '4hiburim-trophies';
 
-
 // ----- in‑progress state -----
 
 function getTodayProgressKey() {
@@ -133,8 +132,6 @@ function incrementTrophyCount() {
   updateTrophyDisplay(next);
 }
 
-
-
 // ------------------ GAME INITIALIZATION ------------------
 
 function initGame() {
@@ -176,6 +173,30 @@ function shuffleArray(array) {
   }
 }
 
+// ------------------ TEXT FIT HELPER ------------------
+
+function fitWordToTile(tile) {
+  const textEl = tile.querySelector('.word-text');
+  if (!textEl) return;
+
+  // decide base size by screen
+  const isMobile = window.matchMedia('(max-width: 600px)').matches;
+  const baseSize = isMobile ? 13 : 16;   // 13px mobile, 16px web
+
+  // start at base size
+  let fontSize = baseSize;
+  textEl.style.fontSize = baseSize + 'px';
+
+  // available width inside tile (minus padding)
+  const maxWidth = tile.clientWidth - 14;
+
+  // shrink only if needed, down to 10px minimum
+  while (textEl.scrollWidth > maxWidth && fontSize > 10) {
+    fontSize -= 0.5;
+    textEl.style.fontSize = fontSize + 'px';
+  }
+}
+
 // ------------------ RENDER ------------------
 
 function updateDisplay() {
@@ -195,14 +216,24 @@ function updateDisplay() {
   });
 
   const board = document.getElementById('game-board');
-  board.innerHTML = '';
-  remainingWords.forEach(item => {
-    const tile = document.createElement('div');
-    tile.className = 'word-tile';
-    tile.textContent = item.word;
-    tile.addEventListener('click', () => toggleWord(item.word, tile));
-    board.appendChild(tile);
-  });
+board.innerHTML = '';
+
+remainingWords.forEach(item => {
+  const tile = document.createElement('div');
+  tile.className = 'word-tile';
+  tile.innerHTML = `<span class="word-text">${item.word}</span>`;
+
+  const textEl = tile.querySelector('.word-text');
+  if (item.word.includes(' ')) {
+    textEl.classList.add('has-space');
+  }
+
+  tile.addEventListener('click', () => toggleWord(item.word, tile));
+
+  board.appendChild(tile);
+  fitWordToTile(tile);
+});
+
 
   document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
 
@@ -327,20 +358,19 @@ function handleCorrectGuess(category) {
 
     const wasLastGroup = remainingWords.length === 0;
 
-if (wasLastGroup) {
-  lockTodayPuzzle();
-  saveFinalState({
-    type: 'solved',
-    solvedCategories: solvedCategories.slice(),
-    mistakes
-  });
+    if (wasLastGroup) {
+      lockTodayPuzzle();
+      saveFinalState({
+        type: 'solved',
+        solvedCategories: solvedCategories.slice(),
+        mistakes
+      });
 
-  incrementTrophyCount();  // update the trophy counter
+      incrementTrophyCount();
 
-  remainingWords = [];
-  renderFullSolutionGrid(solvedCategories);
-}
-
+      remainingWords = [];
+      renderFullSolutionGrid(solvedCategories);
+    }
 
     updateDisplay();
 
@@ -507,6 +537,10 @@ function shuffleBoard() {
 function handleResize() {
   document.body.style.overflowX = 'hidden';
   document.body.style.width = '100%';
+
+  // refit all tiles on resize/orientation change
+  const tiles = document.querySelectorAll('.word-tile');
+  tiles.forEach(fitWordToTile);
 }
 
 window.addEventListener('orientationchange', () => {
@@ -523,16 +557,25 @@ function nextPuzzle() {
 function renderFullSolutionGrid(solutionCategories) {
   const board = document.getElementById('game-board');
   board.innerHTML = '';
+
   solutionCategories.forEach(cat => {
     cat.words.forEach(word => {
       const tile = document.createElement('div');
       tile.className = `word-tile completed ${cat.difficulty}`;
-      tile.textContent = word;
+      tile.innerHTML = `<span class="word-text">${word}</span>`;
       tile.style.pointerEvents = 'none';
+
+      const textEl = tile.querySelector('.word-text');
+      if (word.includes(' ')) {
+        textEl.classList.add('has-space');
+      }
+
       board.appendChild(tile);
+      fitWordToTile(tile);
     });
   });
 }
+
 
 // ------------------ STARTUP ------------------
 
