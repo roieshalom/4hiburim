@@ -119,6 +119,19 @@ h1 {
   color: var(--color-text-muted);
 }
 
+.ai-banner {
+  width: 100%;
+  height: 60px;
+  padding: 20px 16px;
+  background: #003255;              /* soft yellow */
+  color: #75cbf7;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0d4a5;
+}
+
+
 
 
 /* ==========================================
@@ -396,7 +409,7 @@ background-color: #f0f0f0;
   position: relative;
   width: 100%;
   max-width: 510px;
-  margin: 20px auto 0;  /*top gap, centered */
+  margin: 10px auto 0;  /*top gap, centered */
 }
 
 .message-overlay {
