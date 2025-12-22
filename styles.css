@@ -31,6 +31,7 @@
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-large: 18px;
+  --font-size-larger: 20px;
   --font-size-xlarge: 24px;
   --font-size-heading: 120px;
 
@@ -93,10 +94,27 @@ body {
 
 h1 {
   font-family: var(--font-h1);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 0;
   color: var(--color-text);
   font-size: 5em;
   text-align: left;
+} 
+
+.directions {
+  font-family: var(--font-primary);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+  max-width: 510px;
+  margin: 0 auto var(--spacing-xs);
+  text-align: center;
+}
+
+/* Larger screens: make the directions more prominent */
+@media (min-width: 768px) {
+  .directions {
+    font-size: var(--font-size-large);
+    margin: 0 auto var(--spacing-sm);
+  }
 }
 
 .solve-counter {
@@ -202,12 +220,12 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--spacing-sm);
-  margin-left: var(--spacing-lg) auto;
-  margin-right: var(--spacing-lg) auto;
-  margin-bottom: 2em;
+  margin: 0 auto 2em;
   justify-content: center;
   width: 100%;
   max-width: 510px;
+  padding-inline: var(--spacing-lg);
+  box-sizing: border-box;
 }
 
 .word-tile {
