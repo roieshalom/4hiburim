@@ -19,6 +19,9 @@
       "language": "en"
     },
     {
+      "id": "1",
+      "date": "10.12.2025",
+      "language": "en",
       "categories": [
         {
           "name": "Kitchen Utensils",
@@ -60,16 +63,9 @@
           ],
           "difficulty": "purple"
         }
-      ],
-      "date": "10.12.2025",
-      "id": "1",
-      "language": "en",
-      "status": "published"
+      ]
     },
     {
-      "id": "2",
-      "date": "11.12.2025",
-      "language": "en",
       "categories": [
         {
           "name": "Coffee Drinks",
@@ -111,7 +107,11 @@
           ],
           "difficulty": "purple"
         }
-      ]
+      ],
+      "date": "11.12.2025",
+      "id": "2",
+      "language": "en",
+      "status": "published"
     },
     {
       "id": "3",
