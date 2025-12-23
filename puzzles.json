@@ -215,49 +215,50 @@
       },
       "categories": [
         {
-          "difficulty": "yellow",
           "name": "Common farm animals",
           "words": [
             "COW",
             "SHEEP",
             "GOAT",
             "CHICKEN"
-          ]
+          ],
+          "difficulty": "yellow"
         },
         {
-          "difficulty": "purple",
           "name": "Phrases with 'Head'",
           "words": [
             "ACHE",
             "LIGHT",
             "LINE",
             "STONE"
-          ]
+          ],
+          "difficulty": "purple"
         },
         {
-          "difficulty": "green",
           "name": "Classical music composers",
           "words": [
             "MOZART",
             "BEETHOVEN",
             "BACH",
             "VIVALDI"
-          ]
+          ],
+          "difficulty": "green"
         },
         {
-          "difficulty": "blue",
           "name": "Idioms with 'Break'",
           "words": [
             "NECK",
             "GROUND",
             "ICE",
             "RECORD"
-          ]
+          ],
+          "difficulty": "blue"
         }
       ],
       "date": "13.12.2025",
       "id": "4",
-      "language": "en"
+      "language": "en",
+      "status": "published"
     },
     {
       "_validation": {
