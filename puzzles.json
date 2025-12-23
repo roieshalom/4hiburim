@@ -768,7 +768,49 @@
       ],
       "date": "23.12.2025",
       "id": "14",
-      "language": "en"
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things That Are Sweet",
+          "words": [
+            "HONEY",
+            "CAKE",
+            "CANDY",
+            "SUGAR"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Things You Can Press",
+          "words": [
+            "BUTTON",
+            "FLOWER",
+            "JUICE",
+            "RECORD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Things That Can Break",
+          "words": [
+            "GLASS",
+            "HEART",
+            "NEWS",
+            "CHAIN"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Words That Can Follow 'Glass'",
+          "words": [
+            "CEILING",
+            "HOUSE",
+            "WARE",
+            "CASE"
+          ],
+          "difficulty": "blue"
+        }
+      ]
     }
-  ]
-}
+    ]
+  }
