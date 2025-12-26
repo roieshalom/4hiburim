@@ -818,6 +818,100 @@
           "difficulty": "blue"
         }
       ]
+    },
+    {
+      "date": "27.12.2025",
+      "id": "18",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of hats",
+          "words": [
+            "FEDORA",
+            "BERET",
+            "PANAMA",
+            "BOWLER"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Historical Artifacts",
+          "words": [
+            "POTTERY",
+            "TOMB",
+            "SCROLL",
+            "FRESCO"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Famous painters",
+          "words": [
+            "MONET",
+            "PICASSO",
+            "KAHLO",
+            "DURER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Words that can mean 'sharp' or 'pointed'",
+          "words": [
+            "ACUTE",
+            "KEEN",
+            "EDGY",
+            "PIERCING"
+          ],
+          "difficulty": "blue"
+        }
+      ]
+    },
+    {
+      "date": "28.12.2025",
+      "id": "19",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Common Spices",
+          "words": [
+            "BASIL",
+            "GINGER",
+            "PARSLEY",
+            "THYME"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Circuit Elements",
+          "words": [
+            "RESISTOR",
+            "CAPACITOR",
+            "INDUCTOR",
+            "DIODE"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Fictional Realms",
+          "words": [
+            "MIDDLE-EARTH",
+            "WAKANDA",
+            "NARNIA",
+            "HOGWARTS"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Culinary Techniques",
+          "words": [
+            "SAUTE",
+            "BLANCH",
+            "GLAZE",
+            "BRAISE"
+          ],
+          "difficulty": "blue"
+        }
+      ]
     }
   ]
 }
