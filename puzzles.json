@@ -1006,6 +1006,53 @@
           "difficulty": "blue"
         }
       ]
+    },
+    {
+      "date": "31.12.2025",
+      "id": "22",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Birds",
+          "words": [
+            "EAGLE",
+            "PARROT",
+            "SPARROW",
+            "FALCON"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "70's bands: \"The _____\"",
+          "words": [
+            "CARS",
+            "BAND",
+            "WHO",
+            "TEMPTATIONS"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Abstract Bonds",
+          "words": [
+            "UNION",
+            "LINK",
+            "NEXUS",
+            "TIE"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Animal Groups",
+          "words": [
+            "MURDER",
+            "GAGGLE",
+            "PARLIAMENT",
+            "SCHOOL"
+          ],
+          "difficulty": "blue"
+        }
+      ]
     }
   ]
 }
