@@ -912,6 +912,100 @@
           "difficulty": "blue"
         }
       ]
+    },
+    {
+      "date": "29.12.2025",
+      "id": "20",
+      "language": "en",
+      "categories": [
+        {
+          "name": "90's NBA basketball players",
+          "words": [
+            "JORDAN",
+            "HILL",
+            "BIRD",
+            "MALONE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Animals on car symbols",
+          "words": [
+            "HORSE",
+            "SNAKE",
+            "BULL",
+            "LION"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Geographical forms",
+          "words": [
+            "PLATEAU",
+            "CANYON",
+            "ISLAND",
+            "FJORD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "To overcome or surpass",
+          "words": [
+            "BREAK",
+            "BEAT",
+            "TOP",
+            "OUTDO"
+          ],
+          "difficulty": "blue"
+        }
+      ]
+    },
+    {
+      "date": "30.12.2025",
+      "id": "21",
+      "language": "en",
+      "categories": [
+        {
+          "name": "90's NBA basketball players",
+          "words": [
+            "JORDAN",
+            "HILL",
+            "BIRD",
+            "MALONE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Animals on car symbols",
+          "words": [
+            "HORSE",
+            "SNAKE",
+            "BULL",
+            "LION"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Geographical forms",
+          "words": [
+            "PLATEAU",
+            "CANYON",
+            "ISLAND",
+            "FJORD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "To overcome or surpass",
+          "words": [
+            "BREAK",
+            "BEAT",
+            "TOP",
+            "OUTDO"
+          ],
+          "difficulty": "blue"
+        }
+      ]
     }
   ]
 }
