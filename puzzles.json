@@ -1,6 +1,6 @@
 {
   "puzzles": [
-        {
+    {
       "date": "31.12.2025",
       "id": "22",
       "language": "en",
@@ -183,6 +183,147 @@
             "PYROMETER",
             "PROTRACTOR",
             "STOPWATCH"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "04.01.2026",
+      "id": "26",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Banks",
+          "words": [
+            "RIVER",
+            "BLOOD",
+            "SAVINGS",
+            "DATA"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Weather Events",
+          "words": [
+            "HURRICANE",
+            "TORNADO",
+            "BLIZZARD",
+            "FLOOD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Seaside Elements",
+          "words": [
+            "SAND",
+            "WAVE",
+            "SHELL",
+            "BREEZE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Ways to gesture goodbye",
+          "words": [
+            "SALUTE",
+            "KISS",
+            "CURTSEY",
+            "FINGERGUN"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "05.01.2026",
+      "id": "27",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Berries",
+          "words": [
+            "STRAW",
+            "BLUE",
+            "CLOUD",
+            "BLACK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Programming languages",
+          "words": [
+            "LOGO",
+            "PYTHON",
+            "GO",
+            "SWIFT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of red",
+          "words": [
+            "MAROON",
+            "RUBY",
+            "SCARLET",
+            "SANGRIA"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "\"___ five\"",
+          "words": [
+            "HIGH",
+            "JASCKSON",
+            "STARTING",
+            "TAKE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "06.01.2026",
+      "id": "28",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Branch",
+          "words": [
+            "TWIG",
+            "ARM",
+            "FORK",
+            "LIMB"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Musical instruments with Strings",
+          "words": [
+            "GUITAR",
+            "VIOLIN",
+            "HARP",
+            "CELLO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Culinary Tools",
+          "words": [
+            "WHISK",
+            "PEELER",
+            "GRATER",
+            "MANDOLINE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "A plant or a body part",
+          "words": [
+            "STEM",
+            "ROOT",
+            "PALM",
+            "LEAF"
           ],
           "difficulty": "purple"
         }
