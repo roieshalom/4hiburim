@@ -536,29 +536,61 @@ button {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 12px 24px;
-  font-size: var(--font-size-xlarge);
+  padding: 10px 20px;
+  font-size: var(--font-size-large);
   font-weight: 600;
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-md);
   cursor: pointer;
   border: none;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  line-height: 1;          /* important: keeps content tight */
+  height: 38px;            /* lock a height you like */
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.08s ease;
 }
 
+/* Base icon element */
+button .icon {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.icon-clear {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-shuffle {
+  width: 22px;
+  height: 22px;
+}
+
+
+/* Primary: Submit */
 #submit-btn {
   background-color: var(--color-primary);
   color: #fff;
+  height: 40px;
 }
 
+/* Clear icon */
+.icon-clear {
+  mask: url("icons/clear.svg") center/contain no-repeat;
+  -webkit-mask: url("icons/clear.svg") center/contain no-repeat;
+  background-color: currentColor;
+}
+
+/* Shuffle icon */
+.icon-shuffle {
+  mask: url("icons/shuffle.svg") center/contain no-repeat;
+  -webkit-mask: url("icons/shuffle.svg") center/contain no-repeat;
+  background-color: currentColor;
+}
 #submit-btn:disabled {
   background-color: var(--color-disabled);
   cursor: not-allowed;
+  opacity: 0.8;
 }
 
-#submit-btn:not(:disabled):hover {
-  background-color: var(--color-primary-hover);
-}
-
+/* Secondary: Clear + Shuffle */
 #deselect-btn,
 #shuffle-btn {
   background-color: var(--color-surface);
@@ -568,7 +600,8 @@ button {
 
 #deselect-btn:hover,
 #shuffle-btn:hover {
-background-color: #f0f0f0;
+  background-color: #f5ecff;
+  border-color: var(--color-primary-hover);
 }
 
 .stats {
