@@ -679,18 +679,39 @@ function deselectAll() {
 function shuffleBoard() {
   if (mistakes >= 4 || remainingWords.length === 0) return;
 
+  // Shuffle the data
+  shuffleArray(remainingWords);
+  selectedWords = [];
+
+  // Get existing tiles (there are always 16)
   const tiles = document.querySelectorAll('.word-tile');
-  tiles.forEach(tile => tile.classList.add('shuffling'));
 
-  setTimeout(() => {
-    tiles.forEach(tile => tile.classList.remove('shuffling'));
-    shuffleArray(remainingWords);
-    selectedWords = [];
-    updateDisplay();
-    updateDeselectButtonState();
-  }, 250);
+  remainingWords.forEach((item, index) => {
+    const tile = tiles[index];
+    if (!tile) return;
+
+    const textEl = tile.querySelector('.word-text');
+    if (!textEl) return;
+
+    // Update text
+    textEl.textContent = item.word;
+
+    // Reset wrapping class
+    textEl.classList.toggle('has-space', item.word.includes(' '));
+
+    // Trigger animation
+    textEl.classList.remove('shuffle-change');
+    // force reflow so re-adding the class retriggers the animation
+    void textEl.offsetWidth;
+    textEl.classList.add('shuffle-change');
+
+    // Clear selection styling
+    tile.classList.remove('selected', 'group-selected');
+  });
+
+  updateDeselectButtonState();
+  saveProgressState();
 }
-
 
 
 function handleResize() {
