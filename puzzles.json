@@ -1,5 +1,52 @@
 {
   "puzzles": [
+        {
+      "date": "31.12.2025",
+      "id": "22",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Birds",
+          "words": [
+            "EAGLE",
+            "PARROT",
+            "SPARROW",
+            "FALCON"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "70's bands: \"The _____\"",
+          "words": [
+            "CARS",
+            "BAND",
+            "WHO",
+            "TEMPTATIONS"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Abstract Bonds",
+          "words": [
+            "UNION",
+            "LINK",
+            "NEXUS",
+            "TIE"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Animal Groups",
+          "words": [
+            "MURDER",
+            "GAGGLE",
+            "PARLIAMENT",
+            "SCHOOL"
+          ],
+          "difficulty": "blue"
+        }
+      ]
+    },
     {
       "date": "01.01.2026",
       "id": "23",
@@ -89,6 +136,53 @@
             "SWORD",
             "HELMET",
             "MACE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "03.01.2026",
+      "id": "25",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Digital objects",
+          "words": [
+            "FOLDERS",
+            "APPS",
+            "IMAGES",
+            "SHORTCUTS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Sculpting Tools",
+          "words": [
+            "CHISEL",
+            "CARVING",
+            "MALLET",
+            "FILES"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Musical Terms",
+          "words": [
+            "PITCH",
+            "SCALE",
+            "TONIC",
+            "SHARP"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Measuring devices",
+          "words": [
+            "CALIPER",
+            "PYROMETER",
+            "PROTRACTOR",
+            "STOPWATCH"
           ],
           "difficulty": "purple"
         }
