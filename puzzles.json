@@ -328,6 +328,335 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "07.01.2026",
+      "id": "29",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Light",
+          "words": [
+            "NEON",
+            "LANTERN",
+            "BEAM",
+            "FLASH"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Superheros",
+          "words": [
+            "SPIDERMAN",
+            "BATMAN",
+            "WONDERWOMAN",
+            "IRONMAN"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Elements",
+          "words": [
+            "OXYGEN",
+            "HYDROGEN",
+            "CARBON",
+            "NITROGEN"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Sia sings",
+          "words": [
+            "TITANIUM",
+            "SNOWMAN",
+            "UNSTOPPABLE",
+            "CHANDELIER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "08.01.2026",
+      "id": "30",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Knots",
+          "words": [
+            "BOWLINE",
+            "BUTTERFLY",
+            "SLIPKNOT",
+            "REEF"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Winged animals",
+          "words": [
+            "EAGLE",
+            "FALCON",
+            "HUMMINGBIRD",
+            "PENGUIN"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "90's rock bands",
+          "words": [
+            "NIRVANA",
+            "ASH",
+            "TOOL",
+            "GARBAGE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Marks",
+          "words": [
+            "TICK",
+            "CROSS",
+            "DOT",
+            "SLASH"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "09.01.2026",
+      "id": "31",
+      "language": "en",
+      "categories": [
+        {
+          "name": "\"____ Brothers\"",
+          "words": [
+            "WRIGHT",
+            "BLOOD",
+            "MARX",
+            "WARNER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Music Genres",
+          "words": [
+            "BLUES",
+            "FOLK",
+            "HOUSE",
+            "SWING"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Philosophers",
+          "words": [
+            "KANT",
+            "NIETZSCHE",
+            "PLATO",
+            "SARTRE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Fluids in our body",
+          "words": [
+            "LYMPH",
+            "TEARS",
+            "SWEAT",
+            "SALIVA"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "10.01.2026",
+      "id": "32",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Vintage Car Models",
+          "words": [
+            "MUSTANG",
+            "CAMARO",
+            "IMPALA",
+            "CHARGER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Types of Antlopes",
+          "words": [
+            "SPRINGBOK",
+            "KUDU",
+            "GEMSBOK",
+            "DIK-DIK"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Feral horses",
+          "words": [
+            "BRUMBY",
+            "BANKER",
+            "KONIK",
+            "SORRAIA"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Battery power sources",
+          "words": [
+            "DYNAMO",
+            "GENERATOR",
+            "SOLAR PANEL",
+            "POWER BANK"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "11.01.2026",
+      "id": "33",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Repeated in a name",
+          "words": [
+            "YO",
+            "TU",
+            "WEE",
+            "BORA"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Pathway Terms",
+          "words": [
+            "AVENUE",
+            "BOULEVARD",
+            "LANE",
+            "ROUTE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Electronic music groups",
+          "words": [
+            "DAFT PUNK",
+            "MOBY",
+            "KRAFTWERK",
+            "UNDERWORLD"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Cinematic Archetypes",
+          "words": [
+            "ANTI-HERO",
+            "SIDEKICK",
+            "REBEL",
+            "PRODIGY"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "12.01.2026",
+      "id": "34",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Indoor Plants",
+          "words": [
+            "RUBBER",
+            "ZZ",
+            "SNAKE",
+            "SPIDER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "_____ room",
+          "words": [
+            "HEAD",
+            "GREEN",
+            "WIGGLE",
+            "DARK"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Keyboard keys",
+          "words": [
+            "ESCAPE",
+            "CONTROL",
+            "FUNCTION",
+            "F1"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Transitory States",
+          "words": [
+            "CHANGE",
+            "SHIFT",
+            "TRANSFORM",
+            "EVOLVE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "13.01.2026",
+      "id": "35",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Pens",
+          "words": [
+            "PARKER",
+            "BIC",
+            "LAMY",
+            "PELIKAN"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Last names of superheroes",
+          "words": [
+            "STARK",
+            "KENT",
+            "WAYNE",
+            "BANNER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Marketing collateral",
+          "words": [
+            "BROCHURE",
+            "FLYER",
+            "POSTER",
+            "CATALOG"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Famous mountains in the Alps",
+          "words": [
+            "MONTBLANC",
+            "MATTERHORN",
+            "EIGER",
+            "GROSSGLOCKNER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
