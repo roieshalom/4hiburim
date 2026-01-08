@@ -704,6 +704,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "15.01.2026",
+      "id": "37",
+      "language": "en",
+      "categories": [
+        {
+          "name": "German surnames",
+          "words": [
+            "MÜLLER",
+            "SCHMIDT",
+            "MEYER",
+            "WAGNER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Motor types",
+          "words": [
+            "PETROL",
+            "V6",
+            "ROTARY",
+            "WANKEL"
+          ],
+          "difficulty": "purple"
+        },
+        {
+          "name": "Italian brands",
+          "words": [
+            "FERRARI",
+            "DIESEL",
+            "NUTELLA",
+            "FERRERO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "From the movie \"Spaceballs\"",
+          "words": [
+            "SCHWARTZ",
+            "YOGURT",
+            "PIZZA",
+            "VESPA"
+          ],
+          "difficulty": "blue"
+        }
+      ]
     }
   ]
 }
