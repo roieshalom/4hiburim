@@ -1,18 +1,17 @@
 console.log('game.js loaded');
 
-
 let puzzles = [];
 let currentPuzzleIndex = 0;
 let currentPuzzle = null;
+
+// Now track selected by word text ONLY, but always derive classes from state
 let selectedWords = [];
 let mistakes = 0;
 let solvedCategories = [];
 let remainingWords = [];
 let triedCombinations = new Set();
 
-
 // ------------------ CLARITY HELPERS ------------------
-
 
 function trackPuzzleEvent(eventName, extra = {}) {
   if (typeof window === 'undefined' || typeof window.clarity !== 'function') return;
@@ -23,22 +22,18 @@ function trackPuzzleEvent(eventName, extra = {}) {
     ? currentPuzzle.categories.map(c => c.difficulty).join(',')
     : '';
 
-  // base tags for filtering
   window.clarity("set", "puzzle_id", String(puzzleId));
   window.clarity("set", "puzzle_date", String(today));
   window.clarity("set", "puzzle_difficulties", String(difficultySummary));
 
-  // extra tags if provided
   Object.entries(extra).forEach(([key, value]) => {
     window.clarity("set", String(key), String(value));
   });
 
-  window.clarity("event", eventName); // API event Clarity can turn into a Smart Event[web:37][web:6]
+  window.clarity("event", eventName);
 }
 
-
 // ------------------ DATE + Puzzles ------------------
-
 
 function getTodayDDMMYYYY() {
   const d = new Date();
@@ -48,24 +43,17 @@ function getTodayDDMMYYYY() {
   return `${day}.${month}.${year}`;
 }
 
-
 async function loadPuzzles() {
   const res = await fetch('puzzles.json');
   const data = await res.json();
   const today = getTodayDDMMYYYY();
-  console.log('today:', today, 'data:', data);
-
-  puzzles = data.puzzles.filter(p => p.date === today);
-  console.log('filtered puzzles:', puzzles);
+  puzzles = (data.puzzles || []).filter(p => p.date === today);
 }
-
 
 // ------------------ STORAGE KEYS ------------------
 
-
 const STORAGE_KEY_PREFIX = 'grooped-puzzle-';
 const STATE_KEY_PREFIX   = 'grooped-state-';
-
 
 function getTodayKey() {
   const today = getTodayDDMMYYYY();
@@ -73,18 +61,15 @@ function getTodayKey() {
   return `${STORAGE_KEY_PREFIX}${today}-${puzzleId}`;
 }
 
-
 function isTodayPuzzleLocked() {
   const key = getTodayKey();
   return localStorage.getItem(key) === 'done';
 }
 
-
 function lockTodayPuzzle() {
   const key = getTodayKey();
   localStorage.setItem(key, 'done');
 }
-
 
 function getTodayStateKey() {
   const today = getTodayDDMMYYYY();
@@ -92,12 +77,10 @@ function getTodayStateKey() {
   return `${STATE_KEY_PREFIX}${today}-${puzzleId}`;
 }
 
-
 function saveFinalState(state) {
   const key = getTodayStateKey();
   localStorage.setItem(key, JSON.stringify(state));
 }
-
 
 function loadFinalState() {
   const key = getTodayStateKey();
@@ -110,62 +93,49 @@ function loadFinalState() {
   }
 }
 
-
 const TROPHY_KEY = 'grooped-trophies';
-
 
 // ------------------ MIGRATION FROM OLD KEYS ------------------
 
-
 function migrateFromOldKeys() {
-  // Migrate trophies
   const oldTrophyKey = '4hiburim-trophies';
   const oldTrophyValue = localStorage.getItem(oldTrophyKey);
   if (oldTrophyValue !== null && localStorage.getItem(TROPHY_KEY) === null) {
     localStorage.setItem(TROPHY_KEY, oldTrophyValue);
-    console.log('Migrated trophies from old key');
   }
 
-  // Migrate puzzle completion and state keys
   const today = getTodayDDMMYYYY();
   const puzzleId = puzzles[0]?.id;
-  
+
   if (puzzleId) {
-    // Migrate puzzle completion
     const oldPuzzleKey = `4hiburim-puzzle-${today}-${puzzleId}`;
     const oldPuzzleValue = localStorage.getItem(oldPuzzleKey);
     if (oldPuzzleValue !== null) {
       const newPuzzleKey = getTodayKey();
       if (localStorage.getItem(newPuzzleKey) === null) {
         localStorage.setItem(newPuzzleKey, oldPuzzleValue);
-        console.log('Migrated puzzle completion from old key');
       }
     }
 
-    // Migrate state
     const oldStateKey = `4hiburim-state-${today}-${puzzleId}`;
     const oldStateValue = localStorage.getItem(oldStateKey);
     if (oldStateValue !== null) {
       const newStateKey = getTodayStateKey();
       if (localStorage.getItem(newStateKey) === null) {
         localStorage.setItem(newStateKey, oldStateValue);
-        console.log('Migrated state from old key');
       }
     }
 
-    // Migrate progress
     const oldProgressKey = `4hiburim-progress-${today}-${puzzleId}`;
     const oldProgressValue = localStorage.getItem(oldProgressKey);
     if (oldProgressValue !== null) {
       const newProgressKey = getTodayProgressKey();
       if (localStorage.getItem(newProgressKey) === null) {
         localStorage.setItem(newProgressKey, oldProgressValue);
-        console.log('Migrated progress from old key');
       }
     }
   }
 
-  // Migrate all other puzzle keys (for past puzzles)
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     if (key && key.startsWith('4hiburim-')) {
@@ -174,23 +144,19 @@ function migrateFromOldKeys() {
         const value = localStorage.getItem(key);
         if (value !== null) {
           localStorage.setItem(newKey, value);
-          console.log(`Migrated key: ${key} -> ${newKey}`);
         }
       }
     }
   }
 }
 
-
 // ----- in‑progress state -----
-
 
 function getTodayProgressKey() {
   const today = getTodayDDMMYYYY();
   const puzzleId = puzzles[0]?.id;
   return `grooped-progress-${today}-${puzzleId}`;
 }
-
 
 function saveProgressState() {
   const key = getTodayProgressKey();
@@ -203,7 +169,6 @@ function saveProgressState() {
   localStorage.setItem(key, JSON.stringify(state));
 }
 
-
 function loadProgressState() {
   const key = getTodayProgressKey();
   const raw = localStorage.getItem(key);
@@ -215,12 +180,10 @@ function loadProgressState() {
   }
 }
 
-
 function clearProgressState() {
   const key = getTodayProgressKey();
   localStorage.removeItem(key);
 }
-
 
 function getTrophyCount() {
   const raw = localStorage.getItem(TROPHY_KEY);
@@ -228,18 +191,15 @@ function getTrophyCount() {
   return isNaN(n) ? 0 : n;
 }
 
-
 function setTrophyCount(n) {
   localStorage.setItem(TROPHY_KEY, String(n));
 }
-
 
 function updateTrophyDisplay(value) {
   const el = document.getElementById('trophy-count');
   if (!el) return;
   el.textContent = value;
 }
-
 
 function incrementTrophyCount() {
   const current = getTrophyCount();
@@ -248,9 +208,7 @@ function incrementTrophyCount() {
   updateTrophyDisplay(next);
 }
 
-
 // ------------------ GAME INITIALIZATION ------------------
-
 
 function initGame() {
   currentPuzzle = puzzles[currentPuzzleIndex];
@@ -260,7 +218,7 @@ function initGame() {
     mistakes         = saved.mistakes || 0;
     solvedCategories = saved.solvedCategories || [];
     remainingWords   = saved.remainingWords || [];
-    selectedWords    = [];
+    selectedWords    = saved.selectedWords || [];
     triedCombinations = new Set();
     updateDisplay();
     return;
@@ -280,13 +238,9 @@ function initGame() {
   );
   shuffleArray(remainingWords);
   updateDisplay();
-  updateDeselectButtonState();
-
 }
 
-
 // Shuffle array util
-
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -295,39 +249,35 @@ function shuffleArray(array) {
   }
 }
 
-
 // ------------------ TEXT FIT HELPER ------------------
-
 
 function fitWordToTile(tile) {
   const textEl = tile.querySelector('.word-text');
   if (!textEl) return;
 
-  // decide base size by screen
   const isMobile = window.matchMedia('(max-width: 600px)').matches;
-  const baseSize = isMobile ? 13 : 16;   // 13px mobile, 16px web
+  const baseSize = isMobile ? 13 : 16;
 
-  // start at base size
   let fontSize = baseSize;
   textEl.style.fontSize = baseSize + 'px';
 
-  // available width inside tile (minus padding)
   const maxWidth = tile.clientWidth - 14;
 
-  // shrink only if needed, down to 10px minimum
   while (textEl.scrollWidth > maxWidth && fontSize > 10) {
     fontSize -= 0.5;
     textEl.style.fontSize = fontSize + 'px';
   }
 }
 
+// ------------------ SOLVED BAR RENDER ------------------
 
-// ------------------ RENDER ------------------
+let lastSolvedSignature = '';
 
+function renderSolvedCategoriesIfChanged() {
+  const signature = JSON.stringify(solvedCategories);
+  if (signature === lastSolvedSignature) return; // nothing changed
 
-function updateDisplay() {
-  document.getElementById('mistakes').textContent = mistakes;
-  saveProgressState();
+  lastSolvedSignature = signature;
 
   const solvedContainer = document.getElementById('solved-categories');
   solvedContainer.innerHTML = '';
@@ -340,6 +290,16 @@ function updateDisplay() {
     `;
     solvedContainer.appendChild(div);
   });
+}
+
+// ------------------ RENDER ------------------
+
+function updateDisplay() {
+  document.getElementById('mistakes').textContent = mistakes;
+  saveProgressState();
+
+  // NEW: only update solved bar when needed
+  renderSolvedCategoriesIfChanged();
 
   const board = document.getElementById('game-board');
   board.innerHTML = '';
@@ -347,6 +307,12 @@ function updateDisplay() {
   remainingWords.forEach(item => {
     const tile = document.createElement('div');
     tile.className = 'word-tile';
+
+    // keep selection visual state in sync
+    if (selectedWords.includes(item.word)) {
+      tile.classList.add('selected');
+    }
+
     tile.innerHTML = `<span class="word-text">${item.word}</span>`;
 
     const textEl = tile.querySelector('.word-text');
@@ -354,15 +320,14 @@ function updateDisplay() {
       textEl.classList.add('has-space');
     }
 
-    tile.addEventListener('click', () => toggleWord(item.word, tile));
+    tile.addEventListener('click', () => toggleWord(item.word));
 
     board.appendChild(tile);
     fitWordToTile(tile);
   });
 
-document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
-updateDeselectButtonState();
-
+  document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
+  updateDeselectButtonState();
 
   if (remainingWords.length === 0) {
     return;
@@ -376,41 +341,38 @@ updateDeselectButtonState();
 
 // ------------------ INTERACTION ------------------
 
-
-function toggleWord(word, tileElement) {
+function toggleWord(word) {
   if (mistakes >= 4 || remainingWords.length === 0) return;
 
   const index = selectedWords.indexOf(word);
 
   if (index > -1) {
     selectedWords.splice(index, 1);
-    tileElement.classList.remove('selected', 'group-selected');
   } else {
     if (selectedWords.length >= 4) return;
     selectedWords.push(word);
-    tileElement.classList.add('selected');
   }
-document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
-updateDeselectButtonState();
 
+  document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
+  updateDeselectButtonState();
+  updateDisplay(); // always re-render so DOM matches state
 }
-
 
 function highlightSelectedGroup() {
   const tiles = document.querySelectorAll('.word-tile');
   tiles.forEach(tile => {
-    if (selectedWords.includes(tile.textContent)) {
+    const text = tile.textContent.trim();
+    if (selectedWords.includes(text)) {
       tile.classList.add('group-selected');
+    } else {
+      tile.classList.remove('group-selected');
     }
   });
 }
 
-
 // Submit guess with small animation
 
-
 const PRE_CHECK_DELAY = 150;
-
 
 function submitGuess() {
   if (selectedWords.length !== 4) return;
@@ -430,21 +392,20 @@ function submitGuess() {
     const selectedUpper = selectedWords.map(w => w.toUpperCase());
 
     const category = currentPuzzle.categories.find(cat => {
-      const catWords = cat.words.map(w => w.toUpperCase());
+      const catWordsUpper = cat.words.map(w => w.toUpperCase());
       return (
-        selectedUpper.every(w => catWords.includes(w)) &&
-        selectedUpper.length === catWords.length
+        selectedUpper.every(w => catWordsUpper.includes(w)) &&
+        selectedUpper.length === catWordsUpper.length
       );
     });
 
     if (category) {
-      handleCorrectGuess(category, selectedUpper);
+      handleCorrectGuess(category);
     } else {
       handleWrongGuess(selectedUpper);
     }
   }, PRE_CHECK_DELAY);
 }
-
 
 function handleCorrectGuess(category) {
   showMessage('Correct!', 'correct', 800);
@@ -457,14 +418,16 @@ function handleCorrectGuess(category) {
   const EXTRA_READ_TIME          = 800;
 
   tiles.forEach(tile => {
-    if (selectedWords.includes(tile.textContent)) {
+    const text = tile.textContent.trim();
+    if (selectedWords.includes(text)) {
       tile.classList.add('correct-hop');
     }
   });
 
   setTimeout(() => {
     tiles.forEach(tile => {
-      if (selectedWords.includes(tile.textContent)) {
+      const text = tile.textContent.trim();
+      if (selectedWords.includes(text)) {
         tile.classList.remove('correct-hop');
       }
     });
@@ -472,7 +435,8 @@ function handleCorrectGuess(category) {
 
   setTimeout(() => {
     tiles.forEach(tile => {
-      if (selectedWords.includes(tile.textContent)) {
+      const text = tile.textContent.trim();
+      if (selectedWords.includes(text)) {
         tile.classList.add('correct-resolve');
       }
     });
@@ -503,12 +467,11 @@ function handleCorrectGuess(category) {
 
       incrementTrophyCount();
 
-      // ---- CLARITY: COMPLETED PUZZLE ----
       trackPuzzleEvent("puzzle_completed", {
         result: "solved",
         mistakes: mistakes,
         groups_solved: solvedCategories.length
-      }); // This becomes an API smart event in Clarity[web:37][web:38][web:6]
+      });
 
       remainingWords = [];
       renderFullSolutionGrid(solvedCategories);
@@ -527,7 +490,6 @@ function handleCorrectGuess(category) {
     }
   }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
 }
-
 
 function handleWrongGuess(selectedUpper) {
   let maxOverlap = 0;
@@ -548,7 +510,8 @@ function handleWrongGuess(selectedUpper) {
 
   const tiles = document.querySelectorAll('.word-tile');
   tiles.forEach(tile => {
-    if (selectedWords.includes(tile.textContent)) {
+    const text = tile.textContent.trim();
+    if (selectedWords.includes(text)) {
       tile.classList.add('wrong-guess');
     }
   });
@@ -561,7 +524,10 @@ function handleWrongGuess(selectedUpper) {
       tile.classList.remove('wrong-guess');
     });
 
-    document.getElementById('mistakes').textContent = mistakes;
+    const mistakesEl = document.getElementById('mistakes');
+    if (mistakesEl) {
+      mistakesEl.textContent = mistakes;
+    }
 
     if (mistakes >= 4) {
       handleFailure();
@@ -574,7 +540,6 @@ function handleWrongGuess(selectedUpper) {
     }
   }, JIGGLE_DURATION + EXTRA_READ_TIME);
 }
-
 
 function handleFailure() {
   lockTodayPuzzle();
@@ -608,20 +573,16 @@ function handleFailure() {
     tile.style.pointerEvents = 'none';
   });
 
-  // ---- CLARITY: FAILED PUZZLE ----
   trackPuzzleEvent("puzzle_failed", {
     result: "failed",
     mistakes: mistakes,
     groups_solved: solvedCategories.length
-  }); // This will be a separate API smart event[web:37][web:38][web:6]
+  });
 }
-
 
 // ------------------ UTILS ------------------
 
-
 let currentMessageTimeout = null;
-
 
 function showMessage(text, type = 'info', duration = 1200) {
   const overlay = document.getElementById('message-overlay');
@@ -654,7 +615,6 @@ function showMessage(text, type = 'info', duration = 1200) {
   }
 }
 
-
 function positionMessageOverBoard() {
   const overlay = document.getElementById('message-overlay');
   const board = document.getElementById('game-board');
@@ -679,64 +639,32 @@ function deselectAll() {
 function shuffleBoard() {
   if (mistakes >= 4 || remainingWords.length === 0) return;
 
-  // 1) Shuffle the data
   shuffleArray(remainingWords);
   selectedWords = [];
-
-  // 2) Reuse existing tiles instead of rebuilding the grid
-  const tiles = document.querySelectorAll('.word-tile');
-
-  remainingWords.forEach((item, index) => {
-    const tile = tiles[index];
-    if (!tile) return;
-
-    const textEl = tile.querySelector('.word-text');
-    if (!textEl) return;
-
-    // Update the word in place
-    textEl.textContent = item.word;
-
-    // Multi-word wrapping class
-    textEl.classList.toggle('has-space', item.word.includes(' '));
-
-    // Clear selection styles
-    tile.classList.remove('selected', 'group-selected');
-
-    // 3) Trigger the shuffle animation on the text
-    textEl.classList.remove('shuffle-change');
-    void textEl.offsetWidth;            // force reflow so animation restarts
-    textEl.classList.add('shuffle-change');
-  });
-
-  // 4) Update button states + save progress
-  updateDeselectButtonState();
+  updateDisplay();
   saveProgressState();
 }
 
+// Resize/text fit
 
 function handleResize() {
   document.body.style.overflowX = 'hidden';
   document.body.style.width = '100%';
 
-  // refit all tiles on resize/orientation change
   const tiles = document.querySelectorAll('.word-tile');
   tiles.forEach(fitWordToTile);
 }
-
 
 window.addEventListener('orientationchange', () => {
   setTimeout(handleResize, 300);
 });
 
-
 window.addEventListener('resize', handleResize);
-
 
 function nextPuzzle() {
   currentPuzzleIndex = (currentPuzzleIndex + 1) % puzzles.length;
   initGame();
 }
-
 
 function renderFullSolutionGrid(solutionCategories) {
   const board = document.getElementById('game-board');
@@ -760,21 +688,13 @@ function renderFullSolutionGrid(solutionCategories) {
   });
 }
 
-
-
 // ------------------ STARTUP ------------------
 
-
 const deselectButton = document.getElementById('deselect-btn');
-
 
 function updateDeselectButtonState() {
   const selectedCount = selectedWords.length;
   deselectButton.disabled = selectedCount === 0;
-  console.log('updateDeselectButtonState:', {
-    selectedCount,
-    disabled: deselectButton.disabled
-  });
 }
 
 document.getElementById('submit-btn').addEventListener('click', submitGuess);
@@ -782,11 +702,8 @@ document.getElementById('deselect-btn').addEventListener('click', deselectAll);
 document.getElementById('shuffle-btn').addEventListener('click', shuffleBoard);
 
 async function startGame() {
-  console.log('startGame called');
   await loadPuzzles();
-  console.log('puzzles after load:', puzzles);
 
-  // Migrate data from old localStorage keys
   migrateFromOldKeys();
 
   updateTrophyDisplay(getTrophyCount());
@@ -800,7 +717,6 @@ async function startGame() {
 
   if (isTodayPuzzleLocked()) {
     const state = loadFinalState();
-    console.log('loaded final state:', state);
 
     if (state && state.type === 'solved') {
       solvedCategories = state.solvedCategories;
@@ -827,12 +743,9 @@ async function startGame() {
       tile.classList.add('completed');
       tile.style.pointerEvents = 'none';
     });
-
   } else {
     initGame();
-    console.log('initGame finished');
   }
 }
-
 
 startGame();
