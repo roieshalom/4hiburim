@@ -845,6 +845,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "18.01.2026",
+      "id": "40",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Golf terms",
+          "words": [
+            "IRON",
+            "DIVOT",
+            "BIRDIE",
+            "ROUGH"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "_____ Damage",
+          "words": [
+            "RADIOLOGICAL",
+            "TRUE",
+            "DPS",
+            "THUNDER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Crafted Beverages",
+          "words": [
+            "COCKTAIL",
+            "GOSE",
+            "KÖLSCH",
+            "TEA"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Movies starring Tom Cruise",
+          "words": [
+            "COLLATERAL",
+            "MAGNOLIA",
+            "LEGEND",
+            "OBLIVION"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "19.01.2026",
+      "id": "41",
+      "language": "en",
+      "categories": [
+        {
+          "name": "names and types of Red",
+          "words": [
+            "COQUELICOT",
+            "CINNABAR",
+            "VERMILION",
+            "SINOPER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "names and types of blue",
+          "words": [
+            "CERULEAN",
+            "SMALT",
+            "AZURITE",
+            "COBALT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "names and types of green",
+          "words": [
+            "OLIVE",
+            "EMERALD",
+            "SAGE",
+            "MALACHITE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "names and types of yellow",
+          "words": [
+            "SAFFRON",
+            "OCHRE",
+            "DAFFODIL",
+            "CITRINE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
