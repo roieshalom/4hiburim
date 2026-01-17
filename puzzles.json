@@ -939,6 +939,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "20.01.2026",
+      "id": "42",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things You Can 'Run'",
+          "words": [
+            "MARATHON",
+            "CODE",
+            "WATER",
+            "BUSINESS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Textile Patterns",
+          "words": [
+            "TARTAN",
+            "HOUNDSTOOTH",
+            "CHEVRON",
+            "PLAID"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Bridge Terms",
+          "words": [
+            "TRUSS",
+            "CANTILEVER",
+            "SUSPENSION",
+            "ARCH"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Coded Symbols",
+          "words": [
+            "AT",
+            "HASH",
+            "DOLLAR",
+            "AMPERSAND"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
