@@ -1174,6 +1174,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "25.01.2026",
+      "id": "47",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Mobility Apps",
+          "words": [
+            "UBER",
+            "LYFT",
+            "BIRD",
+            "LIME"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Insect Roles",
+          "words": [
+            "QUEEN",
+            "DRONE",
+            "WORKER",
+            "NURSE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Mechanical Parts",
+          "words": [
+            "BOLT",
+            "GEAR",
+            "CRANK",
+            "LEVER"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Mind Games",
+          "words": [
+            "DECEPTION",
+            "STRATEGY",
+            "BLUFFING",
+            "MISDIRECTION"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "26.01.2026",
+      "id": "48",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Common Card Games",
+          "words": [
+            "UNO",
+            "POKER",
+            "RUMMY",
+            "HEARTS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Types of Dance",
+          "words": [
+            "SALSA",
+            "TANGO",
+            "TAP",
+            "FOXTROT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Austrian Actors",
+          "words": [
+            "SCHWARZENEGGER",
+            "WALTZ",
+            "SCHNEIDER",
+            "LAMARR"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Song Parts",
+          "words": [
+            "CHORUS",
+            "BRIDGE",
+            "VERSE",
+            "HOOK"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
