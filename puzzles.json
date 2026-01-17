@@ -986,6 +986,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "21.01.2026",
+      "id": "43",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Classic Board Game Pieces",
+          "words": [
+            "KNIGHT",
+            "PAWN",
+            "CHECKER",
+            "BISHOP"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Musical Terms",
+          "words": [
+            "SHARP",
+            "FLAT",
+            "SCALE",
+            "CHORD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Battles",
+          "words": [
+            "SKIRMISH",
+            "SIEGE",
+            "AMBUSH",
+            "RAID"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Computer Network Components",
+          "words": [
+            "SERVER",
+            "NODE",
+            "PROXY",
+            "FIREWALL"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "22.01.2026",
+      "id": "44",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Breakfast Staples",
+          "words": [
+            "BACON",
+            "OATMEAL",
+            "TOAST",
+            "EGG"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Types of Knives",
+          "words": [
+            "CHEF",
+            "PARING",
+            "BUTTER",
+            "CLEAVER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Programming Languages",
+          "words": [
+            "PYTHON",
+            "JAVA",
+            "SWIFT",
+            "RUBY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Morning Routine",
+          "words": [
+            "CROISSANT",
+            "KETTLE",
+            "TOOTHPASTE",
+            "TOWEL"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
