@@ -1221,6 +1221,241 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "26.01.2026",
+      "id": "49",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Tools used for frying",
+          "words": [
+            "TONGS",
+            "WHISK",
+            "LADLE",
+            "STRAINER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Roles",
+          "words": [
+            "MANAGER",
+            "TEACHER",
+            "ENGINEER",
+            "DRIVER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Locks",
+          "words": [
+            "PADLOCK",
+            "DEADBOLT",
+            "COMBINATION",
+            "PILOT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Painter's Tools",
+          "words": [
+            "PALETTE",
+            "BRUSHES",
+            "EASEL",
+            "SPATULA"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "27.01.2026",
+      "id": "50",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of meetings",
+          "words": [
+            "STANDUP",
+            "SEMINAR",
+            "WORKSHOP",
+            "RETREAT"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Types of comedy",
+          "words": [
+            "SATIRE",
+            "DARK",
+            "SCREWBALL",
+            "PARODY"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Signs of Illness",
+          "words": [
+            "COUGH",
+            "NAUSEA",
+            "CHILLS",
+            "RASH"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Elvis' Songs",
+          "words": [
+            "FEVER",
+            "TROUBLE",
+            "HOUND DOG",
+            "SURRENDER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "28.01.2026",
+      "id": "51",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Wear on Your Head",
+          "words": [
+            "BERET",
+            "TIARA",
+            "HOOD",
+            "CAP"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Crafting Tools",
+          "words": [
+            "CHISEL",
+            "VARNISH",
+            "BURLAP",
+            "SANDER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Quick Moves",
+          "words": [
+            "DASH",
+            "SLIDE",
+            "LEAP",
+            "BOLTING"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Physical Place and an Abstract Concept",
+          "words": [
+            "FIELD",
+            "POINT",
+            "LINE",
+            "GROUND"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "29.01.2026",
+      "id": "52",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Building Methods",
+          "words": [
+            "BRICK",
+            "COB",
+            "CORDWOOD",
+            "ADOBE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Tech Icons",
+          "words": [
+            "APPLE",
+            "GOOGLE",
+            "IBM",
+            "TESLA"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Game Components",
+          "words": [
+            "TOKEN",
+            "CARD",
+            "DICE",
+            "BOARD"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Famous Inventors",
+          "words": [
+            "NEWTON",
+            "BELL",
+            "EDISON",
+            "MELARCONI"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "30.01.2026",
+      "id": "53",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Tools of Persuasion",
+          "words": [
+            "LOGIC",
+            "EMOTION",
+            "REASON",
+            "RHETORIC"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Professional Presentations",
+          "words": [
+            "DEMO",
+            "PITCH",
+            "LECTURE",
+            "WEBINAR"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Writing Genres",
+          "words": [
+            "FANTASY",
+            "MYSTERY",
+            "THRILLER",
+            "DRAMA"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Concepts in Philosophy",
+          "words": [
+            "TRUTH",
+            "EXISTENCE",
+            "KNOWLEDGE",
+            "MEANING"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
