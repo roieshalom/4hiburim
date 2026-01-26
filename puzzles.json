@@ -1456,6 +1456,194 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "31.01.2026",
+      "id": "54",
+      "language": "en",
+      "categories": [
+        {
+          "name": "\" _______ white\"",
+          "words": [
+            "SNOW",
+            "PAPER",
+            "EGG",
+            "BONE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Winter Weather",
+          "words": [
+            "SNOWFLAKE",
+            "BLIZZARD",
+            "FROSTBITE",
+            "SLEDDING"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Ways to Stall in Conversation",
+          "words": [
+            "PAUSE",
+            "REPEAT",
+            "REDIRECT",
+            "CLARIFY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Motions",
+          "words": [
+            "SWAY",
+            "DRIFT",
+            "FLOAT",
+            "VIBRATE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "01.02.2026",
+      "id": "55",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Common Expressions Involving Time",
+          "words": [
+            "DEADLINE",
+            "OVERTIME",
+            "RUSH",
+            "BREAK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Animal Sounds",
+          "words": [
+            "BARK",
+            "MEOW",
+            "ROAR",
+            "CHIRP"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Tools for Shaping",
+          "words": [
+            "CHISEL",
+            "PLANE",
+            "KNIFE",
+            "FILE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Part of a Tree",
+          "words": [
+            "CROWN",
+            "ROOTS",
+            "FOLIAGE",
+            "BRANCH"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "02.02.2026",
+      "id": "56",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Everyday Things That Can Be Broken",
+          "words": [
+            "PROMISE",
+            "RECORD",
+            "GLASS",
+            "CODE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Roles in Storytelling",
+          "words": [
+            "HERO",
+            "VILLAIN",
+            "MENTOR",
+            "SIDEKICK"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Communication",
+          "words": [
+            "EMAIL",
+            "TELEGRAM",
+            "TELEPHONE",
+            "FACSIMILE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Linguistic Relics",
+          "words": [
+            "SLOGAN",
+            "IDIOM",
+            "PROVERB",
+            "MANTRA"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "03.02.2026",
+      "id": "57",
+      "language": "en",
+      "categories": [
+        {
+          "name": "In a Cozy Cabin",
+          "words": [
+            "FIREPLACE",
+            "RUG",
+            "LANTERN",
+            "WOOD"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Voice Types",
+          "words": [
+            "ALTO",
+            "TENOR",
+            "BASS",
+            "SOPRANO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Travel",
+          "words": [
+            "ITINERARY",
+            "VISA",
+            "TRANSIT",
+            "HOSTEL"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of fish",
+          "words": [
+            "PIKE",
+            "BARRACUDA",
+            "FLOUNDER",
+            "SARDINE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
