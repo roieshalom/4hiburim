@@ -1785,6 +1785,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "07.02.2026",
+      "id": "61",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Bauhaus Teachers",
+          "words": [
+            "GROPIUS",
+            "KANDINSKY",
+            "KLEE",
+            "MIES"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Impressionist painters",
+          "words": [
+            "MONET",
+            "RENOIR",
+            "CEZANNE",
+            "DEGAS"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "20th century women artists",
+          "words": [
+            "O'KEEFFE",
+            "KAHLO",
+            "KUSAMA",
+            "SHERMAN"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Top olympics gold medalists",
+          "words": [
+            "PHELPS",
+            "BOLT",
+            "LEDECKY",
+            "JOHNSON"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "08.02.2026",
+      "id": "62",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Common office distractions",
+          "words": [
+            "CHAT",
+            "COFFEE",
+            "EMAIL",
+            "PHONE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Things you can do with a smartphone",
+          "words": [
+            "PHOTOGRAPH",
+            "STREAM",
+            "NAVIGATE",
+            "DOWNLOAD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Bird Behaviors",
+          "words": [
+            "FLYING",
+            "NESTING",
+            "MIGRATING",
+            "SINGING"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Talent show",
+          "words": [
+            "PERFORMANCE",
+            "AUDITION",
+            "JUDGES",
+            "SPOTLIGHT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
