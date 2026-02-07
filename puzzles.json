@@ -1926,6 +1926,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "10.02.2026",
+      "id": "64",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Lesser Known Muppets",
+          "words": [
+            "PICKLES",
+            "SAL MINELLA",
+            "LIPS",
+            "ROBIN"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Double Organs",
+          "words": [
+            "KIDNEYS",
+            "LUNGS",
+            "EYES",
+            "EARS"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Fermentation",
+          "words": [
+            "MISO",
+            "KOMBUCHA",
+            "SOURDOUGH",
+            "PROBIOTICS"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "DC Sidekicks",
+          "words": [
+            "BATGIRL",
+            "AQUALAD",
+            "TIGER",
+            "HARLEY"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "11.02.2026",
+      "id": "65",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Signals at Intersections",
+          "words": [
+            "STOP",
+            "YIELD",
+            "CROSSWALK",
+            "GREEN"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Inexperienced",
+          "words": [
+            "NOOB",
+            "PROBATIONER",
+            "STARTER",
+            "APPRENTICE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Spice Girls Songs",
+          "words": [
+            "WANNABE",
+            "MAMA",
+            "GOODBYE",
+            "HOLLER"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Investment/Return",
+          "words": [
+            "DIVIDEND",
+            "APPRECIATION",
+            "COUPON",
+            "CAPITAL"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
