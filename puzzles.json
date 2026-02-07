@@ -1869,12 +1869,59 @@
           "difficulty": "blue"
         },
         {
-          "name": "Talent show",
+          "name": "Talent Show",
           "words": [
             "PERFORMANCE",
             "AUDITION",
             "JUDGES",
             "SPOTLIGHT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "09.02.2026",
+      "id": "63",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Salty Snacks",
+          "words": [
+            "CHIPS",
+            "PRETZEL",
+            "CRACKERS",
+            "POPCORN"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Pie Toppings",
+          "words": [
+            "STREUSEL",
+            "CRUMBLE",
+            "NUTS",
+            "FROSTING"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Cultural Rhythms",
+          "words": [
+            "MERENGUE",
+            "BACHATA",
+            "KATHAK",
+            "FLAMENCO"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Adidas Shoe Models",
+          "words": [
+            "NMD",
+            "ULTRABOOST",
+            "SAMBA",
+            "YEEZY"
           ],
           "difficulty": "purple"
         }
