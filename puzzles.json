@@ -2020,6 +2020,288 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "12.02.2026",
+      "id": "66",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Gummy candy shapes",
+          "words": [
+            "BEAR",
+            "WORM",
+            "CORN",
+            "RING"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Legless Animals",
+          "words": [
+            "SNAKE",
+            "JELLYFISH",
+            "EEL",
+            "SLUG"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Hibernating Animals",
+          "words": [
+            "GROUNDHOG",
+            "DORMOUSE",
+            "BAT",
+            "MARMOT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Animal‑Themed Superheroes",
+          "words": [
+            "SPIDER",
+            "CAT",
+            "PANTHER",
+            "ANT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "13.02.2026",
+      "id": "67",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Clean With Water",
+          "words": [
+            "WASH",
+            "RINSE",
+            "SHOWER",
+            "SOAK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Poker Hands",
+          "words": [
+            "FULL HOUSE",
+            "STRAIGHT",
+            "FLUSH",
+            "PAIR"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "90's Sitcoms",
+          "words": [
+            "FRIENDS",
+            "CHEERS",
+            "THE NANNY",
+            "WINGS"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "words you say when raising a toast",
+          "words": [
+            "CIN‑CIN",
+            "PROST",
+            "SLÁINTE",
+            "KAMPAI"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "14.02.2026",
+      "id": "68",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Telecom brands",
+          "words": [
+            "VERIZON",
+            "AT&T",
+            "ORANGE",
+            "SPRINT"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Search engines to find flights",
+          "words": [
+            "KAYAK",
+            "SKYSKANNER",
+            "EXPEDIA",
+            "KIWI"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Vitamin C",
+          "words": [
+            "LYCHEE",
+            "GUAVA",
+            "PAPAYA",
+            "STRAWBERRY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Boats",
+          "words": [
+            "DINGHY",
+            "YACHT",
+            "CANOE",
+            "RAFT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "15.02.2026",
+      "id": "69",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Alcoholic Spirits",
+          "words": [
+            "VODKA",
+            "TEQUILA",
+            "RUM",
+            "WHISKEY"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "K-pop Demon Hunters",
+          "words": [
+            "JIN",
+            "MINA",
+            "SUHO",
+            "NARI"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Water Landforms",
+          "words": [
+            "SEA",
+            "ESTUARY",
+            "RIVER",
+            "BAY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Methodologies",
+          "words": [
+            "WATERFALL",
+            "SPIRAL",
+            "AGILE",
+            "SCRUM"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "16.02.2026",
+      "id": "70",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Love States",
+          "words": [
+            "CRUSH",
+            "INFATUATION",
+            "ATTACHMENT",
+            "COMPANIONATE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Ways to Serve Ice",
+          "words": [
+            "CRACK",
+            "SHAVE",
+            "CUBE",
+            "FLAKE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Grooming Methods",
+          "words": [
+            "WAX",
+            "TRIM",
+            "LASER",
+            "SUGARING"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Light Tech",
+          "words": [
+            "LED",
+            "NEON",
+            "STROBE",
+            "XENON"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "17.02.2026",
+      "id": "71",
+      "language": "en",
+      "categories": [
+        {
+          "name": "RED _______",
+          "words": [
+            "FLAG",
+            "HERRING",
+            "EYE",
+            "LIGHT"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "One of the 7 Dwarves",
+          "words": [
+            "DOC",
+            "GRUMPY",
+            "SNEEZY",
+            "BASHFUL"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Mental States or Conditions",
+          "words": [
+            "ALERT",
+            "SLEEPY",
+            "SAD",
+            "FOCUSED"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "file extensions",
+          "words": [
+            "FIG",
+            "ZIP",
+            "PIE",
+            "JPEG"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
