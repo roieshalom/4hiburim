@@ -447,6 +447,15 @@ h1 {
   display: inline-block;   /* ensure text-align works inside span */
 }
 
+.word-text.two-words {
+  white-space: normal;
+  text-align: center;
+}
+
+.word-text.two-words .word-part {
+  display: block;      /* each word forced to its own line */
+}
+
 
 @keyframes tileIn {
   0% {

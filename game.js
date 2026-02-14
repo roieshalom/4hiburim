@@ -1,4 +1,4 @@
-console.log('game.js loaded');
+console.log('game.js loaded v3');
 
 let puzzles = [];
 let currentPuzzleIndex = 0;
@@ -22,15 +22,15 @@ function trackPuzzleEvent(eventName, extra = {}) {
     ? currentPuzzle.categories.map(c => c.difficulty).join(',')
     : '';
 
-  window.clarity("set", "puzzle_id", String(puzzleId));
-  window.clarity("set", "puzzle_date", String(today));
-  window.clarity("set", "puzzle_difficulties", String(difficultySummary));
+  window.clarity('set', 'puzzle_id', String(puzzleId));
+  window.clarity('set', 'puzzle_date', String(today));
+  window.clarity('set', 'puzzle_difficulties', String(difficultySummary));
 
   Object.entries(extra).forEach(([key, value]) => {
-    window.clarity("set", String(key), String(value));
+    window.clarity('set', String(key), String(value));
   });
 
-  window.clarity("event", eventName);
+  window.clarity('event', eventName);
 }
 
 // ------------------ DATE + Puzzles ------------------
@@ -53,7 +53,7 @@ async function loadPuzzles() {
 // ------------------ STORAGE KEYS ------------------
 
 const STORAGE_KEY_PREFIX = 'grooped-puzzle-';
-const STATE_KEY_PREFIX   = 'grooped-state-';
+const STATE_KEY_PREFIX = 'grooped-state-';
 
 function getTodayKey() {
   const today = getTodayDDMMYYYY();
@@ -215,29 +215,29 @@ function initGame() {
 
   const saved = loadProgressState();
   if (saved) {
-    mistakes         = saved.mistakes || 0;
+    mistakes = saved.mistakes || 0;
     solvedCategories = saved.solvedCategories || [];
-    remainingWords   = saved.remainingWords || [];
-    selectedWords    = saved.selectedWords || [];
+    remainingWords = saved.remainingWords || [];
+    selectedWords = saved.selectedWords || [];
     triedCombinations = new Set();
-    updateDisplay();
+    updateDisplayV2();
     return;
   }
 
-  mistakes         = 0;
+  mistakes = 0;
   solvedCategories = [];
-  selectedWords    = [];
+  selectedWords = [];
   triedCombinations = new Set();
 
   remainingWords = currentPuzzle.categories.flatMap(cat =>
     cat.words.map(word => ({
       word,
       category: cat.name,
-      difficulty: cat.difficulty
-    }))
+      difficulty: cat.difficulty,
+    })),
   );
   shuffleArray(remainingWords);
-  updateDisplay();
+  updateDisplayV2();
 }
 
 // Shuffle array util
@@ -292,9 +292,9 @@ function renderSolvedCategoriesIfChanged() {
   });
 }
 
-// ------------------ RENDER ------------------
+// ------------------ RENDER (NEW VERSION) ------------------
 
-function updateDisplay() {
+function updateDisplayV2() {
   document.getElementById('mistakes').textContent = mistakes;
   saveProgressState();
 
@@ -313,7 +313,21 @@ function updateDisplay() {
       tile.classList.add('selected');
     }
 
-    tile.innerHTML = `<span class="word-text">${item.word}</span>`;
+    // two-word tiles: always 2 lines
+    const parts = item.word.split(' ');
+    let wordHtml;
+    if (parts.length === 2) {
+      wordHtml = `
+        <span class="word-text two-words">
+          <span class="word-part">${parts[0]}</span>
+          <span class="word-part">${parts[1]}</span>
+        </span>
+      `;
+    } else {
+      wordHtml = `<span class="word-text">${item.word}</span>`;
+    }
+
+    tile.innerHTML = wordHtml;
 
     const textEl = tile.querySelector('.word-text');
     if (item.word.includes(' ')) {
@@ -338,7 +352,6 @@ function updateDisplay() {
   }
 }
 
-
 // ------------------ INTERACTION ------------------
 
 function toggleWord(word) {
@@ -355,7 +368,7 @@ function toggleWord(word) {
 
   document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
   updateDeselectButtonState();
-  updateDisplay(); // always re-render so DOM matches state
+  updateDisplayV2(); // always re-render so DOM matches state
 }
 
 function highlightSelectedGroup() {
@@ -412,10 +425,10 @@ function handleCorrectGuess(category) {
 
   const tiles = document.querySelectorAll('.word-tile');
 
-  const CORRECT_HOP_DURATION     = 250;
-  const PAUSE_AFTER_HOP          = 300;
+  const CORRECT_HOP_DURATION = 250;
+  const PAUSE_AFTER_HOP = 300;
   const CORRECT_RESOLVE_DURATION = 500;
-  const EXTRA_READ_TIME          = 800;
+  const EXTRA_READ_TIME = 800;
 
   tiles.forEach(tile => {
     const text = tile.textContent.trim();
@@ -446,11 +459,11 @@ function handleCorrectGuess(category) {
     solvedCategories.push({
       name: category.name,
       words: category.words,
-      difficulty: category.difficulty
+      difficulty: category.difficulty,
     });
 
     remainingWords = remainingWords.filter(
-      item => !selectedWords.includes(item.word)
+      item => !selectedWords.includes(item.word),
     );
 
     selectedWords = [];
@@ -462,28 +475,28 @@ function handleCorrectGuess(category) {
       saveFinalState({
         type: 'solved',
         solvedCategories: solvedCategories.slice(),
-        mistakes
+        mistakes,
       });
 
       incrementTrophyCount();
 
-      trackPuzzleEvent("puzzle_completed", {
-        result: "solved",
+      trackPuzzleEvent('puzzle_completed', {
+        result: 'solved',
         mistakes: mistakes,
-        groups_solved: solvedCategories.length
+        groups_solved: solvedCategories.length,
       });
 
       remainingWords = [];
       renderFullSolutionGrid(solvedCategories);
     }
 
-    updateDisplay();
+    updateDisplayV2();
 
     if (wasLastGroup) {
       showMessage(
         '🏆 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
         'correct',
-        4000
+        4000,
       );
     } else {
       showMessage('', '');
@@ -546,13 +559,13 @@ function handleFailure() {
   const fullSolution = currentPuzzle.categories.map(cat => ({
     name: cat.name,
     words: cat.words,
-    difficulty: cat.difficulty
+    difficulty: cat.difficulty,
   }));
 
   const finalState = {
     type: 'failed',
     solvedCategories: fullSolution,
-    mistakes
+    mistakes,
   };
   saveFinalState(finalState);
   clearProgressState();
@@ -560,7 +573,7 @@ function handleFailure() {
   solvedCategories = finalState.solvedCategories;
   remainingWords = [];
   renderFullSolutionGrid(solvedCategories);
-  updateDisplay();
+  updateDisplayV2();
   showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect', 4000);
 
   document.getElementById('submit-btn').disabled = true;
@@ -573,10 +586,10 @@ function handleFailure() {
     tile.style.pointerEvents = 'none';
   });
 
-  trackPuzzleEvent("puzzle_failed", {
-    result: "failed",
+  trackPuzzleEvent('puzzle_failed', {
+    result: 'failed',
     mistakes: mistakes,
-    groups_solved: solvedCategories.length
+    groups_solved: solvedCategories.length,
   });
 }
 
@@ -631,7 +644,7 @@ function positionMessageOverBoard() {
 
 function deselectAll() {
   selectedWords = [];
-  updateDisplay();
+  updateDisplayV2();
   saveProgressState();
   updateDeselectButtonState();
 }
@@ -641,7 +654,7 @@ function shuffleBoard() {
 
   shuffleArray(remainingWords);
   selectedWords = [];
-  updateDisplay();
+  updateDisplayV2();
   saveProgressState();
 }
 
@@ -723,14 +736,18 @@ async function startGame() {
       remainingWords = [];
       mistakes = state.mistakes;
       renderFullSolutionGrid(solvedCategories);
-      updateDisplay();
-      showMessage('🏆 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle', 'correct', 4000);
+      updateDisplayV2();
+      showMessage(
+        '🏆 You solved the puzzle!<br>Come back tomorrow<br>for a new puzzle',
+        'correct',
+        4000,
+      );
     } else if (state && state.type === 'failed') {
       solvedCategories = state.solvedCategories;
       remainingWords = [];
       mistakes = state.mistakes;
       renderFullSolutionGrid(solvedCategories);
-      updateDisplay();
+      updateDisplayV2();
       showMessage('Better luck tomorrow! Here’s the solution.', 'incorrect', 4000);
     }
 
@@ -749,3 +766,6 @@ async function startGame() {
 }
 
 startGame();
+
+// expose our version globally so nothing else wins
+window.updateDisplay = updateDisplayV2;
