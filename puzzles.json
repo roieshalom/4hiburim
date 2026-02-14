@@ -2302,6 +2302,147 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "18.02.2026",
+      "id": "72",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Playing Cards",
+          "words": [
+            "HEART",
+            "SPADE",
+            "CLUB",
+            "DIAMON"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Geometric Shapes",
+          "words": [
+            "CONE",
+            "PYRAMID",
+            "CYLINDER",
+            "SQUARE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Slang for a Boring Person",
+          "words": [
+            "DRIP",
+            "TOOL",
+            "STICK",
+            "STIFF"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "_____ Ice",
+          "words": [
+            "BOX",
+            "CUBE",
+            "CREAM",
+            "TRAY"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "19.02.2026",
+      "id": "73",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Fish",
+          "words": [
+            "BASS",
+            "SKATE",
+            "SOLE",
+            "FLOUNDER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Musical Instuments",
+          "words": [
+            "DRUM",
+            "HORN",
+            "FLUTE",
+            "ORGAN"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "______ Board",
+          "words": [
+            "DRAFT",
+            "SURF",
+            "SOUND",
+            "KEY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Military Ranks",
+          "words": [
+            "MAJOR",
+            "PRIVATE",
+            "COLONEL",
+            "CAPTAIN"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "20.02.2026",
+      "id": "74",
+      "language": "en",
+      "categories": [
+        {
+          "name": "First Names of Fashion Designers",
+          "words": [
+            "RALPH",
+            "CALVIN",
+            "MIUCCIA",
+            "GIANNI"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Looney Tunes",
+          "words": [
+            "TOM",
+            "BUGS",
+            "DAFFY",
+            "ELMER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Pests",
+          "words": [
+            "RATS",
+            "WEEDS",
+            "MOLD",
+            "GERMS"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "famous mice",
+          "words": [
+            "MICKY",
+            "STUART",
+            "JERRY",
+            "SPEEDY GONZALES"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
