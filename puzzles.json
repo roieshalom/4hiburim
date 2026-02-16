@@ -2443,6 +2443,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "21.02.2026",
+      "id": "75",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Bird Actions",
+          "words": [
+            "FLY",
+            "CHIRP",
+            "NEST",
+            "PERCH"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Types of Fasteners",
+          "words": [
+            "CLIP",
+            "NAIL",
+            "SCREW",
+            "ZIP"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "To Swindle",
+          "words": [
+            "CON",
+            "FLEECE",
+            "TRICK",
+            "SWING"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Have a Shell",
+          "words": [
+            "EGG",
+            "NUT",
+            "CLAM",
+            "TURTLE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
