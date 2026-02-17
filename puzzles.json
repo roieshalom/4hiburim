@@ -2490,6 +2490,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "22.02.2026",
+      "id": "76",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Green Leafy Plants",
+          "words": [
+            "SPINACH",
+            "KALE",
+            "SAGE",
+            "PEA"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Shades of Green",
+          "words": [
+            "EMERALD",
+            "FOREST",
+            "OLIVE",
+            "MINT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Parts of a Forest",
+          "words": [
+            "CANOPY",
+            "FLOOR",
+            "UNDERSTORY",
+            "BREAK"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Popeye Characters",
+          "words": [
+            "WIMPY",
+            "BLUTO",
+            "POPEYE",
+            "SWEE'PEA"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "23.02.2026",
+      "id": "77",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Have Teeth",
+          "words": [
+            "COMB",
+            "GEAR",
+            "ZIPPER",
+            "SAW"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Levels of a Building",
+          "words": [
+            "STORY",
+            "FLOOR",
+            "TIER",
+            "DECK"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Hand Tools",
+          "words": [
+            "HAMMER",
+            "PLANE",
+            "DRILL",
+            "LANDING"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "_____ Air",
+          "words": [
+            "ON",
+            "HOT",
+            "THIN",
+            "THICK"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
