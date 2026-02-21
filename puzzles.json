@@ -2584,6 +2584,147 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "24.02.2026",
+      "id": "78",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Small Insects",
+          "words": [
+            "FLEA",
+            "TICK",
+            "TERMITE",
+            "MIDGE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Birds",
+          "words": [
+            "ROOSTER",
+            "CANARY",
+            "ROBIN",
+            "SWALLOW"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Stand-alone Weight Classes",
+          "words": [
+            "WELTER",
+            "CRUISER",
+            "HEAVY",
+            "MIDDLE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "_______ Weight",
+          "words": [
+            "PAPER",
+            "FEATHER",
+            "LIGHT",
+            "FLY"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "25.02.2026",
+      "id": "79",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Kitchen Appliances",
+          "words": [
+            "TOASTER",
+            "BLENDER",
+            "MIXER",
+            "GRATE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Island Nations",
+          "words": [
+            "CUBA",
+            "MALTA",
+            "PALAU",
+            "JAPAN"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Kinds of Shoes",
+          "words": [
+            "PUMP",
+            "MULE",
+            "CLOG",
+            "FLAT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Measurement Units",
+          "words": [
+            "FOOT",
+            "HAND",
+            "STONE",
+            "SPAN"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "26.02.2026",
+      "id": "80",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Leader",
+          "words": [
+            "BOSS",
+            "HEAD",
+            "CHAIR",
+            "DIRECTOR"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Parts of a River",
+          "words": [
+            "FORK",
+            "MOUTH",
+            "BED",
+            "BANK"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Furniture Pieces",
+          "words": [
+            "TABLE",
+            "CHEST",
+            "STOOL",
+            "COUCH"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Words that Start with a Pronoun",
+          "words": [
+            "HELMET",
+            "USA",
+            "HERCULES",
+            "WEDDING"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
