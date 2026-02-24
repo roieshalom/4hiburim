@@ -2725,6 +2725,241 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "27.02.2026",
+      "id": "81",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Words for \"Zero\"",
+          "words": [
+            "NIL",
+            "ZIP",
+            "LOVE",
+            "NOUGHT"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Kinds of Taxes",
+          "words": [
+            "EXCISE",
+            "TOLL",
+            "DUTY",
+            "LEVY"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Pasta Shapes",
+          "words": [
+            "BOWTIE",
+            "SHELL",
+            "TUBE",
+            "EAR"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Things that \"Run\"",
+          "words": [
+            "NOSE",
+            "FAUCET",
+            "CANDLE",
+            "NYLON"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "28.02.2026",
+      "id": "82",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Synonyms for \"Insignificant\"",
+          "words": [
+            "SMALL",
+            "LITTLE",
+            "MINOR",
+            "TRIVIAL"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Standard Units of Measure",
+          "words": [
+            "WATT",
+            "NEWTON",
+            "JOULE",
+            "PASCAL"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of \"Belts\"",
+          "words": [
+            "CONVEYOR",
+            "ASTEROID",
+            "ORION",
+            "BIBLE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Words after \"Gas\"",
+          "words": [
+            "STATION",
+            "MASK",
+            "LIGHT",
+            "GIANT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "01.03.2026",
+      "id": "83",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Walk",
+          "words": [
+            "STROLL",
+            "TREAD",
+            "WANDER",
+            "MARCH"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Side _______",
+          "words": [
+            "WALK",
+            "KIK",
+            "BAR",
+            "BOARD"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Month Names",
+          "words": [
+            "JULY",
+            "APRIL",
+            "JUNE",
+            "OCTOBER"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Authorization",
+          "words": [
+            "CLEAR",
+            "MAY",
+            "ALLOWED",
+            "PERMITTED"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "02.03.2026",
+      "id": "84",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Move Forward",
+          "words": [
+            "PROCEED",
+            "PROGRESS",
+            "PUSH",
+            "PASS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Nautical Locations",
+          "words": [
+            "PORT",
+            "PROW",
+            "POOP",
+            "PIER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Money",
+          "words": [
+            "PAPER",
+            "PLASTIC",
+            "PENCE",
+            "POCKET"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "_______ Point",
+          "words": [
+            "POWER",
+            "PENCIL",
+            "PIVOT",
+            "PRESSURE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "03.03.2026",
+      "id": "85",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Classic Toys",
+          "words": [
+            "JACKS",
+            "SLINKY",
+            "MARBLES",
+            "TOPS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Queen's Albums",
+          "words": [
+            "QUEEN",
+            "THE WORKS",
+            "JAZZ",
+            "HOT SPACE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "British Royalty",
+          "words": [
+            "CHARLES",
+            "HARRY",
+            "WILLIAM",
+            "GOERGE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Famous Primates",
+          "words": [
+            "ALBERT II",
+            "MARCEL",
+            "RAFIKI",
+            "ABU"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
