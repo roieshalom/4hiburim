@@ -2960,6 +2960,134 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "04.03.2026",
+      "id": "86",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Programming Languages",
+          "words": [
+            "PYTHON",
+            "JAVA",
+            "RUBY",
+            "RUST"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Yoga Poses",
+          "words": [
+            "WARRIOR",
+            "BRIDGE",
+            "TREE",
+            "COBRA"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Snakes",
+          "words": [
+            "MAMBA",
+            "ADDER",
+            "BOA",
+            "ANACONDA"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Sports Cars",
+          "words": [
+            "MUSTANG",
+            "FERRARI",
+            "VIPER",
+            "LOTUS"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "05.03.2026",
+      "id": "87",
+      "language": "en",
+      "categories": [
+        {
+          "name": "_____ City",
+          "words": ["KANSAS", "OKLAHOMA", "MEXICO", "IOWA"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Types of Hat",
+          "words": ["FEDORA", "PANAMA", "BERET", "BOWLER"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Fabric",
+          "words": ["JERSEY", "DENIM", "VELVET", "SUEDE"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Cattle Breeds",
+          "words": ["ANGUS", "HEREFORD", "FRIESIAN", "CHAROLAIS"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "06.03.2026",
+      "id": "88",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Dog Breeds",
+          "words": ["SETTER", "POINTER", "SPANIEL", "RETRIEVER"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "___ Bus",
+          "words": ["NIGHT", "SCHOOL", "DOUBLE", "MINI"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Boxing Punches",
+          "words": ["BOXER", "JAB", "CROSS", "UPPERCUT"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Peter Pan Characters",
+          "words": ["HOOK", "PETER", "WENDY", "TINKER"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "07.03.2026",
+      "id": "89",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Planets",
+          "words": ["EARTH", "MARS", "JUPITER", "NEPTUNE"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Roman Gods",
+          "words": ["MERCURY", "PLUTO", "VENUS", "DIANA"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Car Brands",
+          "words": ["SATURN", "TESLA", "FORD", "JAGUAR"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Chocolate Bars",
+          "words": ["SNICKERS", "BOUNTY", "LION", "TWIX"],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
