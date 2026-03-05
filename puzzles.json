@@ -3088,6 +3088,168 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "08.03.2026",
+      "id": "90",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Luxury Watches",
+          "words": ["ROLEX", "SEIKO", "TISSOT", "OMEGA"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Greek Letters",
+          "words": ["ALPHA", "BETA", "GAMMA", "DELTA"],
+          "difficulty": "green"
+        },
+        {
+          "name": "NATO Phonetic Alphabet",
+          "words": ["BRAVO", "CHARLIE", "ROMEO", "NOVEMBER"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Amazon Devices",
+          "words": ["ECHO", "KINDLE", "FIRE", "RING"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "09.03.2026",
+      "id": "91",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Constellations",
+          "words": ["LYRA", "CASSIOPEIA", "DRACO", "ANDROMEDA"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Zodiac Signs",
+          "words": ["SCORPIO", "VIRGO", "LIBRA", "CAPRICORN"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Mythical Creatures",
+          "words": ["MINOTAUR", "GRIFFIN", "UNICORN", "CHIMERA"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Greek Gods",
+          "words": ["ZEUS", "ATHENA", "ARTEMIS", "DIONYSUS"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "10.03.2026",
+      "id": "92",
+      "language": "en",
+      "categories": [
+        {
+          "name": "___ Fish",
+          "words": ["SWORD", "STAR", "CAT", "JELLY"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Weapons",
+          "words": ["LANCE", "BOW", "DAGGER", "SPEAR"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Celestial Bodies",
+          "words": ["MOON", "SUN", "METEOR", "COMET"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Wild Animals",
+          "words": ["LION", "BEAR", "WOLF", "FOX"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "11.03.2026",
+      "id": "93",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Cheeses",
+          "words": ["BRIE", "EDAM", "MOZZARELLA", "CHEDDAR"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Dutch Cities",
+          "words": ["GOUDA", "AMSTERDAM", "ROTTERDAM", "LEIDEN"],
+          "difficulty": "green"
+        },
+        {
+          "name": "English Towns",
+          "words": ["BATH", "RYE", "DOVER", "WINDSOR"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "French Regions",
+          "words": ["CHAMPAGNE", "BURGUNDY", "ALSACE", "COGNAC"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "12.03.2026",
+      "id": "94",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Cluedo Suspects",
+          "words": ["SCARLETT", "MUSTARD", "PLUM", "PEACOCK"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Military Ranks",
+          "words": ["COLONEL", "CAPTAIN", "GENERAL", "LIEUTENANT"],
+          "difficulty": "green"
+        },
+        {
+          "name": "UK Prime Ministers",
+          "words": ["BLAIR", "HEATH", "THATCHER", "MAJOR"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of School",
+          "words": ["GRAMMAR", "BOARDING", "PREP", "PRIVATE"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "13.03.2026",
+      "id": "95",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Insects",
+          "words": ["WASP", "MOTH", "BEETLE", "HORNET"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Wild Cats",
+          "words": ["OCELOT", "SERVAL", "LYNX", "CHEETAH"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Sports",
+          "words": ["CRICKET", "POLO", "SQUASH", "JUDO"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Car Brands",
+          "words": ["FERRARI", "LAMBORGHINI", "PORSCHE", "ASTON MARTIN"],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
