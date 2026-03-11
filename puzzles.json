@@ -3250,6 +3250,141 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "14.03.2026",
+      "id": "96",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Charlies",
+          "words": ["BROWN", "CHAPLIN", "SHEEN", "PARKER"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Italian Desserts",
+          "words": ["TIRAMISU", "PANNA COTTA", "CANNOLI", "GELATO"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Musical Tempos",
+          "words": ["PRESTO", "ALLEGRO", "ANDANTE", "LARGO"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Surface Finishes",
+          "words": ["MATTE", "GLOSS", "SATIN", "LACQUER"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "15.03.2026",
+      "id": "97",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Household Chores",
+          "words": ["SCRUB", "SWEEP", "MOP", "VACUUM"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Shades of Grey",
+          "words": ["PEARL", "PEWTER", "CHARCOAL", "DUST"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Olympic Throwing Events",
+          "words": ["HAMMER", "JAVELIN", "SHOT", "DISCUS"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Gemstones",
+          "words": ["SAPPHIRE", "OPAL", "TOPAZ", "GARNET"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "16.03.2026",
+      "id": "98",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Nicknames for the Toilet",
+          "words": ["LOO", "THRONE", "JOHN", "CAN"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Royalty Titles",
+          "words": ["KING", "QUEEN", "PRINCE", "EARL"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Jazz Legends (nicknames)",
+          "words": ["DUKE", "MILES", "DIZZY", "MONK"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Things in a Pub",
+          "words": ["STOOL", "DART", "PINT", "TAB"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "17.03.2026",
+      "id": "99",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Hairstyles",
+          "words": ["AFRO", "BRAID", "MULLET", "BOB"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Famous Bobs (surnames)",
+          "words": ["DYLAN", "MARLEY", "ROSS", "HOPE"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Native American Tribes",
+          "words": ["MOHAWK", "CHEROKEE", "SIOUX", "COMANCHE"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Helicopters",
+          "words": ["APACHE", "BLACK HAWK", "SIKORSKY", "BELL"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "18.03.2026",
+      "id": "100",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Words Hiding a Number",
+          "words": ["STONE", "OFTEN", "FREIGHT", "CANINE"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "At the Dentist",
+          "words": ["BRACE", "CAVITY", "CROWN", "BRIDGE"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Modes of Transport",
+          "words": ["TRAIN", "SHIP", "TRUCK", "PLANE"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "___STONE",
+          "words": ["CORNER", "KEY", "SAND", "LIME"],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
