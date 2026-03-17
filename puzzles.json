@@ -3759,6 +3759,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "20.03.2026",
+      "id": "103",
+      "language": "en",
+      "categories": [
+        {
+          "name": "\"___ John\"",
+          "words": [
+            "ELTON",
+            "DEAR",
+            "LONG",
+            "LITTLE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Famous Operas",
+          "words": [
+            "TOSCA",
+            "CARMEN",
+            "AIDA",
+            "RIGOLETTO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Photography Terms",
+          "words": [
+            "SHUTTER",
+            "EXPOSURE",
+            "ZOOM",
+            "APERTURE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Legal Terms",
+          "words": [
+            "VERDICT",
+            "APPEAL",
+            "BRIEF",
+            "MOTION"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
