@@ -3806,6 +3806,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "22.03.2026",
+      "id": "104",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things That Come in Waves",
+          "words": [
+            "HEAT",
+            "CRIME",
+            "RADIO",
+            "MICRO"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Famous Amys",
+          "words": [
+            "WINEHOUSE",
+            "ADAMS",
+            "SCHUMER",
+            "GRANT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Whiskey",
+          "words": [
+            "BOURBON",
+            "SCOTCH",
+            "RYE",
+            "MALT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of Bread",
+          "words": [
+            "BAGUETTE",
+            "BRIOCHE",
+            "CIABATTA",
+            "FOCACCIA"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
