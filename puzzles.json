@@ -3853,6 +3853,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "23.03.2026",
+      "id": "105",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Ships",
+          "words": [
+            "TITANIC",
+            "BEAGLE",
+            "MAYFLOWER",
+            "LUSITANIA"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Dog Breeds",
+          "words": [
+            "POODLE",
+            "DALMATIAN",
+            "LABRADOR",
+            "DACHSHUND"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Currencies",
+          "words": [
+            "EURO",
+            "FRANC",
+            "PESO",
+            "POUND"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Units of Weight",
+          "words": [
+            "OUNCE",
+            "GRAM",
+            "STONE",
+            "TON"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
