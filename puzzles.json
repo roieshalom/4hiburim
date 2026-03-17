@@ -3015,22 +3015,42 @@
       "categories": [
         {
           "name": "_____ City",
-          "words": ["KANSAS", "OKLAHOMA", "MEXICO", "IOWA"],
+          "words": [
+            "KANSAS",
+            "OKLAHOMA",
+            "MEXICO",
+            "IOWA"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Types of Hat",
-          "words": ["FEDORA", "PANAMA", "BERET", "BOWLER"],
+          "words": [
+            "FEDORA",
+            "PANAMA",
+            "BERET",
+            "BOWLER"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Types of Fabric",
-          "words": ["JERSEY", "DENIM", "VELVET", "SUEDE"],
+          "words": [
+            "JERSEY",
+            "DENIM",
+            "VELVET",
+            "SUEDE"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Cattle Breeds",
-          "words": ["ANGUS", "HEREFORD", "FRIESIAN", "CHAROLAIS"],
+          "words": [
+            "ANGUS",
+            "HEREFORD",
+            "FRIESIAN",
+            "CHAROLAIS"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3042,22 +3062,42 @@
       "categories": [
         {
           "name": "Dog Breeds",
-          "words": ["SETTER", "POINTER", "SPANIEL", "RETRIEVER"],
+          "words": [
+            "SETTER",
+            "POINTER",
+            "SPANIEL",
+            "RETRIEVER"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "___ Bus",
-          "words": ["NIGHT", "SCHOOL", "DOUBLE", "MINI"],
+          "words": [
+            "NIGHT",
+            "SCHOOL",
+            "DOUBLE",
+            "MINI"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Boxing Punches",
-          "words": ["BOXER", "JAB", "CROSS", "UPPERCUT"],
+          "words": [
+            "BOXER",
+            "JAB",
+            "CROSS",
+            "UPPERCUT"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Peter Pan Characters",
-          "words": ["HOOK", "PETER", "WENDY", "TINKER"],
+          "words": [
+            "HOOK",
+            "PETER",
+            "WENDY",
+            "TINKER"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3069,22 +3109,42 @@
       "categories": [
         {
           "name": "Planets",
-          "words": ["EARTH", "MARS", "JUPITER", "NEPTUNE"],
+          "words": [
+            "EARTH",
+            "MARS",
+            "JUPITER",
+            "NEPTUNE"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Roman Gods",
-          "words": ["MERCURY", "PLUTO", "VENUS", "DIANA"],
+          "words": [
+            "MERCURY",
+            "PLUTO",
+            "VENUS",
+            "DIANA"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Car Brands",
-          "words": ["SATURN", "TESLA", "FORD", "JAGUAR"],
+          "words": [
+            "SATURN",
+            "TESLA",
+            "FORD",
+            "JAGUAR"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Chocolate Bars",
-          "words": ["SNICKERS", "BOUNTY", "LION", "TWIX"],
+          "words": [
+            "SNICKERS",
+            "BOUNTY",
+            "LION",
+            "TWIX"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3096,22 +3156,42 @@
       "categories": [
         {
           "name": "Luxury Watches",
-          "words": ["ROLEX", "SEIKO", "TISSOT", "OMEGA"],
+          "words": [
+            "ROLEX",
+            "SEIKO",
+            "TISSOT",
+            "OMEGA"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Greek Letters",
-          "words": ["ALPHA", "BETA", "GAMMA", "DELTA"],
+          "words": [
+            "ALPHA",
+            "BETA",
+            "GAMMA",
+            "DELTA"
+          ],
           "difficulty": "green"
         },
         {
           "name": "NATO Phonetic Alphabet",
-          "words": ["BRAVO", "CHARLIE", "ROMEO", "NOVEMBER"],
+          "words": [
+            "BRAVO",
+            "CHARLIE",
+            "ROMEO",
+            "NOVEMBER"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Amazon Devices",
-          "words": ["ECHO", "KINDLE", "FIRE", "RING"],
+          "words": [
+            "ECHO",
+            "KINDLE",
+            "FIRE",
+            "RING"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3123,22 +3203,42 @@
       "categories": [
         {
           "name": "Constellations",
-          "words": ["LYRA", "CASSIOPEIA", "DRACO", "ANDROMEDA"],
+          "words": [
+            "LYRA",
+            "CASSIOPEIA",
+            "DRACO",
+            "ANDROMEDA"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Zodiac Signs",
-          "words": ["SCORPIO", "VIRGO", "LIBRA", "CAPRICORN"],
+          "words": [
+            "SCORPIO",
+            "VIRGO",
+            "LIBRA",
+            "CAPRICORN"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Mythical Creatures",
-          "words": ["MINOTAUR", "GRIFFIN", "UNICORN", "CHIMERA"],
+          "words": [
+            "MINOTAUR",
+            "GRIFFIN",
+            "UNICORN",
+            "CHIMERA"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Greek Gods",
-          "words": ["ZEUS", "ATHENA", "ARTEMIS", "DIONYSUS"],
+          "words": [
+            "ZEUS",
+            "ATHENA",
+            "ARTEMIS",
+            "DIONYSUS"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3150,22 +3250,42 @@
       "categories": [
         {
           "name": "___ Fish",
-          "words": ["SWORD", "STAR", "CAT", "JELLY"],
+          "words": [
+            "SWORD",
+            "STAR",
+            "CAT",
+            "JELLY"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Weapons",
-          "words": ["LANCE", "BOW", "DAGGER", "SPEAR"],
+          "words": [
+            "LANCE",
+            "BOW",
+            "DAGGER",
+            "SPEAR"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Celestial Bodies",
-          "words": ["MOON", "SUN", "METEOR", "COMET"],
+          "words": [
+            "MOON",
+            "SUN",
+            "METEOR",
+            "COMET"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Wild Animals",
-          "words": ["LION", "BEAR", "WOLF", "FOX"],
+          "words": [
+            "LION",
+            "BEAR",
+            "WOLF",
+            "FOX"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3177,22 +3297,42 @@
       "categories": [
         {
           "name": "Cheeses",
-          "words": ["BRIE", "EDAM", "MOZZARELLA", "CHEDDAR"],
+          "words": [
+            "BRIE",
+            "EDAM",
+            "MOZZARELLA",
+            "CHEDDAR"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Dutch Cities",
-          "words": ["GOUDA", "AMSTERDAM", "ROTTERDAM", "LEIDEN"],
+          "words": [
+            "GOUDA",
+            "AMSTERDAM",
+            "ROTTERDAM",
+            "LEIDEN"
+          ],
           "difficulty": "green"
         },
         {
           "name": "English Towns",
-          "words": ["BATH", "RYE", "DOVER", "WINDSOR"],
+          "words": [
+            "BATH",
+            "RYE",
+            "DOVER",
+            "WINDSOR"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "French Regions",
-          "words": ["CHAMPAGNE", "BURGUNDY", "ALSACE", "COGNAC"],
+          "words": [
+            "CHAMPAGNE",
+            "BURGUNDY",
+            "ALSACE",
+            "COGNAC"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3204,22 +3344,42 @@
       "categories": [
         {
           "name": "Cluedo Suspects",
-          "words": ["SCARLETT", "MUSTARD", "PLUM", "PEACOCK"],
+          "words": [
+            "SCARLETT",
+            "MUSTARD",
+            "PLUM",
+            "PEACOCK"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Military Ranks",
-          "words": ["COLONEL", "CAPTAIN", "GENERAL", "LIEUTENANT"],
+          "words": [
+            "COLONEL",
+            "CAPTAIN",
+            "GENERAL",
+            "LIEUTENANT"
+          ],
           "difficulty": "green"
         },
         {
           "name": "UK Prime Ministers",
-          "words": ["BLAIR", "HEATH", "THATCHER", "MAJOR"],
+          "words": [
+            "BLAIR",
+            "HEATH",
+            "THATCHER",
+            "MAJOR"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Types of School",
-          "words": ["GRAMMAR", "BOARDING", "PREP", "PRIVATE"],
+          "words": [
+            "GRAMMAR",
+            "BOARDING",
+            "PREP",
+            "PRIVATE"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3231,22 +3391,42 @@
       "categories": [
         {
           "name": "Insects",
-          "words": ["WASP", "MOTH", "BEETLE", "HORNET"],
+          "words": [
+            "WASP",
+            "MOTH",
+            "BEETLE",
+            "HORNET"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Wild Cats",
-          "words": ["OCELOT", "SERVAL", "LYNX", "CHEETAH"],
+          "words": [
+            "OCELOT",
+            "SERVAL",
+            "LYNX",
+            "CHEETAH"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Sports",
-          "words": ["CRICKET", "POLO", "SQUASH", "JUDO"],
+          "words": [
+            "CRICKET",
+            "POLO",
+            "SQUASH",
+            "JUDO"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Car Brands",
-          "words": ["FERRARI", "LAMBORGHINI", "PORSCHE", "ASTON MARTIN"],
+          "words": [
+            "FERRARI",
+            "LAMBORGHINI",
+            "PORSCHE",
+            "ASTON MARTIN"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3258,22 +3438,42 @@
       "categories": [
         {
           "name": "Charlies",
-          "words": ["BROWN", "CHAPLIN", "SHEEN", "PARKER"],
+          "words": [
+            "BROWN",
+            "CHAPLIN",
+            "SHEEN",
+            "PARKER"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Italian Desserts",
-          "words": ["TIRAMISU", "PANNA COTTA", "CANNOLI", "GELATO"],
+          "words": [
+            "TIRAMISU",
+            "PANNA COTTA",
+            "CANNOLI",
+            "GELATO"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Musical Tempos",
-          "words": ["PRESTO", "ALLEGRO", "ANDANTE", "LARGO"],
+          "words": [
+            "PRESTO",
+            "ALLEGRO",
+            "ANDANTE",
+            "LARGO"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Surface Finishes",
-          "words": ["MATTE", "GLOSS", "SATIN", "LACQUER"],
+          "words": [
+            "MATTE",
+            "GLOSS",
+            "SATIN",
+            "LACQUER"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3285,22 +3485,42 @@
       "categories": [
         {
           "name": "Household Chores",
-          "words": ["SCRUB", "SWEEP", "MOP", "VACUUM"],
+          "words": [
+            "SCRUB",
+            "SWEEP",
+            "MOP",
+            "VACUUM"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Shades of Grey",
-          "words": ["PEARL", "PEWTER", "CHARCOAL", "DUST"],
+          "words": [
+            "PEARL",
+            "PEWTER",
+            "CHARCOAL",
+            "DUST"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Olympic Throwing Events",
-          "words": ["HAMMER", "JAVELIN", "SHOT", "DISCUS"],
+          "words": [
+            "HAMMER",
+            "JAVELIN",
+            "SHOT",
+            "DISCUS"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Gemstones",
-          "words": ["SAPPHIRE", "OPAL", "TOPAZ", "GARNET"],
+          "words": [
+            "SAPPHIRE",
+            "OPAL",
+            "TOPAZ",
+            "GARNET"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3312,22 +3532,42 @@
       "categories": [
         {
           "name": "Nicknames for the Toilet",
-          "words": ["LOO", "THRONE", "JOHN", "CAN"],
+          "words": [
+            "LOO",
+            "THRONE",
+            "JOHN",
+            "CAN"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Royalty Titles",
-          "words": ["KING", "QUEEN", "PRINCE", "EARL"],
+          "words": [
+            "KING",
+            "QUEEN",
+            "PRINCE",
+            "EARL"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Jazz Legends (nicknames)",
-          "words": ["DUKE", "MILES", "DIZZY", "MONK"],
+          "words": [
+            "DUKE",
+            "MILES",
+            "DIZZY",
+            "MONK"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Things in a Pub",
-          "words": ["STOOL", "DART", "PINT", "TAB"],
+          "words": [
+            "STOOL",
+            "DART",
+            "PINT",
+            "TAB"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3339,22 +3579,42 @@
       "categories": [
         {
           "name": "Hairstyles",
-          "words": ["AFRO", "BRAID", "MULLET", "BOB"],
+          "words": [
+            "AFRO",
+            "BRAID",
+            "MULLET",
+            "BOB"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "Famous Bobs (surnames)",
-          "words": ["DYLAN", "MARLEY", "ROSS", "HOPE"],
+          "words": [
+            "DYLAN",
+            "MARLEY",
+            "ROSS",
+            "HOPE"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Native American Tribes",
-          "words": ["MOHAWK", "CHEROKEE", "SIOUX", "COMANCHE"],
+          "words": [
+            "MOHAWK",
+            "CHEROKEE",
+            "SIOUX",
+            "COMANCHE"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "Helicopters",
-          "words": ["APACHE", "BLACK HAWK", "SIKORSKY", "BELL"],
+          "words": [
+            "APACHE",
+            "BLACK HAWK",
+            "SIKORSKY",
+            "BELL"
+          ],
           "difficulty": "purple"
         }
       ]
@@ -3366,22 +3626,465 @@
       "categories": [
         {
           "name": "Words Hiding a Number",
-          "words": ["STONE", "OFTEN", "FREIGHT", "CANINE"],
+          "words": [
+            "STONE",
+            "OFTEN",
+            "FREIGHT",
+            "CANINE"
+          ],
           "difficulty": "yellow"
         },
         {
           "name": "At the Dentist",
-          "words": ["BRACE", "CAVITY", "CROWN", "BRIDGE"],
+          "words": [
+            "BRACE",
+            "CAVITY",
+            "CROWN",
+            "BRIDGE"
+          ],
           "difficulty": "green"
         },
         {
           "name": "Modes of Transport",
-          "words": ["TRAIN", "SHIP", "TRUCK", "PLANE"],
+          "words": [
+            "TRAIN",
+            "SHIP",
+            "TRUCK",
+            "PLANE"
+          ],
           "difficulty": "blue"
         },
         {
           "name": "___STONE",
-          "words": ["CORNER", "KEY", "SAND", "LIME"],
+          "words": [
+            "CORNER",
+            "KEY",
+            "SAND",
+            "LIME"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "12.03.2026",
+      "id": "94",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Cluedo Suspects",
+          "words": [
+            "SCARLETT",
+            "MUSTARD",
+            "PLUM",
+            "PEACOCK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Military Ranks",
+          "words": [
+            "COLONEL",
+            "CAPTAIN",
+            "GENERAL",
+            "LIEUTENANT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "UK Prime Ministers",
+          "words": [
+            "BLAIR",
+            "HEATH",
+            "THATCHER",
+            "MAJOR"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of School",
+          "words": [
+            "GRAMMAR",
+            "BOARDING",
+            "PREP",
+            "PRIVATE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "13.03.2026",
+      "id": "95",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Insects",
+          "words": [
+            "WASP",
+            "MOTH",
+            "BEETLE",
+            "HORNET"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Wild Cats",
+          "words": [
+            "OCELOT",
+            "SERVAL",
+            "LYNX",
+            "CHEETAH"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Sports",
+          "words": [
+            "CRICKET",
+            "POLO",
+            "SQUASH",
+            "JUDO"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Car Brands",
+          "words": [
+            "FERRARI",
+            "LAMBORGHINI",
+            "PORSCHE",
+            "ASTON MARTIN"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "14.03.2026",
+      "id": "96",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Charlies (surnames)",
+          "words": [
+            "BROWN",
+            "CHAPLIN",
+            "SHEEN",
+            "PARKER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Italian Desserts",
+          "words": [
+            "TIRAMISU",
+            "PANNA COTTA",
+            "CANNOLI",
+            "GELATO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Musical Tempo Markings",
+          "words": [
+            "PRESTO",
+            "ALLEGRO",
+            "ANDANTE",
+            "LARGO"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Surface Finishes",
+          "words": [
+            "MATTE",
+            "GLOSS",
+            "SATIN",
+            "LACQUER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "15.03.2026",
+      "id": "97",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Household Chores",
+          "words": [
+            "SCRUB",
+            "SWEEP",
+            "MOP",
+            "VACUUM"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Shades of Grey",
+          "words": [
+            "PEARL",
+            "PEWTER",
+            "CHARCOAL",
+            "DUST"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Olympic Throwing Events",
+          "words": [
+            "HAMMER",
+            "JAVELIN",
+            "SHOT",
+            "DISCUS"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Gemstones",
+          "words": [
+            "SAPPHIRE",
+            "OPAL",
+            "TOPAZ",
+            "GARNET"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "16.03.2026",
+      "id": "98",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Nicknames for the Toilet",
+          "words": [
+            "LOO",
+            "THRONE",
+            "JOHN",
+            "CAN"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Royalty Titles",
+          "words": [
+            "KING",
+            "QUEEN",
+            "PRINCE",
+            "EARL"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Jazz Legends (nicknames)",
+          "words": [
+            "DUKE",
+            "MILES",
+            "DIZZY",
+            "MONK"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Things in a Pub",
+          "words": [
+            "STOOL",
+            "DART",
+            "PINT",
+            "TAB"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "17.03.2026",
+      "id": "99",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Hairstyles",
+          "words": [
+            "AFRO",
+            "BRAID",
+            "MULLET",
+            "BOB"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Famous Bobs (surnames)",
+          "words": [
+            "DYLAN",
+            "MARLEY",
+            "ROSS",
+            "HOPE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Native American Tribes",
+          "words": [
+            "MOHAWK",
+            "CHEROKEE",
+            "SIOUX",
+            "COMANCHE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Helicopters",
+          "words": [
+            "APACHE",
+            "BLACK HAWK",
+            "SIKORSKY",
+            "BELL"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "18.03.2026",
+      "id": "100",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Words Hiding a Number",
+          "words": [
+            "STONE",
+            "OFTEN",
+            "FREIGHT",
+            "CANINE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "At the Dentist",
+          "words": [
+            "BRACE",
+            "CAVITY",
+            "CROWN",
+            "BRIDGE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Modes of Transport",
+          "words": [
+            "TRAIN",
+            "SHIP",
+            "TRUCK",
+            "PLANE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "___STONE",
+          "words": [
+            "CORNER",
+            "KEY",
+            "SAND",
+            "LIME"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "18.03.2026",
+      "id": "101",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Clothing Fasteners",
+          "words": [
+            "ZIPPER",
+            "BUTTON",
+            "SNAP",
+            "HOOK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Makeup Categories",
+          "words": [
+            "BLUSH",
+            "FOUNDATION",
+            "CONCEALER",
+            "PRIMER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Forms of \"Bond\"",
+          "words": [
+            "CHEMICAL",
+            "BAIL",
+            "SURETY",
+            "MATRIMONY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Words Typable Using Only the Top QWERTY Row",
+          "words": [
+            "TYPEWRITER",
+            "PEPPER",
+            "POTTERY",
+            "EQUITY"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "19.03.2026",
+      "id": "102",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Girls' Names",
+          "words": [
+            "RUBY",
+            "LILY",
+            "ROSE",
+            "DAISY"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Ballet Terms",
+          "words": [
+            "PLIÉ",
+            "ARABESQUE",
+            "PIROUETTE",
+            "POINTE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Shades of Purple",
+          "words": [
+            "LILAC",
+            "MAUVE",
+            "LAVENDER",
+            "AMETHYST"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Plants",
+          "words": [
+            "IVY",
+            "WISTERIA",
+            "FERN",
+            "CLEMATIS"
+          ],
           "difficulty": "purple"
         }
       ]
