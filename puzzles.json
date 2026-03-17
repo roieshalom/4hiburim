@@ -4088,6 +4088,60 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "18.03.2026",
+      "id": "101",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Clothing Fasteners",
+          "words": ["ZIPPER", "BUTTON", "SNAP", "HOOK"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Makeup Categories",
+          "words": ["BLUSH", "FOUNDATION", "CONCEALER", "PRIMER"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Forms of \"Bond\"",
+          "words": ["CHEMICAL", "BAIL", "SURETY", "MATRIMONY"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Words Typable Using Only the Top QWERTY Row",
+          "words": ["TYPEWRITER", "PEPPER", "POTTERY", "EQUITY"],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "19.03.2026",
+      "id": "102",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Girls' Names",
+          "words": ["RUBY", "LILY", "ROSE", "DAISY"],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Ballet Terms",
+          "words": ["PLIÉ", "ARABESQUE", "PIROUETTE", "POINTE"],
+          "difficulty": "green"
+        },
+        {
+          "name": "Shades of Purple",
+          "words": ["LILAC", "MAUVE", "LAVENDER", "AMETHYST"],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Plants",
+          "words": ["IVY", "WISTERIA", "FERN", "CLEMATIS"],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
