@@ -3947,6 +3947,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "25.03.2026",
+      "id": "107",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things That Can Be \"Wild\"",
+          "words": [
+            "FIRE",
+            "CARD",
+            "GOOSE",
+            "WEST"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Australian Animals",
+          "words": [
+            "QUOKKA",
+            "WOMBAT",
+            "BILBY",
+            "ECHIDNA"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Dances",
+          "words": [
+            "QUICKSTEP",
+            "RUMBA",
+            "JIVE",
+            "WALTZ"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Famous Wrestlers",
+          "words": [
+            "UNDERTAKER",
+            "MANKIND",
+            "STING",
+            "GOLDBERG"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
