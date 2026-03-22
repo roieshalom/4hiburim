@@ -3900,6 +3900,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "24.03.2026",
+      "id": "106",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things With Keys",
+          "words": [
+            "PIANO",
+            "CAR",
+            "LOCK",
+            "CIPHER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "African Countries",
+          "words": [
+            "CHAD",
+            "TOGO",
+            "MALI",
+            "NIGER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Fonts",
+          "words": [
+            "HELVETICA",
+            "GARAMOND",
+            "FUTURA",
+            "GILL"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Darts Terms",
+          "words": [
+            "BULLSEYE",
+            "DOUBLE",
+            "FINISH",
+            "CHECKOUT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
