@@ -4088,6 +4088,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "28.03.2026",
+      "id": "110",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Bridge",
+          "words": [
+            "SUSPENSION",
+            "ARCH",
+            "TRUSS",
+            "PONTOON"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Card Games",
+          "words": [
+            "SNAP",
+            "SOLITAIRE",
+            "BRIDGE",
+            "WHIST"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Hitchcock Films",
+          "words": [
+            "PSYCHO",
+            "VERTIGO",
+            "ROPE",
+            "FRENZY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Knots",
+          "words": [
+            "BOWLINE",
+            "REEF",
+            "CLOVE",
+            "HITCH"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
