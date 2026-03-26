@@ -3994,6 +3994,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "26.03.2026",
+      "id": "108",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Sharks",
+          "words": [
+            "HAMMERHEAD",
+            "BULL",
+            "MAKO",
+            "TIGER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Bond Villains",
+          "words": [
+            "GOLDFINGER",
+            "JAWS",
+            "BLOFELD",
+            "ODDJOB"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Steak",
+          "words": [
+            "RIBEYE",
+            "SIRLOIN",
+            "RUMP",
+            "FILLET"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Arcade Classics",
+          "words": [
+            "PACMAN",
+            "TETRIS",
+            "GALAGA",
+            "FROGGER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
