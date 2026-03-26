@@ -4041,6 +4041,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "27.03.2026",
+      "id": "109",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Bones in the Body",
+          "words": [
+            "FEMUR",
+            "TIBIA",
+            "STERNUM",
+            "ANVIL"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Musical Instruments",
+          "words": [
+            "LUTE",
+            "OBOE",
+            "TUBA",
+            "DRUM"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Currencies",
+          "words": [
+            "KRONA",
+            "DINAR",
+            "RUPEE",
+            "ZLOTY"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Pixar Films",
+          "words": [
+            "COCO",
+            "SOUL",
+            "BRAVE",
+            "UP"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
