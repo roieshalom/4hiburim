@@ -4135,6 +4135,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "29.03.2026",
+      "id": "111",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Famous Steves (surnames)",
+          "words": [
+            "JOBS",
+            "WONDER",
+            "MARTIN",
+            "IRWIN"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Cocktails",
+          "words": [
+            "NEGRONI",
+            "SCREWDRIVER",
+            "MANHATTAN",
+            "SPRITZ"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Things in a Toolbox",
+          "words": [
+            "WRENCH",
+            "SPANNER",
+            "PLIERS",
+            "LEVEL"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Greek Islands",
+          "words": [
+            "CORFU",
+            "MYKONOS",
+            "SANTORINI",
+            "CRETE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
