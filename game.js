@@ -46,6 +46,14 @@ function getTodayDDMMYYYY() {
 async function loadPuzzles() {
   const res = await fetch('puzzles.json');
   const data = await res.json();
+  const idParam = new URLSearchParams(window.location.search).get('id');
+  if (idParam !== null) {
+    const byId = (data.puzzles || []).filter(p => String(p.id) === String(idParam));
+    if (byId.length > 0) {
+      puzzles = byId;
+      return;
+    }
+  }
   const today = getTodayDDMMYYYY();
   puzzles = (data.puzzles || []).filter(p => p.date === today);
 }
