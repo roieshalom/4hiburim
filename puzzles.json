@@ -4276,6 +4276,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "01.04.2026",
+      "id": "114",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Can Be Scrambled",
+          "words": [
+            "EGG",
+            "TELEGRAM",
+            "CODE",
+            "LETTERS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "On the Farm",
+          "words": [
+            "ROOSTER",
+            "HAY",
+            "TRACTOR",
+            "SILO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Messaging Apps",
+          "words": [
+            "WHATSAPP",
+            "SIGNAL",
+            "MESSENGER",
+            "QQ"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of Code",
+          "words": [
+            "MORSE",
+            "BINARY",
+            "QR",
+            "DRESS"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
