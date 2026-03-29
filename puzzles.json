@@ -4182,6 +4182,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "30.03.2026",
+      "id": "112",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Monopoly Pieces",
+          "words": [
+            "CAT",
+            "BATTLESHIP",
+            "BOOT",
+            "TOP HAT"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Sewing Equipment",
+          "words": [
+            "THIMBLE",
+            "PIN",
+            "THREAD",
+            "BOBBIN"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Formal Wear",
+          "words": [
+            "TUXEDO",
+            "MONOCLE",
+            "CRAVAT",
+            "WAISTCOAT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Pets",
+          "words": [
+            "RABBIT",
+            "HAMSTER",
+            "PARROT",
+            "GUINEA PIG"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
