@@ -4323,6 +4323,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "02.04.2026",
+      "id": "115",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Slang for Great",
+          "words": [
+            "WICKED",
+            "MINT",
+            "BRILLIANT",
+            "SICK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Garden Herbs",
+          "words": [
+            "DILL",
+            "ROSEMARY",
+            "THYME",
+            "BASIL"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Musicals",
+          "words": [
+            "HAMILTON",
+            "GREASE",
+            "CATS",
+            "CHICAGO"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "US Cities",
+          "words": [
+            "DALLAS",
+            "BOSTON",
+            "DENVER",
+            "MIAMI"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
