@@ -4370,6 +4370,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "03.04.2026",
+      "id": "116",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Construction Vehicles",
+          "words": [
+            "CRANE",
+            "DIGGER",
+            "BULLDOZER",
+            "DUMPER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Large Birds",
+          "words": [
+            "FLAMINGO",
+            "OSTRICH",
+            "PELICAN",
+            "EMU"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Sports Equipment",
+          "words": [
+            "BAT",
+            "RACKET",
+            "GLOVE",
+            "HELMET"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Nocturnal Animals",
+          "words": [
+            "OWL",
+            "HEDGEHOG",
+            "BADGER",
+            "FOX"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
