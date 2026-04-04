@@ -4511,6 +4511,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "06.04.2026",
+      "id": "119",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Portmanteaus",
+          "words": [
+            "BRUNCH",
+            "SMOG",
+            "MOTEL",
+            "SPORK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Meals",
+          "words": [
+            "SUPPER",
+            "FEAST",
+            "BANQUET",
+            "BUFFET"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Accommodation",
+          "words": [
+            "INN",
+            "LODGE",
+            "VILLA",
+            "CHALET"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Ski Terms",
+          "words": [
+            "SLALOM",
+            "GONDOLA",
+            "MOGUL",
+            "PISTE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
