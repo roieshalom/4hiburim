@@ -4464,6 +4464,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "05.04.2026",
+      "id": "118",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things Made From Animals",
+          "words": [
+            "IVORY",
+            "GELATIN",
+            "SILK",
+            "BEESWAX"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Shades of White",
+          "words": [
+            "CREAM",
+            "CHALK",
+            "ALABASTER",
+            "ECRU"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "___ Road",
+          "words": [
+            "ABBEY",
+            "TOBACCO",
+            "COUNTRY",
+            "DIRT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of Jacket",
+          "words": [
+            "BOMBER",
+            "PUFFER",
+            "PARKA",
+            "TRENCH"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
