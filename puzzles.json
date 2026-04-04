@@ -4417,6 +4417,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "04.04.2026",
+      "id": "117",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Citrus Fruits",
+          "words": [
+            "LIME",
+            "LEMON",
+            "GRAPEFRUIT",
+            "TANGERINE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Capital Cities",
+          "words": [
+            "LIMA",
+            "OSLO",
+            "CAIRO",
+            "BERLIN"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Vehicle",
+          "words": [
+            "LIMO",
+            "TRAM",
+            "CABLE CAR",
+            "RICKSHAW"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Types of Poem",
+          "words": [
+            "LIMERICK",
+            "SONNET",
+            "HAIKU",
+            "ODE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
