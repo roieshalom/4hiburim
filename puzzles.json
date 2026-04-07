@@ -4557,51 +4557,100 @@
           ],
           "difficulty": "purple"
         }
+      ]
+    },
+    {
+      "date": "07.04.2026",
+      "id": "120",
+      "language": "en",
+      "categories": [
         {
-          "date": "07.04.2026",
-          "id": "120",
-          "language": "en",
-          "categories": [
-            {
-              "name": "found in the hospital",
-              "words": [
-                "NURSE",
-                "DOCTOR",
-                "PATIENT",
-                "BED"
-              ],
-              "difficulty": "yellow"
-            },
-            {
-              "name": "connector types",
-              "words": [
-                "USB",
-                "HDMI",
-                "RJ45",
-                "VGA"
-              ],
-              "difficulty": "green"
-            },
-            {
-              "name": "Water Sources",
-              "words": [
-                "LAKE",
-                "RIVER",
-                "SPRING",
-                "AQUIFER"
-              ],
-              "difficulty": "blue"
-            },
-            {
-              "name": "Expressions of Hesitation",
-              "words": [
-                "UM",
-                "ER",
-                "UH",
-                "WELL"
-              ],
-              "difficulty": "purple"
-            }
+          "name": "found in the hospital",
+          "words": [
+            "NURSE",
+            "DOCTOR",
+            "PATIENT",
+            "BED"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "connector types",
+          "words": [
+            "USB",
+            "HDMI",
+            "RJ45",
+            "VGA"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Water Sources",
+          "words": [
+            "LAKE",
+            "RIVER",
+            "SPRING",
+            "AQUIFER"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Expressions of Hesitation",
+          "words": [
+            "UM",
+            "ER",
+            "UH",
+            "WELL"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "08.04.2026",
+      "id": "121",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Bowling Terms",
+          "words": [
+            "SPLIT",
+            "STRIKE",
+            "ALLEY",
+            "GUTTER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Protest Actions",
+          "words": [
+            "PICKET",
+            "WALKOUT",
+            "BOYCOTT",
+            "LOCKOUT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Gymnastics Moves",
+          "words": [
+            "CARTWHEEL",
+            "HANDSTAND",
+            "BACKFLIP",
+            "SOMERSAULT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "___ Dry",
+          "words": [
+            "TUMBLE",
+            "BLOW",
+            "FREEZE",
+            "SPIN"
+          ],
+          "difficulty": "purple"
+        }
       ]
     }
   ]
