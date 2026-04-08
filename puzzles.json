@@ -4652,6 +4652,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "09.04.2026",
+      "id": "122",
+      "language": "en",
+      "categories": [
+        {
+          "name": "DEAD ___",
+          "words": [
+            "PAN",
+            "BEAT",
+            "POOL",
+            "RINGER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Cooking",
+          "words": [
+            "WOK",
+            "SKILLET",
+            "GRIDDLE",
+            "COLANDER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Music Terms",
+          "words": [
+            "TEMPO",
+            "RHYTHM",
+            "MEASURE",
+            "CADENCE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Leisure Centre",
+          "words": [
+            "SAUNA",
+            "COURT",
+            "TRACK",
+            "JACUZZI"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
