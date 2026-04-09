@@ -4699,6 +4699,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "10.04.2026",
+      "id": "123",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things That Move Very Slowly",
+          "words": [
+            "SNAIL",
+            "SLOTH",
+            "GLACIER",
+            "TORTOISE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Parts of a Coat of Arms",
+          "words": [
+            "TALON",
+            "CREST",
+            "ESCUTCHEON",
+            "MOTTO"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Baseball Positions",
+          "words": [
+            "PITCHER",
+            "CATCHER",
+            "SHORTSTOP",
+            "OUTFIELD"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "___ COACH",
+          "words": [
+            "LIFE",
+            "SWIMMING",
+            "VOICE",
+            "HORSE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
