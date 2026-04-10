@@ -4746,6 +4746,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "11.04.2026",
+      "id": "124",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Fishing",
+          "words": [
+            "CAST",
+            "REEL",
+            "LURE",
+            "TACKLE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Worship",
+          "words": [
+            "TEMPLE",
+            "MOSQUE",
+            "SHRINE",
+            "CATHEDRAL"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Theatre",
+          "words": [
+            "ENCORE",
+            "INTERVAL",
+            "MATINEE",
+            "OVERTURE"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Bones of the Inner Ear",
+          "words": [
+            "STIRRUP",
+            "COCHLEA",
+            "MALLEUS",
+            "INCUS"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
