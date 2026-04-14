@@ -4793,6 +4793,147 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "15.04.2026",
+      "id": "125",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Types of Wood",
+          "words": [
+            "OAK",
+            "ELM",
+            "BIRCH",
+            "MAHOGANY"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Shades of Brown",
+          "words": [
+            "CHESTNUT",
+            "SIENNA",
+            "SEPIA",
+            "TAUPE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Apple",
+          "words": [
+            "RUSSET",
+            "BRAMLEY",
+            "FUJI",
+            "COX"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Things from Japan",
+          "words": [
+            "BONSAI",
+            "SUMO",
+            "MANGA",
+            "ORIGAMI"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "16.04.2026",
+      "id": "126",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Coffee Drinks",
+          "words": [
+            "ESPRESSO",
+            "AMERICANO",
+            "MACCHIATO",
+            "LUNGO"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Parts of a Shoe",
+          "words": [
+            "HEEL",
+            "TONGUE",
+            "EYELET",
+            "UPPER"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "___ Card",
+          "words": [
+            "WILD",
+            "CREDIT",
+            "PUNCH",
+            "DEBIT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Dog Commands",
+          "words": [
+            "SIT",
+            "STAY",
+            "DOWN",
+            "FETCH"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "17.04.2026",
+      "id": "127",
+      "language": "en",
+      "categories": [
+        {
+          "name": "___ Work",
+          "words": [
+            "NET",
+            "FRAME",
+            "TEAM",
+            "CLOCK"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Parts of Glasses",
+          "words": [
+            "LENS",
+            "HINGE",
+            "RIM",
+            "EARPIECE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Types of Clock",
+          "words": [
+            "GRANDFATHER",
+            "CUCKOO",
+            "SUNDIAL",
+            "ALARM"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Volleyball Terms",
+          "words": [
+            "SET",
+            "SERVE",
+            "SPIKE",
+            "ACE"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
