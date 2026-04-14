@@ -4934,6 +4934,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "18.04.2026",
+      "id": "128",
+      "language": "en",
+      "categories": [
+        {
+          "name": "___ Bag",
+          "words": [
+            "CLUTCH",
+            "TOTE",
+            "DUFFEL",
+            "HOLDALL"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Fabrics",
+          "words": [
+            "TWEED",
+            "MUSLIN",
+            "CORDUROY",
+            "CASHMERE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "___ Line",
+          "words": [
+            "JAW",
+            "BROW",
+            "CHIN",
+            "HAIR"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Authors",
+          "words": [
+            "DICKENS",
+            "ORWELL",
+            "KAFKA",
+            "AUSTEN"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
