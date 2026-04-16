@@ -4981,6 +4981,147 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "19.04.2026",
+      "id": "129",
+      "language": "en",
+      "categories": [
+        {
+          "name": "On the Menu",
+          "words": [
+            "SALAD",
+            "STEAK",
+            "SOUP",
+            "DESSERT"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Meetings",
+          "words": [
+            "STANDUP",
+            "BOARD",
+            "RETRO",
+            "KICKOFF"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Office Roles with Authority",
+          "words": [
+            "DIRECTOR",
+            "MANAGER",
+            "SUPERVISOR",
+            "LEAD"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Airplane Seats",
+          "words": [
+            "COACH",
+            "FIRST",
+            "BUSINESS",
+            "FIRST CLASS"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "20.04.2026",
+      "id": "130",
+      "language": "en",
+      "categories": [
+        {
+          "name": "animated characters",
+          "words": [
+            "TIN TIN",
+            "SPONGEBOB",
+            "SIMBA",
+            "DORA"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Famous dogs",
+          "words": [
+            "LASSIE",
+            "SNOOPY",
+            "RIN TIN TIN",
+            "BENJI"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Rappers",
+          "words": [
+            "KENDRICK",
+            "DRAKE",
+            "50 CENT",
+            "JAY-Z"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Foils",
+          "words": [
+            "SATIN",
+            "GOLD",
+            "TIN",
+            "PARCHMENT"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "21.04.2026",
+      "id": "131",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Star ____",
+          "words": [
+            "SHIP",
+            "FISH",
+            "TREK",
+            "WARS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Journey",
+          "words": [
+            "RUN",
+            "TRIP",
+            "RACE",
+            "SPRINT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "To Pair",
+          "words": [
+            "CROSS",
+            "JOIN",
+            "LINK",
+            "BIND"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Catching Animals",
+          "words": [
+            "TRAP",
+            "SNARE",
+            "LASSO",
+            "NET"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
