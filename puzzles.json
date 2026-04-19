@@ -5122,6 +5122,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "22.04.2026",
+      "id": "132",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Traditional Craftsmen",
+          "words": [
+            "KNITTER",
+            "BLACKSMITH",
+            "WEAVER",
+            "POTTER"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Starbucks coffee sizes",
+          "words": [
+            "TALL",
+            "SHORTTALL",
+            "VENTI",
+            "TRENTA"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Pop Singers",
+          "words": [
+            "CARPENTER",
+            "BIEBER",
+            "GRANDE",
+            "SWIFT"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Daft Punk song",
+          "words": [
+            "HARDER",
+            "BETTER",
+            "STRONGER",
+            "FASTER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
