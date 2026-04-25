@@ -5169,6 +5169,100 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "date": "23.04.2026",
+      "id": "133",
+      "language": "en",
+      "categories": [
+        {
+          "name": "At the layground",
+          "words": [
+            "SLIDE",
+            "SWING",
+            "SAND",
+            "BAR"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Cooking terms",
+          "words": [
+            "SAUTE",
+            "SIMMER",
+            "FRY",
+            "ROAST"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Actions in baseball",
+          "words": [
+            "BUNT",
+            "STEAL",
+            "CATCH",
+            "PITCH"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Celebrities' last names whose first name is Steven",
+          "words": [
+            "SPIELBERG",
+            "SEAGAL",
+            "SODERBERGH",
+            "TYLER"
+          ],
+          "difficulty": "purple"
+        }
+      ]
+    },
+    {
+      "date": "24.04.2026",
+      "id": "134",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Things you can dig",
+          "words": [
+            "HOLE",
+            "WELL",
+            "PIT",
+            "TRENCH"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Seeds",
+          "words": [
+            "PIP",
+            "STONE",
+            "KERNEL",
+            "CHIA"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "US presidents first names",
+          "words": [
+            "ABRAHAM",
+            "THEODORE",
+            "BARAK",
+            "WILLIAM"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Money",
+          "words": [
+            "BUCK",
+            "BILL",
+            "NOTE",
+            "DIME"
+          ],
+          "difficulty": "purple"
+        }
+      ]
     }
   ]
 }
