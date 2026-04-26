@@ -5263,6 +5263,53 @@
           "difficulty": "purple"
         }
       ]
+    },
+    {
+      "id": "135",
+      "date": "26.04.2026",
+      "language": "en",
+      "categories": [
+        {
+          "name": "Colors named after gemstones",
+          "words": [
+            "AMBER",
+            "JADE",
+            "RUBY",
+            "SAPPHIRE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Phrases including 'Break'",
+          "words": [
+            "BREAKWATER",
+            "BREAKTHROUGH",
+            "BREAKDANCE",
+            "BREAKUP"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Famous Jazz Musicians",
+          "words": [
+            "DAVIS",
+            "ELLINGTON",
+            "COLTRANE",
+            "BASIE"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Words that can mean both a person and a plant",
+          "words": [
+            "BASIL",
+            "ROSE",
+            "JACK",
+            "CHERRY"
+          ],
+          "difficulty": "blue"
+        }
+      ]
     }
   ]
 }
