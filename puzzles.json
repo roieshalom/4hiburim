@@ -5401,6 +5401,90 @@
       "id": "136",
       "date": "27.4.2026",
       "status": "published"
+    },
+    {
+      "categories": [
+        {
+          "name": "Famous Teds",
+          "words": [
+            "MOSBY",
+            "KENNEDY",
+            "BUNDY",
+            "DANSON"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "A woman",
+          "words": [
+            "MADAM",
+            "LADY",
+            "GIRL",
+            "DAME"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Decline or avoid",
+          "words": [
+            "SKIP",
+            "PASS",
+            "PUNT",
+            "MISS"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "With a rope",
+          "words": [
+            "KNOT",
+            "SPLICE",
+            "TUG OF WAR",
+            "LASSO"
+          ],
+          "difficulty": "purple"
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things you skip on water",
+          "category_b": "Genres of music",
+          "reason_a": "Rock is a common flat object people throw to skip across water surfaces.",
+          "reason_b": "Rock is a major music genre alongside blues, jazz, country, and folk.",
+          "word": "ROCK"
+        }
+      ],
+      "language": "en",
+      "other_trick": "FOLK appears in the music category but could tempt solvers toward thinking about ordinary people or traditions, while PASS and SKIP both work as ways to decline and create surface overlap with skipping stones.",
+      "thinking": {
+        "all_16_words": "ROCK COIN STONE SHELL BLUES JAZZ COUNTRY FOLK SKIP PASS PUNT MISS SEINFELD FRIENDS SCRUBS CHEERS",
+        "anchors": [
+          {
+            "home_category": "Things you skip on water",
+            "meaning_a": "stone or geological material",
+            "meaning_b": "music genre",
+            "tempts_toward": "Genres of music",
+            "word": "ROCK"
+          },
+          {
+            "home_category": "Genres of music",
+            "meaning_a": "music genre",
+            "meaning_b": "feeling sad or melancholy",
+            "tempts_toward": "Things you skip on water",
+            "word": "BLUES"
+          },
+          {
+            "home_category": "Genres of music",
+            "meaning_a": "music genre",
+            "meaning_b": "nation or rural area",
+            "tempts_toward": "Types of geography",
+            "word": "COUNTRY"
+          }
+        ]
+      },
+      "id": "137",
+      "date": "28.4.2026",
+      "status": "published"
     }
   ]
 }
