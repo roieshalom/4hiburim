@@ -779,7 +779,9 @@ startGame();
 window.updateDisplay = updateDisplayV2;
 
 // ── Info / About modal ────────────────────────────────────────────────────────
-(function () {
+// Wrapped in DOMContentLoaded because the modal <div> is placed after this
+// <script> tag in the HTML, so getElementById returns null at parse time.
+document.addEventListener('DOMContentLoaded', function () {
   const btn   = document.getElementById('about-btn');
   const modal = document.getElementById('about-modal');
   const close = document.getElementById('about-close');
@@ -800,4 +802,4 @@ window.updateDisplay = updateDisplayV2;
   document.getElementById('about-link-linkedin')?.addEventListener('click', () => {
     if (typeof clarity === 'function') clarity('event', 'about_linkedin_click');
   });
-})();
+});
