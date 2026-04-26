@@ -687,6 +687,111 @@ button .icon {
   opacity: 1;
 }
 
+/* ── Info / About button ───────────────────────────────────────────── */
+.about-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(97, 0, 143, 0.1);
+  border: 1px solid rgba(97, 0, 143, 0.35);
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+.about-btn:hover {
+  background: rgba(97, 0, 143, 0.18);
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+/* ── About modal ───────────────────────────────────────────────────── */
+.about-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.about-modal.visible {
+  display: flex;
+  opacity: 1;
+}
+.about-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 36px 40px;
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+.about-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s;
+}
+.about-close:hover { color: var(--color-text); }
+
+.about-content h2 {
+  font-family: var(--font-h1);
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin: 0 0 12px;
+}
+.about-content p {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0 0 28px;
+}
+.about-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.about-links a {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  transition: filter 0.2s, transform 0.2s;
+}
+.about-links a:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
 .message-overlay.correct {
   font-family: "Arial";
   font-size: 18px;

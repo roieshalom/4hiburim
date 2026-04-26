@@ -777,3 +777,27 @@ startGame();
 
 // expose our version globally so nothing else wins
 window.updateDisplay = updateDisplayV2;
+
+// ── Info / About modal ────────────────────────────────────────────────────────
+(function () {
+  const btn   = document.getElementById('about-btn');
+  const modal = document.getElementById('about-modal');
+  const close = document.getElementById('about-close');
+  if (!btn || !modal || !close) return;
+
+  const open = () => modal.classList.add('visible');
+  const shut = () => modal.classList.remove('visible');
+
+  btn.addEventListener('click', open);
+  close.addEventListener('click', shut);
+  modal.addEventListener('click', e => { if (e.target === modal) shut(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') shut(); });
+
+  // Clarity event tracking on outbound links
+  document.getElementById('about-link-portfolio')?.addEventListener('click', () => {
+    if (typeof clarity === 'function') clarity('event', 'about_portfolio_click');
+  });
+  document.getElementById('about-link-linkedin')?.addEventListener('click', () => {
+    if (typeof clarity === 'function') clarity('event', 'about_linkedin_click');
+  });
+})();
