@@ -792,7 +792,6 @@ window.updateDisplay = updateDisplayV2;
 
   btn.addEventListener('click', open);
   close.addEventListener('click', shut);
-  modal.addEventListener('click', e => { if (e.target === modal) shut(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') shut(); });
 
   // Clarity event tracking on outbound links
