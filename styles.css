@@ -15,10 +15,10 @@
   --color-disabled: #ccc;
 
   /* Difficulty colors */
-  --color-yellow: #ffeaa7;
-  --color-green: #b8e994;
-  --color-blue: #74b9ff;
-  --color-purple: #d1a6f7;
+  --color-yellow: #FFE384;
+  --color-green: #FF927C;
+  --color-blue: #9EDEBE;
+  --color-purple: #71C2FA;
 
   /* Feedback colors */
   --color-correct: #4caf50;
