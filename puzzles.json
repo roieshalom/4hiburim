@@ -5310,6 +5310,97 @@
           "difficulty": "blue"
         }
       ]
+    },
+    {
+      "categories": [
+        {
+          "name": "Transportation",
+          "words": [
+            "TRAIN",
+            "SHIP",
+            "PLANE",
+            "BUS"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Hung on a wall",
+          "words": [
+            "MIRROR",
+            "SCONCE",
+            "WREATH",
+            "PORTRAIT"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Come in",
+          "words": [
+            "ENTER",
+            "ACCESS",
+            "ARRIVE",
+            "BREACH"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Send",
+          "words": [
+            "DISPATCH",
+            "TRANSMIT",
+            "CONSIGN",
+            "REMIT"
+          ],
+          "difficulty": "purple"
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Types of transportation",
+          "category_b": "___ WRECK",
+          "reason_a": "A train is a locomotive that runs on tracks and carries passengers or cargo.",
+          "reason_b": "Solvers will think of the phrase 'train wreck' meaning a disaster or chaotic situation.",
+          "word": "TRAIN"
+        },
+        {
+          "category_a": "Types of transportation",
+          "category_b": "___ WRECK",
+          "reason_a": "A ship is a large watercraft that travels on oceans and seas.",
+          "reason_b": "Solvers will think of the phrase 'shipwreck' referring to a destroyed vessel at sea.",
+          "word": "SHIP"
+        }
+      ],
+      "language": "en",
+      "other_trick": "CAR can feel like it belongs with transportation but actually completes 'car wreck', while WRECK itself bridges two categories creating double misdirection.",
+      "thinking": {
+        "all_16_words": "TRAIN SHIP PLANE BUS TOTAL NERVOUS HOME CAR WRECK TANGLE MESS DISASTER PENNY NICKEL DIME QUARTER",
+        "anchors": [
+          {
+            "home_category": "Types of transportation",
+            "meaning_a": "locomotive on tracks",
+            "meaning_b": "to practice or teach",
+            "tempts_toward": "___ WRECK",
+            "word": "TRAIN"
+          },
+          {
+            "home_category": "Types of transportation",
+            "meaning_a": "ocean vessel",
+            "meaning_b": "to send a package",
+            "tempts_toward": "___ WRECK",
+            "word": "SHIP"
+          },
+          {
+            "home_category": "___ WRECK",
+            "meaning_a": "a crashed vehicle or disaster",
+            "meaning_b": "to destroy or ruin",
+            "tempts_toward": "Types of transportation",
+            "word": "WRECK"
+          }
+        ]
+      },
+      "id": "136",
+      "date": "27.4.2026",
+      "status": "published"
     }
   ]
 }
