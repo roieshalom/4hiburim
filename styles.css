@@ -768,15 +768,18 @@ button .icon {
 
 .about-content h2 {
   font-family: var(--font-h1);
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin: 0 0 12px;
+  font-size: 3.2rem;
+  color: var(--color-text);
+  margin: 0 0 10px;
+  line-height: 1;
 }
 .about-content p {
-  font-family: var(--font-primary);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.65;
   color: var(--color-text-muted);
+  letter-spacing: 0.01em;
   margin: 0 0 28px;
 }
 .about-links {
@@ -785,18 +788,19 @@ button .icon {
   justify-content: center;
 }
 .about-links a {
-  padding: 10px 22px;
-  border-radius: 999px;
-  background: var(--color-primary);
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #8b31c7 0%, #4a0075 100%);
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.88rem;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.9rem;
   letter-spacing: 0.03em;
-  transition: filter 0.2s, transform 0.2s;
+  transition: filter 0.2s, transform 0.15s;
 }
 .about-links a:hover {
-  filter: brightness(1.15);
+  filter: brightness(1.14);
   transform: translateY(-2px);
 }
 
