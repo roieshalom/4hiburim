@@ -5639,6 +5639,69 @@
       "date": "30.4.2026",
       "decoys": [],
       "id": "139"
+    },
+    {
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Successfully found four natural words each containing a common tool as consecutive letters",
+          "result": "shipped",
+          "tier": 3
+        }
+      ],
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "yellow",
+          "name": "FRENCH ____",
+          "words": [
+            "PRESS",
+            "TOAST",
+            "DOOR",
+            "HORN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Have keys",
+          "words": [
+            "PIANO",
+            "LOCK",
+            "MAP",
+            "FLORIDA"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "blue",
+          "name": "Things that ring",
+          "words": [
+            "BELL",
+            "PHONE",
+            "ALARM",
+            "EAR"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "difficulty": "purple",
+          "name": "Contain hidden tools",
+          "words": [
+            "JIGSAW",
+            "RELAXED",
+            "DRILLING",
+            "PROFILE"
+          ]
+        }
+      ],
+      "date": "1.5.2026",
+      "decoys": [],
+      "id": "140"
     }
   ]
 }
