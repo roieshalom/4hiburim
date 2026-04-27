@@ -5485,6 +5485,97 @@
       "id": "137",
       "date": "28.4.2026",
       "status": "published"
+    },
+    {
+      "categories": [
+        {
+          "name": "Places to deposit",
+          "words": [
+            "BANK",
+            "VAULT",
+            "PIGGY",
+            "SAFE"
+          ],
+          "difficulty": "yellow"
+        },
+        {
+          "name": "Parts of a river system",
+          "words": [
+            "CURRENT",
+            "DELTA",
+            "MOUTH",
+            "FORK"
+          ],
+          "difficulty": "green"
+        },
+        {
+          "name": "Things you flip through on TV",
+          "words": [
+            "CHANNEL",
+            "GUIDE",
+            "LISTING",
+            "PROGRAM"
+          ],
+          "difficulty": "blue"
+        },
+        {
+          "name": "Modern",
+          "words": [
+            "VIRAL",
+            "TRENDING",
+            "BUZZING",
+            "SLAYING"
+          ],
+          "difficulty": "purple"
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Places to deposit things",
+          "category_b": "Parts of a river system",
+          "reason_a": "A bank is where you store money and valuables.",
+          "reason_b": "A river bank is the land alongside the water's edge.",
+          "word": "BANK"
+        },
+        {
+          "category_a": "Things you flip through on TV",
+          "category_b": "Parts of a river system",
+          "reason_a": "A channel is a TV station or broadcast frequency.",
+          "reason_b": "A channel is a narrow waterway connecting larger bodies of water.",
+          "word": "CHANNEL"
+        }
+      ],
+      "language": "en",
+      "other_trick": "SAFE, VAULT, and PROGRAM all have multiple meanings that might create confusion across the money storage and TV categories.",
+      "thinking": {
+        "all_16_words": "BANK VAULT PIGGY SAFE CHANNEL GUIDE LISTING PROGRAM CURRENT DELTA MOUTH FORK SNAP CLAP STOMP WHISTLE",
+        "anchors": [
+          {
+            "home_category": "Places to deposit things",
+            "meaning_a": "financial institution",
+            "meaning_b": "side of a river",
+            "tempts_toward": "Parts of a river system",
+            "word": "BANK"
+          },
+          {
+            "home_category": "Things you flip through on TV",
+            "meaning_a": "TV station",
+            "meaning_b": "body of water connecting two larger bodies",
+            "tempts_toward": "Parts of a river system",
+            "word": "CHANNEL"
+          },
+          {
+            "home_category": "Parts of a river system",
+            "meaning_a": "flow of water",
+            "meaning_b": "present time / up to date",
+            "tempts_toward": "Things you flip through on TV",
+            "word": "CURRENT"
+          }
+        ]
+      },
+      "id": "138",
+      "date": "29.4.2026",
+      "status": "published"
     }
   ]
 }
