@@ -5793,6 +5793,84 @@
         }
       ],
       "id": "141"
+    },
+    {
+      "id": "142",
+      "date": "03.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "____ CROSSING",
+          "words": [
+            "RAILROAD",
+            "PEDESTRIAN",
+            "SCHOOL",
+            "BORDER"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "green",
+          "name": "Things that can run",
+          "words": [
+            "NOSE",
+            "FAUCET",
+            "ENGINE",
+            "USAIN BOLT"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "blue",
+          "name": "Have stripes",
+          "words": [
+            "ZEBRA",
+            "REFEREE",
+            "CANDY",
+            "TOOTHPASTE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "purple",
+          "name": "Bite the ___",
+          "words": [
+            "DUST",
+            "BULLET",
+            "HAND",
+            "CURB"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Have stripes",
+          "category_b": "Things that can run",
+          "reason_a": "Zebras are famous for their black and white stripes",
+          "reason_b": "Zebras are fast-running animals, creating strong pull toward the animal group",
+          "word": "ZEBRA"
+        },
+        {
+          "category_a": "Things that can run",
+          "category_b": "Have stripes",
+          "reason_a": "Tigers are animals that run",
+          "reason_b": "Tigers have distinctive stripes, tempting solvers to group with ZEBRA and SKUNK",
+          "word": "TIGER"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "reason": "Successfully found four natural words with stripes that create strong cross-pulls with animal taxonomy",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
