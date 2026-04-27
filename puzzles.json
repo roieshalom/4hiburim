@@ -5576,6 +5576,69 @@
       "id": "138",
       "date": "29.4.2026",
       "status": "published"
+    },
+    {
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Successfully found four natural words each containing drink names as consecutive letters, verified letter-by-letter",
+          "result": "shipped",
+          "tier": 3
+        }
+      ],
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "ROCK ____",
+          "words": [
+            "BOTTOM",
+            "STAR",
+            "SOLID",
+            "CANDY"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "green",
+          "name": "Things that FIRE",
+          "words": [
+            "CANNON",
+            "NEURON",
+            "KILN",
+            "ENGINE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "blue",
+          "name": "Movies with numbers in the title",
+          "words": [
+            "CATCH",
+            "OCEAN",
+            "APOLLO",
+            "FRIDAY"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "difficulty": "purple",
+          "name": "Words hiding drink names",
+          "words": [
+            "WINTER",
+            "GRUMBLE",
+            "CODING",
+            "STEAMING"
+          ]
+        }
+      ],
+      "date": "30.4.2026",
+      "decoys": [],
+      "id": "139"
     }
   ]
 }
