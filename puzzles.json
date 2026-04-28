@@ -5871,6 +5871,77 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "143",
+      "date": "04.05.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "yellow",
+          "name": "Things that rise",
+          "words": [
+            "STEAM",
+            "SMOKE",
+            "BALLOON",
+            "DOUGH"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "green",
+          "name": "Can be pressed",
+          "words": [
+            "IRON",
+            "SHIRT",
+            "PANTS",
+            "RECORD"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "blue",
+          "name": "Can be set",
+          "words": [
+            "STAGE",
+            "TABLE",
+            "SCENE",
+            "SLACKS"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "Things you might steal from a hotel",
+          "words": [
+            "SHAMPOO",
+            "TOWEL",
+            "PEN",
+            "ROBE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that rise",
+          "category_b": "Contain hidden beverages",
+          "reason_a": "Steam naturally rises upward",
+          "reason_b": "Contains TEA as consecutive letters",
+          "word": "STEAM"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "note": "Successfully found four natural words each containing complete beverage names: STEAM (TEA), COFFEE_TABLE (COFFEE), JUICER (JUICE), MILKSHAKE (MILK)",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
