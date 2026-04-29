@@ -5942,6 +5942,84 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "144",
+      "date": "05.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "______ STONE",
+          "words": [
+            "CORNER",
+            "KEY",
+            "SAND",
+            "LIME"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HOMOPHONE_PAIRS",
+          "difficulty": "green",
+          "name": "Second word of a body part",
+          "words": [
+            "CAGE",
+            "NAIL",
+            "APPLE",
+            "BUTTON"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "blue",
+          "name": "Thrown in Sports",
+          "words": [
+            "HAMMER",
+            "DART",
+            "FRISBEE",
+            "DWARF"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "difficulty": "purple",
+          "name": "Words hiding numbers inside",
+          "words": [
+            "STONE",
+            "OFTEN",
+            "CANINE",
+            "WEIGHT"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Words hiding numbers inside",
+          "category_b": "___ STONE",
+          "reason_a": "Contains ONE (O-N-E) as consecutive letters",
+          "reason_b": "The word STONE itself appears in the blank pattern, making solvers think it belongs to the PREFIX group",
+          "word": "STONE"
+        },
+        {
+          "category_a": "Things you can lift at the gym",
+          "category_b": "___ STONE",
+          "reason_a": "Pumping iron is a gym phrase, iron weights are lifted",
+          "reason_b": "IRONSTONE is a real compound word, creating surface-level pull toward the blank pattern",
+          "word": "IRON"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Successfully found four natural words each containing a hidden number as consecutive letters, with strong decoy potential",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
