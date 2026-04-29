@@ -811,15 +811,16 @@ button .icon {
   background: none;
   border: none;
   padding: 0;
-  color: var(--color-text-muted);
+  color: var(--color-primary);
   font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
   transition: color 0.15s;
 }
-.contact-link:hover { color: var(--color-primary); }
+.contact-link:hover { filter: brightness(1.3); }
 
 /* ── Contact overlay ───────────────────────────────────────────────── */
 .contact-overlay {
@@ -841,8 +842,8 @@ button .icon {
   border: 1px solid var(--color-border);
   border-radius: 16px;
   padding: 32px 36px 28px;
-  max-width: 360px;
-  width: 90%;
+  max-width: 384px;
+  width: calc(90% + 4px);
   position: relative;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
 }
