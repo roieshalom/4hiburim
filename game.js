@@ -800,3 +800,69 @@ window.updateDisplay = updateDisplayV2;
     if (typeof clarity === 'function') clarity('event', 'about_portfolio_click');
   });
 })();
+
+// ── Contact overlay ───────────────────────────────────────────────────────────
+(function () {
+  const contactLink    = document.getElementById('contact-link');
+  const contactOverlay = document.getElementById('contact-overlay');
+  const contactClose   = document.getElementById('contact-close');
+  const contactForm    = document.getElementById('contact-form');
+  const cfSubmit       = document.getElementById('cf-submit');
+  const cfStatus       = document.getElementById('cf-status');
+
+  if (!contactLink || !contactOverlay) return;
+
+  const openContact = () => {
+    contactOverlay.classList.add('visible');
+    cfStatus.textContent = '';
+    cfStatus.className = 'cf-status';
+    contactForm.reset();
+  };
+  const closeContact = () => contactOverlay.classList.remove('visible');
+
+  contactLink.addEventListener('click', openContact);
+  contactClose.addEventListener('click', closeContact);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeContact(); });
+
+  contactForm.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    const name    = document.getElementById('cf-name').value.trim();
+    const message = document.getElementById('cf-message').value.trim();
+    if (!name || !message) {
+      cfStatus.textContent = 'Please fill in the required fields.';
+      cfStatus.className = 'cf-status error';
+      return;
+    }
+
+    cfSubmit.disabled = true;
+    cfStatus.textContent = 'Sending…';
+    cfStatus.className = 'cf-status';
+
+    try {
+      const res = await fetch('https://formspree.io/f/meenjgbk', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email: document.getElementById('cf-email').value.trim(),
+          message,
+        }),
+      });
+      if (res.ok) {
+        cfStatus.textContent = 'Message sent! Thanks 🙌';
+        cfStatus.className = 'cf-status success';
+        contactForm.reset();
+        if (typeof mixpanel !== 'undefined') mixpanel.track('contact_form_sent');
+        if (typeof clarity === 'function') clarity('event', 'contact_form_sent');
+      } else {
+        throw new Error('server error');
+      }
+    } catch {
+      cfStatus.textContent = 'Something went wrong. Try again?';
+      cfStatus.className = 'cf-status error';
+    } finally {
+      cfSubmit.disabled = false;
+    }
+  });
+})();

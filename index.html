@@ -86,6 +86,31 @@
         <a href="https://grooped-puzzle-generator.vercel.app/"
            target="_blank" rel="noopener" id="about-link-editor">Behind the scenes</a>
       </div>
+      <button class="contact-link" id="contact-link">Contact me</button>
+    </div>
+  </div>
+
+  <!-- Contact overlay (sits on top of the about modal) -->
+  <div class="contact-overlay" id="contact-overlay">
+    <div class="contact-content">
+      <button class="about-close" id="contact-close">×</button>
+      <h3>Get in touch</h3>
+      <form id="contact-form" novalidate>
+        <div class="cf-field">
+          <label for="cf-name">Name <span class="cf-req">*</span></label>
+          <input id="cf-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+        </div>
+        <div class="cf-field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="your@email.com">
+        </div>
+        <div class="cf-field">
+          <label for="cf-message">Message <span class="cf-req">*</span></label>
+          <textarea id="cf-message" name="message" required rows="4" placeholder="Say something…"></textarea>
+        </div>
+        <button class="cf-submit" type="submit" id="cf-submit">Send</button>
+        <p class="cf-status" id="cf-status"></p>
+      </form>
     </div>
   </div>
 

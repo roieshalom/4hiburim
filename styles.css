@@ -804,6 +804,116 @@ button .icon {
   transform: translateY(-2px);
 }
 
+/* "Contact me" text link inside about modal */
+.contact-link {
+  display: inline-block;
+  margin-top: 18px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-primary);
+  font-size: 0.82rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.15s;
+}
+.contact-link:hover { color: var(--color-primary); }
+
+/* ── Contact overlay ───────────────────────────────────────────────── */
+.contact-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.contact-overlay.visible {
+  display: flex;
+  opacity: 1;
+}
+.contact-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px 36px 28px;
+  max-width: 360px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+.contact-content h3 {
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 14px;
+}
+.cf-field label {
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cf-req { color: var(--color-primary); }
+.cf-field input,
+.cf-field textarea {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.15s;
+}
+.cf-field input:focus,
+.cf-field textarea:focus {
+  border-color: var(--color-primary);
+}
+.cf-submit {
+  width: 100%;
+  margin-top: 6px;
+  padding: 11px;
+  background: linear-gradient(135deg, #8b31c7 0%, #4a0075 100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.15s;
+}
+.cf-submit:hover:not(:disabled) { filter: brightness(1.14); transform: translateY(-1px); }
+.cf-submit:disabled { opacity: 0.6; cursor: default; }
+.cf-status {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  text-align: center;
+  min-height: 1.2em;
+  color: var(--color-text-muted);
+}
+.cf-status.success { color: #2e7d32; }
+.cf-status.error   { color: #c62828; }
+
 .message-overlay.correct {
   font-family: "Arial";
   font-size: 18px;
