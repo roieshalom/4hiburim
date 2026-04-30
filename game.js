@@ -432,7 +432,7 @@ function handleCorrectGuess(category) {
   showMessage('Correct!', 'correct', 800);
 
   const CORRECT_HOP_DURATION = 450;
-  const STAGGER = 65;
+  const STAGGER = 50;
   const PAUSE_AFTER_HOP = 200;
   const CORRECT_RESOLVE_DURATION = 450;
   const EXTRA_READ_TIME = 200;
