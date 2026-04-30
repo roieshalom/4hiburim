@@ -342,6 +342,7 @@ function updateDisplayV2() {
       textEl.classList.add('has-space');
     }
 
+    tile.dataset.word = item.word;
     tile.addEventListener('click', () => toggleWord(item.word));
 
     board.appendChild(tile);
@@ -382,8 +383,7 @@ function toggleWord(word) {
 function highlightSelectedGroup() {
   const tiles = document.querySelectorAll('.word-tile');
   tiles.forEach(tile => {
-    const text = tile.textContent.trim();
-    if (selectedWords.includes(text)) {
+    if (selectedWords.includes(tile.dataset.word)) {
       tile.classList.add('group-selected');
     } else {
       tile.classList.remove('group-selected');
@@ -431,39 +431,47 @@ function submitGuess() {
 function handleCorrectGuess(category) {
   showMessage('Correct!', 'correct', 800);
 
-  const tiles = document.querySelectorAll('.word-tile');
-
   const CORRECT_HOP_DURATION = 250;
   const PAUSE_AFTER_HOP = 300;
   const CORRECT_RESOLVE_DURATION = 500;
-  const EXTRA_READ_TIME = 800;
+  const EXTRA_READ_TIME = 200;
+  const SLIDE_DURATION = 380;
 
-  tiles.forEach(tile => {
-    const text = tile.textContent.trim();
-    if (selectedWords.includes(text)) {
+  // Bug 1 fix: match on data-word, not textContent
+  const getTiles = () => document.querySelectorAll('.word-tile');
+
+  getTiles().forEach(tile => {
+    if (selectedWords.includes(tile.dataset.word)) {
       tile.classList.add('correct-hop');
     }
   });
 
   setTimeout(() => {
-    tiles.forEach(tile => {
-      const text = tile.textContent.trim();
-      if (selectedWords.includes(text)) {
+    getTiles().forEach(tile => {
+      if (selectedWords.includes(tile.dataset.word)) {
         tile.classList.remove('correct-hop');
       }
     });
   }, CORRECT_HOP_DURATION);
 
   setTimeout(() => {
-    tiles.forEach(tile => {
-      const text = tile.textContent.trim();
-      if (selectedWords.includes(text)) {
+    getTiles().forEach(tile => {
+      if (selectedWords.includes(tile.dataset.word)) {
         tile.classList.add('correct-resolve');
       }
     });
   }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP);
 
   setTimeout(() => {
+    // Bug 2 fix: snapshot positions of remaining tiles BEFORE re-render
+    const prePositions = new Map();
+    getTiles().forEach(tile => {
+      if (!selectedWords.includes(tile.dataset.word)) {
+        const rect = tile.getBoundingClientRect();
+        prePositions.set(tile.dataset.word, { top: rect.top, left: rect.left });
+      }
+    });
+
     solvedCategories.push({
       name: category.name,
       words: category.words,
@@ -499,6 +507,29 @@ function handleCorrectGuess(category) {
     }
 
     updateDisplayV2();
+
+    // FLIP: slide remaining tiles from their old positions to their new ones
+    if (!wasLastGroup && prePositions.size > 0) {
+      getTiles().forEach(tile => {
+        const oldPos = prePositions.get(tile.dataset.word);
+        if (!oldPos) return;
+        const newRect = tile.getBoundingClientRect();
+        const dx = oldPos.left - newRect.left;
+        const dy = oldPos.top - newRect.top;
+        if (Math.abs(dx) < 0.5 && Math.abs(dy) < 0.5) return; // didn't move
+
+        // Snap to old position instantly, then transition to new
+        tile.style.transition = 'none';
+        tile.style.transform = `translate(${dx}px, ${dy}px)`;
+        tile.getBoundingClientRect(); // force reflow
+        tile.style.transition = `transform ${SLIDE_DURATION}ms cubic-bezier(0.25, 0.46, 0.45, 0.94)`;
+        tile.style.transform = 'translate(0, 0)';
+        setTimeout(() => {
+          tile.style.transition = '';
+          tile.style.transform = '';
+        }, SLIDE_DURATION);
+      });
+    }
 
     if (wasLastGroup) {
       showMessage(
