@@ -431,19 +431,20 @@ function submitGuess() {
 function handleCorrectGuess(category) {
   showMessage('Correct!', 'correct', 800);
 
-  const CORRECT_HOP_DURATION = 250;
-  const PAUSE_AFTER_HOP = 300;
-  const CORRECT_RESOLVE_DURATION = 500;
+  const CORRECT_HOP_DURATION = 450;
+  const STAGGER = 65;
+  const PAUSE_AFTER_HOP = 200;
+  const CORRECT_RESOLVE_DURATION = 450;
   const EXTRA_READ_TIME = 200;
   const SLIDE_DURATION = 380;
 
   // Bug 1 fix: match on data-word, not textContent
   const getTiles = () => document.querySelectorAll('.word-tile');
 
-  getTiles().forEach(tile => {
-    if (selectedWords.includes(tile.dataset.word)) {
-      tile.classList.add('correct-hop');
-    }
+  // Stagger hop: tiles animate left→right based on DOM order among selected
+  const selectedTiles = Array.from(getTiles()).filter(t => selectedWords.includes(t.dataset.word));
+  selectedTiles.forEach((tile, i) => {
+    setTimeout(() => tile.classList.add('correct-hop'), i * STAGGER);
   });
 
   setTimeout(() => {
@@ -452,15 +453,17 @@ function handleCorrectGuess(category) {
         tile.classList.remove('correct-hop');
       }
     });
-  }, CORRECT_HOP_DURATION);
+  }, CORRECT_HOP_DURATION + selectedTiles.length * STAGGER);
+
+  const hopEnd = CORRECT_HOP_DURATION + selectedTiles.length * STAGGER;
 
   setTimeout(() => {
-    getTiles().forEach(tile => {
-      if (selectedWords.includes(tile.dataset.word)) {
-        tile.classList.add('correct-resolve');
-      }
+    // Stagger resolve too — same rhythm
+    const resolveTiles = Array.from(getTiles()).filter(t => selectedWords.includes(t.dataset.word));
+    resolveTiles.forEach((tile, i) => {
+      setTimeout(() => tile.classList.add('correct-resolve'), i * STAGGER);
     });
-  }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP);
+  }, hopEnd + PAUSE_AFTER_HOP);
 
   setTimeout(() => {
     // Bug 2 fix: snapshot positions of remaining tiles BEFORE re-render
@@ -540,7 +543,7 @@ function handleCorrectGuess(category) {
     } else {
       showMessage('', '');
     }
-  }, CORRECT_HOP_DURATION + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + EXTRA_READ_TIME);
+  }, hopEnd + PAUSE_AFTER_HOP + CORRECT_RESOLVE_DURATION + (selectedTiles.length * STAGGER) + EXTRA_READ_TIME);
 }
 
 function handleWrongGuess(selectedUpper) {

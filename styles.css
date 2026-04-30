@@ -493,23 +493,19 @@ h1 {
 }
 
 .word-tile.correct-hop {
-  animation: correctHop 0.25s ease-out;
+  animation: correctHop 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97);
 }
 
 @keyframes correctHop {
-  0% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0%   { transform: translateY(0)    scale(1); }
+  25%  { transform: translateY(-22px) scale(1.1); }
+  55%  { transform: translateY(5px)  scale(0.96); }
+  75%  { transform: translateY(-8px) scale(1.03); }
+  100% { transform: translateY(0)    scale(1); }
 }
 
 .word-tile.correct-resolve {
-  animation: correctResolve 0.5s ease-out forwards;
+  animation: correctResolve 0.45s cubic-bezier(0.55, 0, 1, 0.45) forwards;
 }
 
 .word-tile.completed {
@@ -518,14 +514,9 @@ h1 {
 }
 
 @keyframes correctResolve {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
+  0%   { transform: translateY(0)    scale(1);    opacity: 1; }
+  15%  { transform: translateY(-6px) scale(1.08); opacity: 1; }
+  100% { transform: translateY(-36px) scale(0.75); opacity: 0; }
 }
 
 .word-tile.wrong-guess {
