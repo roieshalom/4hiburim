@@ -103,7 +103,7 @@ body {
   width: 100%;
   max-width: 510px;
   margin: 0 auto;
-  padding-inline: var(--spacing-lg);
+  padding-inline: var(--spacing-sm);
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -125,7 +125,7 @@ h1 {
   font-size: var(--font-size-small);
   max-width: 510px;
   margin: 0 auto var(--spacing-xs);
-  padding-inline: var(--spacing-lg);
+  padding-inline: var(--spacing-sm);
   box-sizing: border-box;
   text-align: left;
 }
@@ -423,7 +423,7 @@ h1 {
   justify-content: center;
   width: 100%;
   max-width: 510px;
-  padding-inline: var(--spacing-lg);
+  padding-inline: var(--spacing-sm);
   box-sizing: border-box;
 }
 
@@ -671,13 +671,13 @@ button .icon {
 }
 
 .stats {
- font-family: var(--font-primary);
+  font-family: var(--font-primary);
   font-size: var(--font-size-large);
   color: var(--color-text-muted);
   width: 100%;
   max-width: 510px;
-  margin: 0 auto 20px;  /* bottom margin: 32px */
-  padding-inline: var(--spacing-lg);
+  margin: 0 auto 20px;
+  padding-inline: var(--spacing-sm);
   box-sizing: border-box;
   text-align: center;
 }
@@ -969,10 +969,6 @@ button .icon {
    ========================================== */
 
 @media (max-width: 600px) {
-  .header-row {
-    max-width: 320px;
-  }
-
   h1 {
     font-size: 55px;
   }
