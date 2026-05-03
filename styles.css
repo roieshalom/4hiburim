@@ -4,10 +4,11 @@
 
 /* Colors */
 :root {
-  --color-primary: #61008f;
-  --color-primary-hover: #555;
-  --color-bg-main: #fdfbfb;
-  --color-bg-gradient: radial-gradient(circle at top, #fdfbfb 0%, #ebedee 60%, #dfe4ea 100%);
+  --color-primary: oklch(0.55 0.21 295);
+  --color-primary-hover: oklch(0.50 0.22 295);
+  --gradient-primary: linear-gradient(180deg, oklch(0.62 0.21 295), oklch(0.50 0.22 295));
+  --color-bg-main: oklch(0.985 0.003 85);
+  --color-bg-gradient: oklch(0.985 0.003 85);
   --color-surface: #ffffff;
   --color-border: #ddd;
   --color-text: #333;
@@ -52,6 +53,22 @@
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 6px 14px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  /* Violet accent system */
+  --accent:       oklch(0.55 0.21 295);
+  --accent-2:     oklch(0.50 0.22 295);
+  --accent-soft:  oklch(0.96 0.025 295);
+  --accent-ring:  oklch(0.55 0.22 295 / 0.18);
+
+  /* Button shadow tokens */
+  --shadow-btn:
+    0 1px 0 oklch(1 0 0 / 0.7) inset,
+    0 1px 2px oklch(0 0 0 / 0.04),
+    0 2px 6px oklch(0 0 0 / 0.05);
+  --shadow-btn-hover:
+    0 1px 0 oklch(1 0 0 / 0.7) inset,
+    0 2px 4px oklch(0 0 0 / 0.04),
+    0 6px 14px var(--accent-ring);
 }
 
 /* ==========================================
@@ -411,21 +428,28 @@ h1 {
 }
 
 .word-tile {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
+  background: #fff;
+  border: 1px solid oklch(0.95 0.005 80);
+  border-radius: 14px;
+  box-shadow:
+    0 1px 0 oklch(1 0 0 / 0.7) inset,
+    0 1px 1px oklch(0 0 0 / 0.04),
+    0 2px 6px oklch(0 0 0 / 0.05);
   cursor: pointer;
   text-transform: uppercase;
-
   width: 100%;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding-inline: 6px;
   padding-block: 6px;
+  transition:
+    transform    0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background   0.18s ease,
+    color        0.18s ease,
+    box-shadow   0.18s ease,
+    border-color 0.18s ease;
 }
  
 .word-text {
@@ -470,25 +494,40 @@ h1 {
 
 @media (hover: hover) and (pointer: fine) {
   .word-tile:hover {
-    background-color: #f0f0f0;
+    border-color: oklch(0.85 0.008 60);
+    box-shadow:
+      0 1px 0 oklch(1 0 0 / 0.7) inset,
+      0 4px 14px oklch(0 0 0 / 0.10);
   }
 }
 
 .word-tile:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
 }
 
 .word-tile.selected {
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-surface);
-  color: white;
-  box-shadow: var(--shadow-md);
+  background: linear-gradient(180deg,
+    oklch(0.62 0.21 295),
+    oklch(0.50 0.22 295));
+  color: #fff;
+  border-color: oklch(0.42 0.20 295);
+  transform: scale(0.97);
+  box-shadow:
+    0 1px 0 oklch(1 0 0 / 0.20) inset,
+    0 1px 2px oklch(0.42 0.20 295 / 0.30),
+    0 6px 16px oklch(0.55 0.22 295 / 0.32);
 }
 
 .word-tile.group-selected {
-  background-color: var(--color-primary);
+  background: linear-gradient(180deg,
+    oklch(0.62 0.21 295),
+    oklch(0.50 0.22 295));
   color: #fff;
-  box-shadow: var(--shadow-md);
+  border-color: oklch(0.42 0.20 295);
+  box-shadow:
+    0 1px 0 oklch(1 0 0 / 0.20) inset,
+    0 1px 2px oklch(0.42 0.20 295 / 0.30),
+    0 6px 16px oklch(0.55 0.22 295 / 0.32);
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
@@ -563,8 +602,8 @@ button {
   border-radius: var(--radius-md);
   cursor: pointer;
   border: none;
-  line-height: 1;          /* important: keeps content tight */
-  height: 38px;            /* lock a height you like */
+  line-height: 1;
+  height: 38px;
   transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.08s ease;
 }
 
@@ -587,7 +626,7 @@ button .icon {
 
 /* Primary: Submit */
 #submit-btn {
-  background-color: var(--color-primary);
+  background: var(--gradient-primary);
   color: #fff;
   height: 40px;
 }
@@ -781,7 +820,7 @@ button .icon {
 .about-links a {
   padding: 10px 24px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, #8b31c7 0%, #4a0075 100%);
+  background: var(--gradient-primary);
   color: #fff;
   text-decoration: none;
   font-family: var(--font-primary);
@@ -883,7 +922,7 @@ button .icon {
   width: 100%;
   margin-top: 6px;
   padding: 11px;
-  background: linear-gradient(135deg, #8b31c7 0%, #4a0075 100%);
+  background: var(--gradient-primary);
   color: #fff;
   border: none;
   border-radius: var(--radius-md);
