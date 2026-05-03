@@ -430,7 +430,7 @@ h1 {
 .word-tile {
   background: #fff;
   border: 1px solid oklch(0.95 0.005 80);
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   box-shadow:
     0 1px 0 oklch(1 0 0 / 0.7) inset,
     0 1px 1px oklch(0 0 0 / 0.04),
@@ -599,7 +599,7 @@ button {
   padding: 10px 20px;
   font-size: var(--font-size-large);
   font-weight: 600;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xl);
   cursor: pointer;
   border: none;
   line-height: 1;
