@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Clarity -->
+    <!-- Clarity (skipped on localhost / local IP) -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ujtqeeko43");
+        (function() {
+            var h = window.location.hostname;
+            var isLocal = h === 'localhost' || h === '127.0.0.1' ||
+                          /^192\.168\./.test(h) || /^10\./.test(h) ||
+                          /^172\.(1[6-9]|2\d|3[01])\./.test(h);
+            if (isLocal) return;
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "ujtqeeko43");
+        })();
     </script>
 
     <meta charset="UTF-8">
