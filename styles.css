@@ -430,7 +430,7 @@ h1 {
 .word-tile {
   background: #fff;
   border: 1px solid oklch(0.95 0.005 80);
-  border-radius: 14px;
+  border-radius: 20px;
   box-shadow:
     0 1px 0 oklch(1 0 0 / 0.7) inset,
     0 1px 1px oklch(0 0 0 / 0.04),
