@@ -343,7 +343,36 @@ function updateDisplayV2() {
     }
 
     tile.dataset.word = item.word;
-    tile.addEventListener('click', () => toggleWord(item.word));
+    tile.addEventListener('pointerdown', (e) => {
+      e.preventDefault();
+      if (mistakes >= 4 || remainingWords.length === 0) return;
+
+      // Don't allow selecting a 5th tile
+      const alreadySelected = selectedWords.includes(item.word);
+      if (!alreadySelected && selectedWords.length >= 4) return;
+
+      // Phase 1: scale down immediately (no color yet)
+      tile.classList.add('pressing');
+
+      setTimeout(() => {
+        // Phase 2: update state
+        const idx = selectedWords.indexOf(item.word);
+        if (idx > -1) {
+          selectedWords.splice(idx, 1);
+        } else {
+          selectedWords.push(item.word);
+        }
+
+        // Toggle color on the SAME tile element so CSS transition fires
+        tile.classList.remove('pressing');
+        tile.classList.toggle('selected', selectedWords.includes(item.word));
+
+        // Sync button states & save
+        document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
+        updateDeselectButtonState();
+        saveProgressState();
+      }, 100); // matches the 0.10s press transition
+    });
 
     board.appendChild(tile);
     fitWordToTile(tile);
