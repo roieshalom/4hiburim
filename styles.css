@@ -127,7 +127,7 @@ h1 {
   margin: 0 auto var(--spacing-xs);
   padding-inline: var(--spacing-lg);
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
 }
 
 /* Larger screens: make the directions more prominent */
