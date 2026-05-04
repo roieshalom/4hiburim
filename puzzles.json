@@ -6098,6 +6098,77 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "146",
+      "date": "07.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "FIRE ___",
+          "words": [
+            "ALARM",
+            "HYDRANT",
+            "DRILL",
+            "WORKS"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "green",
+          "name": "Things that spread",
+          "words": [
+            "RUMOR",
+            "DISEASE",
+            "WILDFIRE",
+            "YAWN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "blue",
+          "name": "Break the ___",
+          "words": [
+            "ICE",
+            "NEWS",
+            "SPELL",
+            "BANK"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "difficulty": "purple",
+          "name": "Words hiding beverages",
+          "words": [
+            "RUMPLE",
+            "STEALTH",
+            "SHALE",
+            "GINKGO"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that spread",
+          "category_b": "Words hiding beverages",
+          "reason_a": "Rumors spread from person to person",
+          "reason_b": "Contains RUM at the start (R-U-M-O-R), could trap solvers looking for hidden drinks",
+          "word": "RUMOR"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Successfully found four natural words each containing different beverages as consecutive letters",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
