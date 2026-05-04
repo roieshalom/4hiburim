@@ -6268,6 +6268,83 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "148",
+      "date": "09.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "FINGER ___",
+          "words": [
+            "PRINT",
+            "PAINT",
+            "LICKING",
+            "FOOD"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Have a Head",
+          "words": [
+            "BED",
+            "NAIL",
+            "COIN",
+            "CABBAGE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Can be BROKEN",
+          "words": [
+            "HEART",
+            "GLASS",
+            "SILENCE",
+            "RECORD"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "appear on playing cards",
+          "words": [
+            "SPADE",
+            "CLUB",
+            "SWORD",
+            "NUMBER"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things with a HEAD",
+          "category_b": "FINGER ___",
+          "reason_a": "A nail has a head",
+          "reason_b": "Can form 'fingernail', leading solvers to think it belongs to this group.",
+          "word": "NAIL"
+        },
+        {
+          "category_a": "Can be BROKEN",
+          "category_b": "FINGER ___",
+          "reason_a": "One can break a record (e.g., a vinyl record, or a sports record)",
+          "reason_b": "Can form 'fingerprint record', tempting solvers to place it with other 'FINGER' words.",
+          "word": "RECORD"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HOMOPHONE_OF_NUMBER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
