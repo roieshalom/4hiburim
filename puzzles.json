@@ -6169,6 +6169,105 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "147",
+      "date": "08.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Paper ___",
+          "words": [
+            "BOY",
+            "TRAIL",
+            "TOWEL",
+            "WORK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Can be Cracked",
+          "words": [
+            "EGG",
+            "CODE",
+            "NUT",
+            "SMILE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "A vegan wouldn't eat",
+          "words": [
+            "CHEESE",
+            "HONEY",
+            "PORK",
+            "FISH"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "purple",
+          "name": "Take into the shower",
+          "words": [
+            "SOAP",
+            "SHAMPOO",
+            "LOOFAH",
+            "SCRUB"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Sounds like letters of the alphabet",
+          "category_b": "Can be CRACKED",
+          "reason_a": "Sounds like the letter 'I'",
+          "reason_b": "One can 'crack an eye' open, or have 'cracked eyes' from fatigue.",
+          "word": "EYE"
+        },
+        {
+          "category_a": "Sounds like letters of the alphabet",
+          "category_b": "Things that FLOAT",
+          "reason_a": "Sounds like the letter 'T'",
+          "reason_b": "Tea leaves or tea bags float in water.",
+          "word": "TEA"
+        },
+        {
+          "category_a": "Sounds like letters of the alphabet",
+          "category_b": "Things that FLOAT",
+          "reason_a": "Sounds like the letter 'B'",
+          "reason_b": "Bees float (fly) in the air.",
+          "word": "BEE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "THINGS_THAT_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "HOMOPHONE_OF_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
