@@ -6345,6 +6345,98 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "149",
+      "date": "10.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "Singers",
+          "words": [
+            "JEWEL",
+            "PINK",
+            "PRINCE",
+            "SEAL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Power Rangers' color",
+          "words": [
+            "BLUE",
+            "YELLOW",
+            "RED",
+            "BLACK"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SUFFIX_BLANK",
+          "difficulty": "blue",
+          "name": "Jewelry",
+          "words": [
+            "RING",
+            "EARRING",
+            "BRACELET",
+            "PENDANT"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "purple",
+          "name": "Semiaquatics",
+          "words": [
+            "HIPPO",
+            "WATER LILY",
+            "TURTLE",
+            "CAPYBARA"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Sounds Like A Letter",
+          "category_b": "Things Found In Or Near The Ocean",
+          "reason_a": "Sounds like the letter 'C'.",
+          "reason_b": "The word 'sea' directly refers to the ocean, a natural fit for this category.",
+          "word": "SEA"
+        },
+        {
+          "category_a": "Sounds Like A Letter",
+          "category_b": "Things That Fly",
+          "reason_a": "Sounds like the letter 'J'.",
+          "reason_b": "A 'jay' is a type of bird (e.g., blue jay), and birds are known to fly, making it a plausible fit for 'Things That Fly'.",
+          "word": "JAY"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "FOUND_IN_SCENE",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "THINGS_THAT_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "HOMOPHONE_OF_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
