@@ -6437,6 +6437,98 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "150",
+      "date": "11.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "Very small",
+          "words": [
+            "TINY",
+            "PETITE",
+            "MINUTE",
+            "LITTLE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "green",
+          "name": "To support",
+          "words": [
+            "SAVE",
+            "SECOND",
+            "PREACH",
+            "STAY"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Dog commands",
+          "words": [
+            "HEEL",
+            "FETCH",
+            "SPEAK",
+            "PAW"
+          ]
+        },
+        {
+          "tier": null,
+          "mechanic": null,
+          "difficulty": "purple",
+          "name": "At church",
+          "words": [
+            "PRAY",
+            "WORSHIP",
+            "COMMUNE",
+            "SING"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Sounds Like a Number",
+          "category_b": "___ the Day",
+          "reason_a": "Homophone for the number 'one'",
+          "reason_b": "To 'won the day' means to achieve victory or success, completing the idiom category.",
+          "word": "WON"
+        },
+        {
+          "category_a": "___ the Day",
+          "category_b": "Things That Can Be Broken",
+          "reason_a": "To 'rule the day' means to dominate or prevail.",
+          "reason_b": "A 'rule' can be broken, similar to a 'law' which is in this category.",
+          "word": "RULE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SYNONYMS",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "CAN_BE_VERBED",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "HOMOPHONE_OF_NUMBER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
