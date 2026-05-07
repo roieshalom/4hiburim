@@ -624,9 +624,10 @@ function handleWrongGuess(selectedUpper) {
       return;
     }
 
-    // Keep tiles selected but re-enable submit — if they tap it again
-    // with the same combo, triedCombinations will show "Already tried"
-    document.getElementById('submit-btn').disabled = false;
+    // Rebuild the board — clears stale group-selected/wrong-guess classes
+    // and re-applies selected only from selectedWords, so tiles respond
+    // correctly to individual taps again. Submit stays enabled (4 selected).
+    updateDisplayV2();
   }, JIGGLE_DURATION + EXTRA_READ_TIME);
 
   setTimeout(() => {
