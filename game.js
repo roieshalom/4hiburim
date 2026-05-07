@@ -360,6 +360,12 @@ function updateDisplayV2() {
         if (idx > -1) {
           selectedWords.splice(idx, 1);
         } else {
+          // Re-check limit inside the callback — rapid taps can both pass
+          // the synchronous guard above before either callback fires
+          if (selectedWords.length >= 4) {
+            tile.classList.remove('pressing');
+            return;
+          }
           selectedWords.push(item.word);
         }
 
@@ -615,7 +621,12 @@ function handleWrongGuess(selectedUpper) {
 
     if (mistakes >= 4) {
       handleFailure();
+      return;
     }
+
+    // Keep tiles selected but re-enable submit — if they tap it again
+    // with the same combo, triedCombinations will show "Already tried"
+    document.getElementById('submit-btn').disabled = false;
   }, JIGGLE_DURATION + EXTRA_READ_TIME);
 
   setTimeout(() => {
