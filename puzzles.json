@@ -6529,6 +6529,83 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "151",
+      "date": "12.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Sugar forms",
+          "words": [
+            "POWDER",
+            "CUBE",
+            "GRAIN",
+            "CRYSTAL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Ice ____",
+          "words": [
+            "ICE BABY",
+            "TEA",
+            "HOCKEY",
+            "AGE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Physical Health Metrics",
+          "words": [
+            "HEIGHT",
+            "WEIGHT",
+            "BMI",
+            "PULSE"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "difficulty": "purple",
+          "name": "Violin parts",
+          "words": [
+            "WAIST",
+            "NECK",
+            "PEG",
+            "F-HOLE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Colors Hidden at the Start",
+          "category_b": "Things With a Shell",
+          "reason_a": "'GREEN' is a color hidden at the start of the word.",
+          "reason_b": "A greenhouse has a protective outer structure, often made of glass or plastic, enclosing its contents, like a shell.",
+          "word": "GREENHOUSE"
+        },
+        {
+          "category_a": "Things That Can Be Stretched",
+          "category_b": "Things With a Shell",
+          "reason_a": "Wire is physically stretched to extend it or when pulled under tension.",
+          "reason_b": "Electrical wires are typically covered in an insulating outer layer or 'shell'.",
+          "word": "WIRE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
