@@ -6606,6 +6606,90 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "152",
+      "date": "13.05.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "yellow",
+          "name": "Words hiding animals",
+          "words": [
+            "PIGMENT",
+            "BULLDOZER",
+            "STICKER",
+            "WHEEL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Famous Swedes",
+          "words": [
+            "BERGMAN",
+            "LINDGREN",
+            "AVICII",
+            "ABBA"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Watercraft",
+          "words": [
+            "YACHT",
+            "DINGHY",
+            "CATAMARAN",
+            "KAYAK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "Palindromes",
+          "words": [
+            "RACE CAR",
+            "REVIVER",
+            "PULL UP",
+            "RADAR"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Named After a Person",
+          "category_b": "Metaphors for Difficult Predicaments",
+          "reason_a": "The term 'boycott' is an eponym, named after Captain Charles Boycott.",
+          "reason_b": "A boycott creates a difficult situation for the target, or for those participating in a protest.",
+          "word": "BOYCOTT"
+        },
+        {
+          "category_a": "Metaphors for Difficult Predicaments",
+          "category_b": "___ POINT",
+          "reason_a": "To be 'backed into a corner' means to be in a difficult position.",
+          "reason_b": "A 'corner point' is a plausible phrase, referring to a specific location or detail.",
+          "word": "CORNER"
+        },
+        {
+          "category_a": "Things that FALL",
+          "category_b": "___ POINT",
+          "reason_a": "A structure, like a temple, can 'fall' or collapse.",
+          "reason_b": "The 'temple point' refers to a specific anatomical area on the side of the head.",
+          "word": "TEMPLE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "EPONYMS",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
