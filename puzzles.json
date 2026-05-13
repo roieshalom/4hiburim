@@ -6690,6 +6690,90 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "153",
+      "date": "14.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "___ Driver",
+          "words": [
+            "SCREW",
+            "CAB",
+            "TEST",
+            "BACKSEAT"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "green",
+          "name": "Things That Can Be Punched",
+          "words": [
+            "CLOCK",
+            "TICKET",
+            "LINE",
+            "BAG"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "blue",
+          "name": "Wines",
+          "words": [
+            "ROSE",
+            "PORT",
+            "SHERRY",
+            "STRAW"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "EPONYMS",
+          "difficulty": "purple",
+          "name": "Words of disappointment",
+          "words": [
+            "BALLS",
+            "CRAP",
+            "NUTS",
+            "FUDGE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Eponyms",
+          "category_b": "Things That Have a Collar",
+          "reason_a": "Named after James Brudenell, 7th Earl of Cardigan.",
+          "reason_b": "A cardigan is a type of garment, and many cardigans have collars.",
+          "word": "CARDIGAN"
+        },
+        {
+          "category_a": "Things That Have a Collar",
+          "category_b": "___ Driver",
+          "reason_a": "Refers to a 'tube top' which can have a collar, or a tube as part of a collar system (e.g., pipe fitting, medical).",
+          "reason_b": "A 'Tube Driver' is the term for a train operator on the London Underground.",
+          "word": "TUBE"
+        },
+        {
+          "category_a": "___ Driver",
+          "category_b": "Things That Can Be Punched",
+          "reason_a": "A 'test driver' is someone who drives cars to test them.",
+          "reason_b": "One can 'punch a test' (a physical exam or paper) or perform a 'punch test' in engineering.",
+          "word": "TEST"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "EPONYMS",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
