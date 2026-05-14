@@ -6774,6 +6774,98 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "154",
+      "date": "15.05.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "yellow",
+          "name": "Inside an aquarium",
+          "words": [
+            "GRAVEL",
+            "WATER",
+            "PUMP",
+            "THERMOMETER"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "green",
+          "name": "Cracker types",
+          "words": [
+            "GOLDFISH",
+            "ANIMAL",
+            "SODA",
+            "TUC"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "blue",
+          "name": "Pop ______",
+          "words": [
+            "CORN",
+            "UP",
+            "CULTURE",
+            "MUSIC"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "purple",
+          "name": "Types of wood connectors",
+          "words": [
+            "LAP",
+            "RABBET",
+            "DOVETAIL",
+            "BISCUIT"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that can be 'shot'",
+          "category_b": "Things that are spherical",
+          "reason_a": "One can 'shoot marbles' in a game.",
+          "reason_b": "Marbles are small, spherical objects.",
+          "word": "MARBLE"
+        },
+        {
+          "category_a": "Things that are spherical",
+          "category_b": "Things that can be 'shot'",
+          "reason_a": "A ball is a common spherical object.",
+          "reason_b": "Many types of balls (e.g., basketball, soccer ball) can be 'shot' or kicked.",
+          "word": "BALL"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HOMOPHONE_OF_NUMBER",
+          "result": "shipped",
+          "tier": 3
+        },
+        {
+          "mechanic": "CAN_BE_VERBED",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "TAXONOMY",
+          "result": "shipped",
+          "tier": 1
+        }
+      ]
     }
   ]
 }
