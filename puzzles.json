@@ -7126,6 +7126,90 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "158",
+      "date": "19.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "Building Components",
+          "words": [
+            "BEAM",
+            "NAIL",
+            "BRICK",
+            "BLOCK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Pry Tools",
+          "words": [
+            "CAT'S PAW",
+            "CHISEL",
+            "WEDGE",
+            "MATTOCK"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "U2 songs",
+          "words": [
+            "VERTIGO",
+            "BABYFACE",
+            "DESIRE",
+            "LEMON"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "difficulty": "purple",
+          "name": "Words Starting with Birds",
+          "words": [
+            "TUITION",
+            "LOONIE",
+            "DOVETAIL",
+            "CROWBAR"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Building Components",
+          "category_b": "Things With a Sharp Point",
+          "reason_a": "A common fastener used in construction.",
+          "reason_b": "Nails have a sharp point for piercing.",
+          "word": "NAIL"
+        },
+        {
+          "category_a": "Words Starting with Birds",
+          "category_b": "Building Components",
+          "reason_a": "Contains 'DOVE' at the beginning.",
+          "reason_b": "A dovetail joint is a woodworking technique used in building.",
+          "word": "DOVETAIL"
+        },
+        {
+          "category_a": "Words Starting with Birds",
+          "category_b": "Things With a Sharp Point",
+          "reason_a": "Contains 'CROW' at the beginning.",
+          "reason_b": "A crowbar is a prying tool, often with a sharpened or tapered end.",
+          "word": "CROWBAR"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
