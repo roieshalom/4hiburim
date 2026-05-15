@@ -6866,6 +6866,83 @@
           "tier": 1
         }
       ]
+    },
+    {
+      "id": "155",
+      "date": "16.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Last years' Eurovision winners",
+          "words": [
+            "THE CODE",
+            "WASTED LOVE",
+            "TATTOO",
+            "STEFANIA"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "green",
+          "name": "Body modificationa",
+          "words": [
+            "TIGHTLACING",
+            "PIERCING",
+            "BRANDING",
+            "IMPLANT"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "blue",
+          "name": "The second word of Movie names with \"The\"",
+          "words": [
+            "INTERNATIONAL",
+            "BIRDS",
+            "GAME",
+            "ARTIST"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "EPONYMS",
+          "difficulty": "purple",
+          "name": "Departments in Tech",
+          "words": [
+            "SALES",
+            "HR",
+            "QA",
+            "DESIGN"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things One Can CAST",
+          "category_b": "Metaphors for Being Stuck",
+          "reason_a": "One can 'cast a net'.",
+          "reason_b": "Being 'caught in a net' is a metaphor for being trapped or stuck.",
+          "word": "NET"
+        },
+        {
+          "category_a": "BACK ___",
+          "category_b": "Metaphors for Being Stuck",
+          "reason_a": "Completes the phrase 'backfire'.",
+          "reason_b": "Being 'caught in the crossfire' or 'stuck in the fire' implies being in a difficult, unavoidable situation.",
+          "word": "FIRE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "EPONYMS",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
