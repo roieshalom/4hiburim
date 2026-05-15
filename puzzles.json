@@ -6943,6 +6943,105 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "156",
+      "date": "17.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "Things with a Point",
+          "words": [
+            "NEEDLE",
+            "ARROW",
+            "SPEAR",
+            "STAR"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Metaphors for Intelligence",
+          "words": [
+            "SHARP",
+            "BRIGHT",
+            "QUICK",
+            "KEEN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "blue",
+          "name": "Things that Can Strike",
+          "words": [
+            "CLOCK",
+            "MATCH",
+            "MINE",
+            "LUCK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "Words Paired With 'High'",
+          "words": [
+            "NOON",
+            "PITCH",
+            "ROLLER",
+            "WIRE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Metaphors for Intelligence",
+          "category_b": "Things with a Point",
+          "reason_a": "a sharp mind is intelligent",
+          "reason_b": "a sharp object has a point",
+          "word": "SHARP"
+        },
+        {
+          "category_a": "Things with a Point",
+          "category_b": "Metaphors for Intelligence",
+          "reason_a": "a star has points",
+          "reason_b": "a 'bright star' can refer to a talented, intelligent person",
+          "word": "STAR"
+        },
+        {
+          "category_a": "Things that Can Strike",
+          "category_b": "Things with a Point",
+          "reason_a": "a clock strikes the hour",
+          "reason_b": "clock hands are pointers",
+          "word": "CLOCK"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "TAXONOMY",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "THINGS_THAT_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "HOMOPHONE_OF_NUMBER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
