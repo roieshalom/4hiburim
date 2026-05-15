@@ -7042,6 +7042,90 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "157",
+      "date": "18.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "HEAD ___",
+          "words": [
+            "CHEESE",
+            "START",
+            "LIGHT",
+            "STRONG"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SUFFIX_BLANK",
+          "difficulty": "green",
+          "name": "Words Before 'Proof'",
+          "words": [
+            "WATER",
+            "BULLET",
+            "SHOCK",
+            "CHILD"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "blue",
+          "name": "Types of beans",
+          "words": [
+            "LENTILS",
+            "LIMA",
+            "EDAMAME",
+            "MOTH"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "EPONYMS",
+          "difficulty": "purple",
+          "name": "Dog bark in different languages",
+          "words": [
+            "BLAF",
+            "HAM",
+            "MUNG",
+            "BHUF"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Types of Waves",
+          "category_b": "Things That Can Break (Idiomatically)",
+          "reason_a": "Heat wave",
+          "reason_b": "To 'break the heat' means to alleviate warm weather.",
+          "word": "HEAT"
+        },
+        {
+          "category_a": "Types of Waves",
+          "category_b": "Things That Can Break (Idiomatically)",
+          "reason_a": "Sound wave",
+          "reason_b": "To 'break the sound barrier' is a common phrase.",
+          "word": "SOUND"
+        },
+        {
+          "category_a": "HEAD ___",
+          "category_b": "Types of Waves",
+          "reason_a": "HEAD LIGHT",
+          "reason_b": "Light is commonly understood as a type of wave (light wave).",
+          "word": "LIGHT"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "EPONYMS",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
