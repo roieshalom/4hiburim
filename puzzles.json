@@ -7210,6 +7210,98 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "159",
+      "date": "20.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "Words for a Short Sleep",
+          "words": [
+            "NAP",
+            "DOZE",
+            "SNOOZE",
+            "WINK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "green",
+          "name": "Things with a 'HEAD'",
+          "words": [
+            "BED",
+            "HAMMER",
+            "LION",
+            "CABBAGE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "blue",
+          "name": "Things that STRIKE",
+          "words": [
+            "CLOCK",
+            "MATCH",
+            "OIL",
+            "JUDGE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "purple",
+          "name": "synonym for Match",
+          "words": [
+            "ACCORD",
+            "CONCUR",
+            "JIBE",
+            "TALLY"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things with a 'HEAD'",
+          "category_b": "Things that STRIKE",
+          "reason_a": "A hammer has a distinct head.",
+          "reason_b": "A hammer is primarily used to strike objects.",
+          "word": "HAMMER"
+        },
+        {
+          "category_a": "Things with a 'HEAD'",
+          "category_b": "Words for a Short Sleep",
+          "reason_a": "Refers to a 'bed head' (a disheveled hairstyle).",
+          "reason_b": "A bed is the primary place for sleeping.",
+          "word": "BED"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SYNONYMS",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "THINGS_THAT_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "HOMOPHONE_OF_NUMBER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
