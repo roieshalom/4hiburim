@@ -7302,6 +7302,83 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "160",
+      "date": "21.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "In the Library",
+          "words": [
+            "BOOK",
+            "SHELF",
+            "CARD",
+            "INDEX"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Ill Fortune",
+          "words": [
+            "JINX",
+            "CURSE",
+            "HEX",
+            "DOOM"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "blue",
+          "name": "Words Preceding 'Deck'",
+          "words": [
+            "SUN",
+            "POOL",
+            "OBSERVATION",
+            "FLIGHT"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "purple",
+          "name": "_____ Clock",
+          "words": [
+            "SAND",
+            "FLORAL",
+            "WATER",
+            "RADIO"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Expressions of Ill Fortune",
+          "category_b": "Things That BREAK",
+          "reason_a": "A jinx is a specific type of bad luck or spell causing misfortune.",
+          "reason_b": "One can 'break a jinx' to reverse its negative effects.",
+          "word": "JINX"
+        },
+        {
+          "category_a": "Things That BREAK",
+          "category_b": "Things You'd Find in a Library",
+          "reason_a": "To 'break a record' means to surpass a previous achievement.",
+          "reason_b": "Libraries and archives commonly house historical 'records' and documents.",
+          "word": "RECORD"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
