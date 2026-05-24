@@ -7625,6 +7625,76 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "164",
+      "date": "27.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "In a movie theater",
+          "words": [
+            "SCREEN",
+            "POSTER",
+            "SEAT",
+            "REEL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WAYS_TO_VERB",
+          "difficulty": "green",
+          "name": "Filter",
+          "words": [
+            "SIFT",
+            "STRAIN",
+            "PURIFY",
+            "REFINE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Seat models",
+          "words": [
+            "IBIZA",
+            "ARONA",
+            "LEON",
+            "ATECA"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ANAGRAM_OF_ONE_SOURCE",
+          "difficulty": "purple",
+          "name": "Movies starring Natalie Portman",
+          "words": [
+            "BLACK SWAN",
+            "CLOSER",
+            "JACKIE",
+            "HEAT"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Words that can complete 'take a ___'",
+          "category_b": "Things that can be snapped",
+          "reason_a": "'take a shot' is a familiar phrase",
+          "reason_b": "'snap a shot' is fairly common, as in photography",
+          "word": "SHOT"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
