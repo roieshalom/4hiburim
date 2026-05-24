@@ -7471,6 +7471,98 @@
           "tier": 1
         }
       ]
+    },
+    {
+      "id": "162",
+      "date": "25.05.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "ORDERED_SET_MEMBER",
+          "difficulty": "yellow",
+          "name": "Middle eastern rivers",
+          "words": [
+            "NILE",
+            "EURPHATES",
+            "TIGRIS",
+            "JORDAN"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "EPONYMS",
+          "difficulty": "green",
+          "name": "Famous Michaels",
+          "words": [
+            "JACKSON",
+            "CAINE",
+            "DOUGLAS",
+            "PHELPS"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ACROSTIC_FIRST_LETTERS",
+          "difficulty": "blue",
+          "name": "European dictators",
+          "words": [
+            "STALIN",
+            "TITO",
+            "MUSSOLINI",
+            "FRANCO"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "ORDERED_SET_MEMBER",
+          "difficulty": "purple",
+          "name": "Jackson 5 members",
+          "words": [
+            "JACKIE",
+            "JERMAINE",
+            "MICHAEL",
+            "MARLON"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "ROLL THE ___",
+          "category_b": "___ BOX",
+          "reason_a": "Common phrase 'roll the dice'",
+          "reason_b": "'Dice box' is a container for dice.",
+          "word": "DICE"
+        },
+        {
+          "category_a": "Things That Float",
+          "category_b": "___ BOX",
+          "reason_a": "Ice floats on water",
+          "reason_b": "'Ice box' is an old term for a refrigerator or cooler.",
+          "word": "ICE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HOMOPHONE_OF_LETTER",
+          "result": "shipped",
+          "tier": 3
+        },
+        {
+          "mechanic": "THINGS_THAT_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        }
+      ]
     }
   ]
 }
