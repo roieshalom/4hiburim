@@ -7563,6 +7563,68 @@
           "tier": 1
         }
       ]
+    },
+    {
+      "id": "163",
+      "date": "26.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "Fill to capacity",
+          "words": [
+            "STUFFING",
+            "LOAD",
+            "JAM",
+            "PACK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "green",
+          "name": "Words on buttons",
+          "words": [
+            "SAVE",
+            "BACK",
+            "LOCK",
+            "SHARE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Types of posts",
+          "words": [
+            "TWEET",
+            "POST",
+            "STORY",
+            "SNAP"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ACROSTIC_FIRST_LETTERS",
+          "difficulty": "purple",
+          "name": "Owned by Elon Musk",
+          "words": [
+            "X",
+            "TESLA",
+            "SPACEX",
+            "WET NELLIE"
+          ]
+        }
+      ],
+      "decoys": [],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
