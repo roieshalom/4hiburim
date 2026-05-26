@@ -571,7 +571,7 @@ button .icon {
 .about-btn {
   position: absolute;
   top: 0;
-  right: 0;
+  right: var(--spacing-sm);
   width: 26px;
   height: 26px;
   border-radius: 50%;
