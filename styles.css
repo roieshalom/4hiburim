@@ -137,6 +137,9 @@ h1 {
     font-size: var(--font-size-large);
     margin: 0 auto var(--spacing-sm);
   }
+  .header-row {
+    margin-top: 0;
+  }
 }
 
 .solve-counter {
