@@ -7695,6 +7695,76 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "165",
+      "date": "28.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Connect",
+          "words": [
+            "BOND",
+            "LINK",
+            "CONTACT",
+            "TIE"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "ABBREVIATION_EXPANSION",
+          "difficulty": "green",
+          "name": "Head of the country",
+          "words": [
+            "KING",
+            "KANZLER",
+            "EMPEROR",
+            "SUPREME LEADER"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "blue",
+          "name": "Card games",
+          "words": [
+            "HEARTS",
+            "BRIDGE",
+            "UNO",
+            "PRESIDENT"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "purple",
+          "name": "Types of chips",
+          "words": [
+            "POTATO",
+            "CHOCOLATE",
+            "BANANA",
+            "POKER"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Metaphors for repairing",
+          "category_b": "___ SPOT",
+          "reason_a": "Patch means to repair or fix something, especially as a metaphor.",
+          "reason_b": "Solvers may think of 'PATCH' as in a grass patch or a worn spot in fabric.",
+          "word": "PATCH"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
