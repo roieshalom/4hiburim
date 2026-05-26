@@ -539,7 +539,8 @@ button .icon {
   position: relative;
   width: 100%;
   max-width: 510px;
-  margin: 35px auto 0; /* space below the fixed info button */
+  margin: 16px auto 0;
+  padding-top: 34px; /* clears the 26px info button + small gap */
 }
 
 .message-overlay {
@@ -568,9 +569,9 @@ button .icon {
 
 /* ── Info / About button ───────────────────────────────────────────── */
 .about-btn {
-  position: fixed;
-  top: 12px;
-  right: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -593,20 +594,6 @@ button .icon {
   border-color: var(--color-text);
   color: var(--color-text);
   transform: scale(1.1);
-}
-
-/* On mobile: move button to top-left so it never fights the trophy on the right */
-@media (max-width: 599px) {
-  .about-btn {
-    right: auto;
-    left: 14px;
-  }
-}
-
-@media (min-width: 600px) {
-  .about-btn {
-    right: calc(50% - 242px);
-  }
 }
 
 /* ── About modal ───────────────────────────────────────────────────── */
