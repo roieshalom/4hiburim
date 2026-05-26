@@ -539,7 +539,7 @@ button .icon {
   position: relative;
   width: 100%;
   max-width: 510px;
-  margin: 35px auto 0;
+  margin: 35px auto 0; /* space below the fixed info button */
 }
 
 .message-overlay {
@@ -595,11 +595,11 @@ button .icon {
   transform: scale(1.1);
 }
 
-/* On mobile push the whole container down so the fixed info button
-   doesn't overlap the title/trophy row */
+/* On mobile: move button to top-left so it never fights the trophy on the right */
 @media (max-width: 599px) {
-  .container {
-    margin-top: 52px;
+  .about-btn {
+    right: auto;
+    left: 14px;
   }
 }
 
