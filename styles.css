@@ -595,11 +595,11 @@ button .icon {
   transform: scale(1.1);
 }
 
-/* On mobile the button is fixed top-right; push the header's right padding
-   out far enough so the trophy never slides under it */
+/* On mobile push the whole container down so the fixed info button
+   doesn't overlap the title/trophy row */
 @media (max-width: 599px) {
-  .header-row {
-    padding-right: 48px;
+  .container {
+    margin-top: 52px;
   }
 }
 
