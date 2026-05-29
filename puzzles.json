@@ -7848,6 +7848,76 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "167",
+      "date": "30.05.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "CHARACTERS_IN_ONE_WORK",
+          "difficulty": "yellow",
+          "name": "Women in Beatles' songs",
+          "words": [
+            "ELEANOR",
+            "JULIA",
+            "MARGO",
+            "LUCY"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Cartoons' wives",
+          "words": [
+            "MINI",
+            "DAISY",
+            "LOLA",
+            "WILMA"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "ORDERED_SET_MEMBER",
+          "difficulty": "blue",
+          "name": "queens of england",
+          "words": [
+            "ELIZABETH",
+            "VICTORIA",
+            "ANNE",
+            "MARY"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ANAGRAM_OF_ONE_SOURCE",
+          "difficulty": "purple",
+          "name": "Branjelina's kids",
+          "words": [
+            "KNOX",
+            "VIVIENNE",
+            "SHILOH",
+            "ZAHARA"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Phrases for exiting discreetly",
+          "category_b": "Things that protect your head",
+          "reason_a": "Waving goodbye is a subtle exit gesture.",
+          "reason_b": "A \"wave\" can be thought of as a covering motion or protector (as in a wave of the hand to shield one's face); \"hand\" is also sometimes slang for something you use for defense, tempting mis-association.",
+          "word": "WAVE HAND"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
