@@ -7918,6 +7918,89 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "168",
+      "date": "31.05.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "wall of ____",
+          "words": [
+            "CHINA",
+            "SOUND",
+            "FIRE",
+            "DEATH"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "CHAIN_THROUGH_HUB",
+          "difficulty": "green",
+          "name": "Euroasian countries",
+          "words": [
+            "RUSSIA",
+            "CYPRUS",
+            "AZERBAIJAN",
+            "TURKEY"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Poultry",
+          "words": [
+            "CHICKEN",
+            "PIGEON",
+            "DUCK",
+            "GOOSE"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "EPONYMS",
+          "difficulty": "purple",
+          "name": "Fender models",
+          "words": [
+            "STRATOCASTER",
+            "TELECASTER",
+            "JAZZMASTER",
+            "JAGUAR"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things with a hidden fastener",
+          "category_b": "Can complete 'power ___'",
+          "reason_a": "paperclip (fastener) is hidden in 'clip'",
+          "reason_b": "Solvers may attempt 'power clip' as a plausible modern device or concept.",
+          "word": "CLIP"
+        },
+        {
+          "category_a": "Can complete 'power ___'",
+          "category_b": "Things with a hidden fastener",
+          "reason_a": "Power button is a physical button used to turn on electronics.",
+          "reason_b": "Button is directly a fastener; solvers may want to place it there, but in this puzzle, it lands in the idiom group instead.",
+          "word": "BUTTON"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_AT_END",
+          "reason": "Could not find four everyday words ending with a hidden fastener cleanly, too forced.",
+          "result": "abandoned",
+          "tier": 3
+        },
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
