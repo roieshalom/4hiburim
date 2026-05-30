@@ -8001,6 +8001,90 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "169",
+      "date": "01.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "Things found in a backpack",
+          "words": [
+            "STICKER",
+            "RECEIPT",
+            "PEN",
+            "GUM"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Sleeping like a ___",
+          "words": [
+            "LOG",
+            "BABY",
+            "ROCK",
+            "DOG"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Can be filtered",
+          "words": [
+            "UV",
+            "WATER",
+            "EMAILS",
+            "NOISE"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ANAGRAM_OF_ONE_SOURCE",
+          "difficulty": "purple",
+          "name": "Building materials",
+          "words": [
+            "BRICK",
+            "DRYWALL",
+            "CONCRETE",
+            "MUD"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things found in a backpack",
+          "category_b": "Metaphors for obstruction",
+          "reason_a": "Gum is a common backpack item.",
+          "reason_b": "Gum can mean to block something up (gum up the works).",
+          "word": "GUM"
+        },
+        {
+          "category_a": "Words hiding the name of an insect",
+          "category_b": "Can be filtered",
+          "reason_a": "FILTER contains 'F-LY'.",
+          "reason_b": "A literal filter is used to filter substances, making it a natural candidate for both.",
+          "word": "FILTER"
+        },
+        {
+          "category_a": "Metaphors for obstruction",
+          "category_b": "Can be filtered",
+          "reason_a": "Block = to impede or obstruct.",
+          "reason_b": "You can block spam emails with a filter.",
+          "word": "BLOCK"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
