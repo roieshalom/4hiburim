@@ -8085,6 +8085,96 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "170",
+      "date": "02.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Book ___",
+          "words": [
+            "WORM",
+            "REPORT",
+            "CARD",
+            "STORE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "green",
+          "name": "Portfolio websites",
+          "words": [
+            "DRIBBBLE",
+            "WIX",
+            "SQUARESPACE",
+            "BEHANCE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "blue",
+          "name": "Basketball terms",
+          "words": [
+            "REBOUND",
+            "DUNK",
+            "SWISH",
+            "BANK"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "difficulty": "purple",
+          "name": "Wander & Explore",
+          "words": [
+            "TRAVEL",
+            "VOYAGE",
+            "TOUR",
+            "EXPEDITE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Basketball scoring terms",
+          "category_b": "Each starts with a postal term",
+          "reason_a": "To bank a shot means to score off the backboard",
+          "reason_b": "Bank is also a term in mailing (mail bank as a sorting place) and 'bank' could fit as a hidden word start, tempting a solver to look for a wordplay.",
+          "word": "BANK"
+        },
+        {
+          "category_a": "BOOK ___",
+          "category_b": "Each starts with a postal term",
+          "reason_a": "Book card (library thing), card book",
+          "reason_b": "CARD is associated with 'postcard', a postal term, possibly tempting solvers here.",
+          "word": "CARD"
+        },
+        {
+          "category_a": "Can be closed",
+          "category_b": "BOOK ___",
+          "reason_a": "Window shades can be closed",
+          "reason_b": "Book shades is not a phrase, but 'shades' in books (literature, nuances) could trick a literary-minded solver.",
+          "word": "SHADES"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Could not find four common words hiding postal terms as consecutive letters naturally",
+          "result": "abandoned",
+          "tier": 3
+        },
+        {
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
