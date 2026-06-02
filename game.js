@@ -210,10 +210,11 @@ function updateTrophyDisplay(value) {
 }
 
 function incrementTrophyCount() {
-  const current = getTrophyCount();
-  const next = current + 1;
-  setTrophyCount(next);
-  updateTrophyDisplay(next);
+  const before = getTrophyCount();
+  const after = before + 1;
+  setTrophyCount(after);
+  updateTrophyDisplay(after);
+  trackPuzzleEvent('trophy_incremented', { before, after });
 }
 
 // ------------------ GAME INITIALIZATION ------------------
