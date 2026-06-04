@@ -8343,6 +8343,96 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "173",
+      "date": "05.06.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "yellow",
+          "name": "Can be broken",
+          "words": [
+            "MIRROR",
+            "RECORD",
+            "SEAL",
+            "FILE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "green",
+          "name": "In a magician's act",
+          "words": [
+            "RABBIT",
+            "WAND",
+            "SCARF",
+            "CARDS"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Winter clothes",
+          "words": [
+            "PARKA",
+            "BALACLAVA",
+            "CARDIGAN",
+            "MITTENS"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "CROSS_LANGUAGE",
+          "difficulty": "purple",
+          "name": "Arabic sweets",
+          "words": [
+            "MAAMOUL",
+            "QATAYEF",
+            "KNAFEH",
+            "BASBOUSA"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "LIGHT ___",
+          "category_b": "Parts of a plant, but also body parts",
+          "reason_a": "Light face is a term in printing; 'face' is also on clocks (clock face)",
+          "reason_b": "Face is both part of a plant (sunflower face) and a body part, pulling as a decoy.",
+          "word": "FACE"
+        },
+        {
+          "category_a": "LIGHT ___",
+          "category_b": "Parts of a plant, but also body parts",
+          "reason_a": "'Light spring' is a seasonal term and palette in color theory",
+          "reason_b": "'Spring' makes one think of leaves and roots, tempting confusion with the plant/body part group.",
+          "word": "SPRING"
+        },
+        {
+          "category_a": "Things you can 'leak'",
+          "category_b": "LIGHT ___",
+          "reason_a": "'Leak the clock' is a stretch but 'clock' cues time, which leaks, and clock face/hands are literal",
+          "reason_b": "Light clock is an actual physics term; clock hands and face connect to the blue group.",
+          "word": "CLOCK"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Tried hiding plant names inside words, but couldn't find four fair surface words without obscure fills or forced overlap. Rebuilt using other underused mechanics with more decoy tension.",
+          "result": "abandoned",
+          "tier": 3
+        },
+        {
+          "mechanic": "CAN_BE_VERBED",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
