@@ -8517,6 +8517,90 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "175",
+      "date": "08.06.2026",
+      "categories": [
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "difficulty": "yellow",
+          "name": "Hiding a tree",
+          "words": [
+            "SPINE",
+            "FIRE",
+            "SOAK",
+            "FIGURE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SUFFIX_BLANK",
+          "difficulty": "green",
+          "name": "French ____",
+          "words": [
+            "TOAST",
+            "PRESS",
+            "HORN",
+            "KISS"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Beer glass types",
+          "words": [
+            "PINT",
+            "IPA",
+            "TULIP",
+            "SNIFTER"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "CROSS_LANGUAGE",
+          "difficulty": "purple",
+          "name": "Symbols of The Netherlands (single form)",
+          "words": [
+            "WINDMILL",
+            "GOUDA",
+            "DELFTWARE",
+            "WOODEN CLOG"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that can 'sound' (as a verb or noun)",
+          "category_b": "Each word hides a kind of tree",
+          "reason_a": "Bark is a sound (dog bark), and 'sound' can mean to make noise.",
+          "reason_b": "Bark comes from trees, and all the tree words are hidden in the purple group; BARK may tempt as a fake tree connection.",
+          "word": "BARK"
+        },
+        {
+          "category_a": "Things that can 'sound' (as a verb or noun)",
+          "category_b": "___ OUT",
+          "reason_a": "Horn is an instrument that makes sound.",
+          "reason_b": "HORN OUT is a plausible phrase; 'horn out' can mean to sound a horn as a warning.",
+          "word": "HORN"
+        },
+        {
+          "category_a": "Ways to say 'leave' (phrasal verbs)",
+          "category_b": "___ OUT",
+          "reason_a": "'Sign off' means to leave or end participation.",
+          "reason_b": "People might think of 'sign out' (log out), which overlaps with 'sign off' and both mean leaving.",
+          "word": "SIGN OFF"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
