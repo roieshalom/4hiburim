@@ -8601,6 +8601,98 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "176",
+      "date": "09.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "Payment Networks",
+          "words": [
+            "DINERS CLUB",
+            "MASTERCARD",
+            "DISCOVER",
+            "AMEX"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "green",
+          "name": "Can be raised",
+          "words": [
+            "BAR",
+            "KIDS",
+            "FLAG",
+            "HAND"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "FIFA 2026 world cup partners",
+          "words": [
+            "ADIDAS",
+            "VISA",
+            "QATAR AIRWAYS",
+            "COCA-COLA"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "COMPOUND_BOTH_WAYS",
+          "difficulty": "purple",
+          "name": "To find out",
+          "words": [
+            "LEARN",
+            "DETERMINE",
+            "REALIZE",
+            "UNMASK"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Can be raised",
+          "category_b": "___ FAN",
+          "reason_a": "You raise your hand.",
+          "reason_b": "Hand fan is a common phrase/object, tempting a misgroup.",
+          "word": "HAND"
+        },
+        {
+          "category_a": "___ FAN",
+          "category_b": "Can be raised",
+          "reason_a": "Ceiling fan is a very common phrase.",
+          "reason_b": "Raise the ceiling (e.g., debt ceiling) is a familiar expression.",
+          "word": "CEILING"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "CAN_BE_VERBED",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
