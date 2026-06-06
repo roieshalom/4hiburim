@@ -8792,6 +8792,97 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "178",
+      "date": "11.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SUFFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "OPEN ___",
+          "words": [
+            "BOOK",
+            "HOUSE",
+            "FIRE",
+            "CODE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WAYS_TO_VERB",
+          "difficulty": "green",
+          "name": "To make an appointment",
+          "words": [
+            "RESERVE",
+            "SCHEDULE",
+            "ARRANGE",
+            "SET UP"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WAYS_TO_VERB",
+          "difficulty": "blue",
+          "name": "Daft Punk's song, minus \"er\"",
+          "words": [
+            "HARD",
+            "BETT",
+            "FAST",
+            "STRONG"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_AT_END",
+          "difficulty": "purple",
+          "name": "Expressing unity",
+          "words": [
+            "SOLID",
+            "IN UNISON",
+            "HARMONIOUS",
+            "CONSISTENT"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "OPEN ___",
+          "category_b": "Ways to tell someone to be quiet",
+          "reason_a": "OPEN MIC is a common phrase for a live-mic event",
+          "reason_b": "Cut the mic is a way to silence someone; feels like it belongs with hush commands",
+          "word": "MIC"
+        },
+        {
+          "category_a": "Add 'P' to the front to make a new word",
+          "category_b": "OPEN ___",
+          "reason_a": "LATE becomes PLATE when you add P",
+          "reason_b": "OPEN LATE is a familiar storefront phrase, tempting a misgroup",
+          "word": "LATE"
+        },
+        {
+          "category_a": "Under the ___",
+          "category_b": "OPEN ___",
+          "reason_a": "Under the hood is a common idiom/phrase",
+          "reason_b": "OPEN HOOD is a natural automotive phrase, pulling it toward that group",
+          "word": "HOOD"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "reason": "Could not find four clean hosts for a single hidden set that also offered cross-board decoys without resorting to obscure words",
+          "result": "abandoned",
+          "tier": 3
+        },
+        {
+          "mechanic": "ADD_LETTER",
+          "reason": "Strong wordplay anchor with natural decoys and no surface tells",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
