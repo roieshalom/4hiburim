@@ -8693,6 +8693,105 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "177",
+      "date": "10.06.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "CHARACTERS_IN_ONE_WORK",
+          "difficulty": "yellow",
+          "name": "\"The Office\" characters",
+          "words": [
+            "JIM",
+            "PAM",
+            "DWIGHT",
+            "MICHAEL"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "green",
+          "name": "Where you hang your coat",
+          "words": [
+            "GARDEROBE",
+            "PEG",
+            "RACK",
+            "HANGER"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "blue",
+          "name": "Off the ___",
+          "words": [
+            "HOOK",
+            "CUFF",
+            "RECORD",
+            "WALL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WORKS_BY_ONE_MAKER",
+          "difficulty": "purple",
+          "name": "Michael Jackson's albums",
+          "words": [
+            "THRILLER",
+            "BAD",
+            "BEN",
+            "INVINCIBLE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Touchscreen motions",
+          "category_b": "Synonyms for “steal”",
+          "reason_a": "A named gesture on phones and tablets.",
+          "reason_b": "To swipe something is to steal it.",
+          "word": "SWIPE"
+        },
+        {
+          "category_a": "Touchscreen motions",
+          "category_b": "Synonyms for “steal”",
+          "reason_a": "Common multi-touch gesture to zoom.",
+          "reason_b": "In British English, to pinch can mean to steal.",
+          "word": "PINCH"
+        },
+        {
+          "category_a": "Add S to the start to form a new word",
+          "category_b": "OFF THE ___ (common phrases)",
+          "reason_a": "Becomes STOP when adding S.",
+          "reason_b": "“Off the top (of my head)” is a familiar phrase, tempting a fit in this idiom set.",
+          "word": "TOP"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "TAXONOMY",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "SYNONYMS",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
