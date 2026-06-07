@@ -8883,6 +8883,105 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "179",
+      "date": "12.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "Key types",
+          "words": [
+            "SKELETON",
+            "ALLEN",
+            "ALPHANUMERIC",
+            "PIANO"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "green",
+          "name": "In the kitchen",
+          "words": [
+            "TOASTER",
+            "BLENDER",
+            "MIXER",
+            "MICROWAVE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Shapes",
+          "words": [
+            "PENTAGON",
+            "TRIANGLE",
+            "CRESCENT",
+            "GÖMBÖC"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ACROSTIC_FIRST_LETTERS",
+          "difficulty": "purple",
+          "name": "Work at a restaurant",
+          "words": [
+            "HOST",
+            "PICCOLO",
+            "DISHWASHER",
+            "CHEF"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "ON THE ___",
+          "category_b": "On your face",
+          "reason_a": "on the nose is a common idiom meaning exactly right",
+          "reason_b": "Nose is also a literal facial feature, tempting a misgroup.",
+          "word": "NOSE"
+        },
+        {
+          "category_a": "On your face",
+          "category_b": "ON THE ___",
+          "reason_a": "Chin is a facial feature",
+          "reason_b": "take it on the chin is a familiar phrase with the same stem.",
+          "word": "CHIN"
+        },
+        {
+          "category_a": "Can be tipped",
+          "category_b": "ON THE ___",
+          "reason_a": "tip the scales is a standard expression",
+          "reason_b": "on the scales (as when weighing) can mislead solvers toward the idiom stem.",
+          "word": "SCALES"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "CAN_BE_VERBED",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "TAXONOMY",
+          "result": "shipped",
+          "tier": 1
+        }
+      ]
     }
   ]
 }
