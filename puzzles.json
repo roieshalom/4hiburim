@@ -8982,6 +8982,98 @@
           "tier": 1
         }
       ]
+    },
+    {
+      "id": "180",
+      "date": "13.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "FIFA world cup balls",
+          "words": [
+            "TELSTAR",
+            "TANGO",
+            "JABULANI",
+            "BRAZUCA"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "green",
+          "name": "UNDER THE ___",
+          "words": [
+            "HOOD",
+            "RADAR",
+            "TABLE",
+            "MILKY WAY"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "blue",
+          "name": "Start with a silent letter",
+          "words": [
+            "KNEE",
+            "WRITE",
+            "GNOME",
+            "HOUR"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "purple",
+          "name": "National dances",
+          "words": [
+            "SAMBA",
+            "FLAMENCO",
+            "DEBKA",
+            "LAKALAKA"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Add L to the front to make a new word",
+          "category_b": "BLACK ___",
+          "reason_a": "ICE becomes LICE with L added",
+          "reason_b": "BLACK ICE is a very common phrase, tempting a misgroup",
+          "word": "ICE"
+        },
+        {
+          "category_a": "Add L to the front to make a new word",
+          "category_b": "BLACK ___",
+          "reason_a": "INK becomes LINK with L added",
+          "reason_b": "BLACK INK is a standard pairing",
+          "word": "INK"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SUFFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
