@@ -9242,6 +9242,83 @@
           "tier": 4
         }
       ]
+    },
+    {
+      "id": "183",
+      "date": "16.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "Slang for Marijuana",
+          "words": [
+            "WEED",
+            "POT",
+            "GRASS",
+            "BROCCOLI"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "green",
+          "name": "Lovers of Superheroes",
+          "words": [
+            "MARY JANE",
+            "SELINA",
+            "PEPPER",
+            "IRIS"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CHARACTERS_IN_ONE_WORK",
+          "difficulty": "blue",
+          "name": "Names from \"Family Guy\"",
+          "words": [
+            "QUAGMIRE",
+            "LOIS",
+            "STEWIE",
+            "BRIAN"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "purple",
+          "name": "_____ Pan",
+          "words": [
+            "PETER",
+            "CAKE",
+            "FRYING",
+            "DRIP"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "___ SHIRT",
+          "category_b": "Can be folded",
+          "reason_a": "DRESS forms the phrase DRESS SHIRT",
+          "reason_b": "Clothing can be folded, so DRESS lures solvers toward the foldable set",
+          "word": "DRESS"
+        },
+        {
+          "category_a": "At a car wash",
+          "category_b": "Can be folded",
+          "reason_a": "Used to dry the car",
+          "reason_b": "A towel is a classic foldable item, pulling it toward the fold set",
+          "word": "TOWEL"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "CHAIN_THROUGH_HUB",
+          "result": "shipped",
+          "tier": 4
+        }
+      ]
     }
   ]
 }
