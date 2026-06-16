@@ -9417,6 +9417,91 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "185",
+      "date": "18.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "Things you stick on a fridge",
+          "words": [
+            "MAGNET",
+            "PHOTO",
+            "LIST",
+            "COUPON"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Built-in macOS apps",
+          "words": [
+            "BOOKS",
+            "FREEFORM",
+            "NUMBERS",
+            "SAFARI"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "blue",
+          "name": "___ Mark",
+          "words": [
+            "BOOK",
+            "WATER",
+            "TRADE",
+            "BENCH"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "purple",
+          "name": "Sticky things",
+          "words": [
+            "GLUE",
+            "GUM",
+            "TAPE",
+            "HONEY"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that stick to other stuff",
+          "category_b": "Things you stick on a fridge",
+          "reason_a": "Tape adheres by design.",
+          "reason_b": "You often use tape to put a PHOTO or LIST on the fridge, tempting a misgroup.",
+          "word": "TAPE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "FOUND_IN_SCENE",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "THINGS_THAT_VERB",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
