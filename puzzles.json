@@ -9502,6 +9502,97 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "186",
+      "date": "19.06.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "CHARACTERS_IN_ONE_WORK",
+          "difficulty": "yellow",
+          "name": "Mean Girls crew",
+          "words": [
+            "REGINA",
+            "CADY",
+            "JANIS",
+            "GRETCHEN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "green",
+          "name": "Hit the ___",
+          "words": [
+            "HAY",
+            "ROAD",
+            "BOOKS",
+            "SPOT"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Roles on the golf course",
+          "words": [
+            "ASSISTANT",
+            "MARSHAL",
+            "RANGER",
+            "STARTER"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "difficulty": "purple",
+          "name": "Things you flip",
+          "words": [
+            "FINGER",
+            "COIN",
+            "MATTRESS",
+            "SWITCH"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Metaphors for being very tired",
+          "category_b": "“Hit the ___” (idioms)",
+          "reason_a": "Beat = exhausted",
+          "reason_b": "Hit and beat are near-synonyms, tempting solvers to lump BEAT with the 'hit' idiom set.",
+          "word": "BEAT"
+        },
+        {
+          "category_a": "Can be folded",
+          "category_b": "“Hit the ___” (idioms)",
+          "reason_a": "Maps are famously foldable",
+          "reason_b": "MAP feels travel-coded and wants to sit with ROAD (hit the road).",
+          "word": "MAP"
+        },
+        {
+          "category_a": "Add one letter (same for all) to make a new common word",
+          "category_b": "“Hit the ___” (idioms)",
+          "reason_a": "LEND → BLEND via +B",
+          "reason_b": "LEND pairs naturally with BOOKS (lend books), misleading toward the idiom set that includes BOOKS.",
+          "word": "LEND"
+        },
+        {
+          "category_a": "Can be folded",
+          "category_b": "“Hit the ___” (idioms)",
+          "reason_a": "Paper is easily folded",
+          "reason_b": "PAPER and BOOKS live in the same reading/study space, which can misdirect solvers toward grouping by theme instead of the exact idiom stem.",
+          "word": "PAPER"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
