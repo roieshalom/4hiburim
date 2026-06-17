@@ -9671,6 +9671,90 @@
           "tier": null
         }
       ]
+    },
+    {
+      "id": "188",
+      "date": "21.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Gods",
+          "words": [
+            "ISIS",
+            "XENU",
+            "LOKI",
+            "YALDABAOTH"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "green",
+          "name": "Children's book characters",
+          "words": [
+            "PIPPI",
+            "ALICE",
+            "GEORGE",
+            "MAX"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "blue",
+          "name": "Things that charge",
+          "words": [
+            "BULL",
+            "BANK",
+            "BATTERY",
+            "GRAND JURY"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "COMPOUND_BOTH_WAYS",
+          "difficulty": "purple",
+          "name": "Grand ___",
+          "words": [
+            "CANYON",
+            "MASTER",
+            "DAME",
+            "MAMA"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that charge",
+          "category_b": "SMART ___",
+          "reason_a": "Phones need to charge up",
+          "reason_b": "Tempting because smartphone is common, but PHONE isn’t in the SMART set here",
+          "word": "PHONE"
+        },
+        {
+          "category_a": "SMART ___",
+          "category_b": "Things that charge",
+          "reason_a": "Smart watch is a familiar product",
+          "reason_b": "Modern smartwatches do charge, nudging solvers to misplace it",
+          "word": "WATCH"
+        },
+        {
+          "category_a": "SMART ___",
+          "category_b": "Things that charge",
+          "reason_a": "Smart car fits the prefix pattern",
+          "reason_b": "Electric cars charge, so CAR can feel like it belongs with BATTERY/PHONE",
+          "word": "CAR"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
