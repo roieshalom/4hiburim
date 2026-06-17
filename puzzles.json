@@ -9593,6 +9593,84 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "187",
+      "date": "20.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "At a picnic",
+          "words": [
+            "BLANKET",
+            "COOLER",
+            "ANTS",
+            "NAPKIN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "green",
+          "name": "Point winning moves in sports",
+          "words": [
+            "GOAL",
+            "TRY",
+            "SIX",
+            "TOUCHDOWN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WAYS_TO_VERB",
+          "difficulty": "blue",
+          "name": "To annoy",
+          "words": [
+            "BUG",
+            "IRK",
+            "VEX",
+            "PESTER"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ANAGRAM_OF_ONE_SOURCE",
+          "difficulty": "purple",
+          "name": "One word scrambled",
+          "words": [
+            "CATER",
+            "CRATE",
+            "TRACE",
+            "REACT"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Ways to annoy (as verbs)",
+          "category_b": "At a picnic",
+          "reason_a": "BUG means to annoy.",
+          "reason_b": "Bugs show up at picnics, tempting a scene-based grouping.",
+          "word": "BUG"
+        },
+        {
+          "category_a": "Drop one letter (the same one) to make a new word",
+          "category_b": "At a picnic",
+          "reason_a": "SCONE → drop S → CONE.",
+          "reason_b": "A SCONE is food you could pack for a picnic.",
+          "word": "SCONE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "MIXED",
+          "reason": "Balanced Tier1/2/3 set with documented cross-pulls",
+          "result": "shipped",
+          "tier": null
+        }
+      ]
     }
   ]
 }
