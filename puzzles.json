@@ -9755,6 +9755,97 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "189",
+      "date": "22.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "Rubber ___",
+          "words": [
+            "BAND",
+            "STAMP",
+            "DUCK",
+            "CHICKEN"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "green",
+          "name": "Collectibles (single form)",
+          "words": [
+            "ACTION FIGURE",
+            "COIN",
+            "RECORD",
+            "CARD"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "blue",
+          "name": "Popeye characters",
+          "words": [
+            "WIMPY",
+            "OLIVE",
+            "GEEZIL",
+            "EUGENE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "difficulty": "purple",
+          "name": "Oil types",
+          "words": [
+            "VEGETABLE",
+            "COCONUT",
+            "HYDRAULIC",
+            "CBD"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "RUBBER ___",
+          "category_b": "Metaphors for being scared",
+          "reason_a": "Forms the common phrase rubber chicken",
+          "reason_b": "Being a 'chicken' means scared, tempting a misgroup",
+          "word": "CHICKEN"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "HIDDEN_WORD_AT_START",
+          "reason": "Could not find four natural host words with a clean, non-banned hidden set that also cross-pulled well with the rest of the board",
+          "result": "abandoned",
+          "tier": 3
+        },
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "SYNONYMS",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
