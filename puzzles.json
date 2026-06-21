@@ -9846,6 +9846,83 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "190",
+      "date": "23.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "Found on a map",
+          "words": [
+            "RIVER",
+            "SCALE",
+            "LEGEND",
+            "BORDER"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "green",
+          "name": "Anatomical Outer Units",
+          "words": [
+            "SCUTE",
+            "SPINE",
+            "DENTICLE",
+            "QUILL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "blue",
+          "name": "Things that bounce",
+          "words": [
+            "BALL",
+            "CHECK",
+            "EMAIL",
+            "LIGHT"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CHARACTERS_IN_ONE_WORK",
+          "difficulty": "purple",
+          "name": "Characters in The Big Lebowski",
+          "words": [
+            "DUDE",
+            "WALTER",
+            "DONNY",
+            "MAUDE"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "TURN THE ___",
+          "category_b": "Found on a map",
+          "reason_a": "“Turn the page” is a common idiom.",
+          "reason_b": "Maps in atlases live on pages, tempting a misgroup.",
+          "word": "PAGE"
+        },
+        {
+          "category_a": "TURN THE ___",
+          "category_b": "Found on a map",
+          "reason_a": "“Turn the corner” is a fixed expression.",
+          "reason_b": "Maps literally have corners, creating cross-pull.",
+          "word": "CORNER"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
