@@ -9923,6 +9923,90 @@
           "tier": 3
         }
       ]
+    },
+    {
+      "id": "191",
+      "date": "24.06.2026",
+      "categories": [
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "yellow",
+          "name": "Things that click when used",
+          "words": [
+            "PEN",
+            "LIGHTER",
+            "MOUSE",
+            "SEATBELT"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "green",
+          "name": "More than...",
+          "words": [
+            "HEAVIER",
+            "BIGGER",
+            "TALLER",
+            "LONGER"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Seans",
+          "words": [
+            "COMBS",
+            "CONNERY",
+            "LENNON",
+            "PAUL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "Wrapped around us",
+          "words": [
+            "BOA",
+            "SCARF",
+            "SARONG",
+            "BANDANA"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Things that click when used",
+          "category_b": "Can be rolled (literally or figuratively)",
+          "reason_a": "The buckle makes a distinct click when latched.",
+          "reason_b": "Seatbelts retract and roll up, tempting placement with SLEEVES/EYES/DICE/SUSHI.",
+          "word": "SEATBELT"
+        },
+        {
+          "category_a": "___ PRINT",
+          "category_b": "Can be rolled (literally or figuratively)",
+          "reason_a": "Forms the common phrase 'fingerprint'.",
+          "reason_b": "A 'finger roll' is a well-known basketball move, luring it toward the rollable set.",
+          "word": "FINGER"
+        },
+        {
+          "category_a": "Things that click when used",
+          "category_b": "Can be rolled (literally or figuratively)",
+          "reason_a": "Computer mice click when pressing buttons.",
+          "reason_b": "Older mice and scroll wheels roll, creating cross-pull toward the rolling group.",
+          "word": "MOUSE"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
