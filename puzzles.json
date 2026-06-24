@@ -10007,6 +10007,105 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "192",
+      "date": "25.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "On a bicycle",
+          "words": [
+            "PEDAL",
+            "CHAIN",
+            "BELL",
+            "SADDLE"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "green",
+          "name": "Terms with “Liberty”",
+          "words": [
+            "SHIP",
+            "ISLAND",
+            "MUTUAL",
+            "AT"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Naturally formed landscapes",
+          "words": [
+            "MESA",
+            "DUNE",
+            "ATOLL",
+            "DELTA"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "purple",
+          "name": "Famous elephants",
+          "words": [
+            "BABAR",
+            "DUMBO",
+            "HATHI",
+            "TANTOR"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "“Take a ___” (common phrases)",
+          "category_b": "On a bicycle",
+          "reason_a": "“take a seat” is a common phrase",
+          "reason_b": "A bicycle has a seat; solvers may try to drop SEAT into the bike set.",
+          "word": "SEAT"
+        },
+        {
+          "category_a": "SADDLE ___",
+          "category_b": "On a bicycle",
+          "reason_a": "SADDLE BAG is a standard compound",
+          "reason_b": "A saddlebag is a common bike accessory, tempting a move to the bike scene.",
+          "word": "BAG"
+        },
+        {
+          "category_a": "On a bicycle",
+          "category_b": "Add W to make a new word",
+          "reason_a": "A bell is mounted on many bikes",
+          "reason_b": "Looks like it could fit the add-W trick (BELL → WELL), but it’s not in that set.",
+          "word": "BELL"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "FOUND_IN_SCENE",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
+      ]
     }
   ]
 }
