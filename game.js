@@ -942,3 +942,26 @@ window.updateDisplay = updateDisplayV2;
     }
   });
 })();
+
+// ── Weekly-cadence announcement banner ───────────────────────────────────────
+// Auto-hides after the cutoff date. Once the user clicks X, the dismissal is
+// stored in localStorage so the banner does not reappear on reload.
+(function () {
+  const CUTOFF = '2026-07-13';                  // today + 2 weeks (today: 2026-06-29)
+  const DISMISS_KEY = 'grooped-weekly-banner-dismissed';
+  const banner = document.getElementById('weekly-announcement');
+  if (!banner) return;
+  const todayIso = new Date().toISOString().slice(0, 10);
+  if (todayIso >= CUTOFF) return;
+  if (localStorage.getItem(DISMISS_KEY) === '1') return;
+  banner.hidden = false;
+  const closeBtn = document.getElementById('announcement-close');
+  if (!closeBtn) return;
+  const dismiss = (e) => {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+    banner.hidden = true;
+    try { localStorage.setItem(DISMISS_KEY, '1'); } catch (err) { /* private mode etc. */ }
+  };
+  closeBtn.addEventListener('click', dismiss);
+  closeBtn.addEventListener('pointerup', dismiss);
+})();

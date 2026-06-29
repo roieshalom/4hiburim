@@ -889,3 +889,45 @@ button .icon {
     font-size: 18px;
   }
 }
+
+/* ── Weekly cadence announcement banner ────────────────────────────────────── */
+/* The [hidden] selector specificity matches .announcement and would lose to
+   our display:flex below; override explicitly so banner.hidden = true hides it. */
+.announcement[hidden] { display: none; }
+
+.announcement {
+  width: 100%;                 /* span full viewport — body is flex-center, so without this we'd shrink to content */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: 8px var(--spacing-md);
+  background: oklch(0.97 0.03 295);
+  border-bottom: 1px solid oklch(0.88 0.06 295);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-small);
+  color: var(--color-text);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.announcement__text { max-width: 510px; }
+
+.announcement__close {
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+.announcement__close:hover { color: var(--color-text); }
+
+@media (max-width: 480px) {
+  .announcement       { font-size: 12px; padding: 6px var(--spacing-sm); gap: 6px; }
+  .announcement__text { text-align: left; }
+}

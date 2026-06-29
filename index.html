@@ -41,6 +41,12 @@
 </head>
 
 <body>
+  <!-- Weekly-cadence announcement (auto-hides after 2026-07-13) -->
+  <div class="announcement" id="weekly-announcement" hidden>
+    <span class="announcement__text">Grooped is going weekly. New puzzles every Sunday. Crafted, not cranked out.</span>
+    <button class="announcement__close" id="announcement-close" aria-label="Dismiss">×</button>
+  </div>
+
   <div class="container">
     <button class="about-btn" id="about-btn" aria-label="About">i</button>
 
@@ -127,7 +133,7 @@
     </div>
   </div>
 
-  <script src="game.js"></script>
+  <script src="game.js?v=banner1"></script>
 
   <!-- Mixpanel -->
   <script type="text/javascript">
