@@ -10182,6 +10182,83 @@
           "result": "shipped",
           "tier": 3
         }
+       ]
+      },   
+      {
+      "id": "194",
+      "date": "30.06.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "yellow",
+          "name": "___ BUG",
+          "words": [
+            "BED",
+            "LOVE",
+            "LADY",
+            "JITTER"
+          ]
+        },
+        {
+          "tier": 3,
+          "mechanic": "ADD_LETTER",
+          "difficulty": "green",
+          "name": "Horned animals",
+          "words": [
+            "IBEX",
+            "IMPALA",
+            "ELK",
+            "KUDU"
+          ]
+        },
+        {
+          "tier": null,
+          "mechanic": null,
+          "difficulty": "blue",
+          "name": "Paul McCartney's albums",
+          "words": [
+            "RAM",
+            "RUSHES",
+            "NEW",
+            "CHOBA B CCCP"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "purple",
+          "name": "Places to grow flowers",
+          "words": [
+            "PLANTER",
+            "PATCH",
+            "YARD",
+            "PLOT"
+          ]
+        }
+      ],
+      "decoys": [],
+      "attempt_log": [
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "METAPHOR_SUBSTITUTES",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "WAYS_TO_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "ADD_LETTER",
+          "result": "shipped",
+          "tier": 3
+        }
       ]
     }
   ]
