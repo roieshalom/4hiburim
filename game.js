@@ -393,7 +393,7 @@ function updateDisplayV2() {
   }
 
   if (mistakes >= 4 && remainingWords.length > 0) {
-    showMessage('See you Sunday. New Grooped every week.', 'incorrect');
+    showMessage('Game Over! See you next Sunday.', 'incorrect');
   }
 }
 
@@ -572,7 +572,7 @@ function handleCorrectGuess(category) {
 
     if (wasLastGroup) {
       showMessage(
-        '🏆 See you Sunday.<br>New Grooped every week.',
+        '🏆 You solved the puzzle!<br>See you next Sunday.',
         'correct',
         4000,
       );
@@ -658,7 +658,7 @@ function handleFailure() {
   remainingWords = [];
   renderFullSolutionGrid(solvedCategories);
   updateDisplayV2();
-  showMessage('See you Sunday. New Grooped every week.', 'incorrect', 4000);
+  showMessage('Better luck next Sunday! Here’s the solution.', 'incorrect', 4000);
 
   document.getElementById('submit-btn').disabled = true;
   document.getElementById('deselect-btn').disabled = true;
@@ -822,7 +822,7 @@ async function startGame() {
       renderFullSolutionGrid(solvedCategories);
       updateDisplayV2();
       showMessage(
-        '🏆 See you Sunday.<br>New Grooped every week.',
+        '🏆 You solved the puzzle!<br>See you next Sunday.',
         'correct',
         4000,
       );
@@ -832,7 +832,7 @@ async function startGame() {
       mistakes = state.mistakes;
       renderFullSolutionGrid(solvedCategories);
       updateDisplayV2();
-      showMessage('See you Sunday. New Grooped every week.', 'incorrect', 4000);
+      showMessage('Better luck next Sunday! Here’s the solution.', 'incorrect', 4000);
     }
 
     document.getElementById('submit-btn').disabled = true;
