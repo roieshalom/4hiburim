@@ -10182,9 +10182,9 @@
           "result": "shipped",
           "tier": 3
         }
-       ]
-      },   
-      {
+      ]
+    },
+    {
       "id": "194",
       "date": "30.06.2026",
       "categories": [
@@ -10258,6 +10258,97 @@
           "mechanic": "ADD_LETTER",
           "result": "shipped",
           "tier": 3
+        }
+      ]
+    },
+    {
+      "id": "195",
+      "date": "05.07.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "Exhausted",
+          "words": [
+            "BEAT",
+            "FRIED",
+            "SPENT",
+            "WIPED"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "SUFFIX_BLANK",
+          "difficulty": "green",
+          "name": "UNDER ___",
+          "words": [
+            "DOG",
+            "WEAR",
+            "HAND",
+            "PAR"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "Things you can tip",
+          "words": [
+            "HAT",
+            "SCALES",
+            "WAITER",
+            "COW"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "They come with a tail",
+          "words": [
+            "COIN",
+            "KITE",
+            "COMET",
+            "BALLOON"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "UNDER ___",
+          "category_b": "Things you can tip",
+          "reason_a": "UNDERHAND is a common word/phrase",
+          "reason_b": "You can “tip your hand” (reveal your intentions), tempting placement here",
+          "word": "HAND"
+        },
+        {
+          "category_a": "Things you can tip",
+          "category_b": "They come with a tail",
+          "reason_a": "Cow tipping is a well-known (if dubious) trope",
+          "reason_b": "Cows literally have tails, which may lure solvers to the tail group",
+          "word": "COW"
+        },
+        {
+          "category_a": "UNDER ___",
+          "category_b": "Ways to say you're exhausted",
+          "reason_a": "UNDERDOG is a familiar term",
+          "reason_b": "The phrase “dog-tired” might mislead solvers toward the exhaustion group",
+          "word": "DOG"
+        },
+        {
+          "category_a": "They come with a tail",
+          "category_b": "Things you can tip",
+          "reason_a": "Coins have a “tails” side",
+          "reason_b": "You can tip someone with coins, creating cross-pull",
+          "word": "COIN"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SYNONYMS",
+          "result": "shipped",
+          "tier": 1
         }
       ]
     }
