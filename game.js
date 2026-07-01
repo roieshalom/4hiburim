@@ -43,8 +43,20 @@ function getTodayDDMMYYYY() {
   return `${day}.${month}.${year}`;
 }
 
+// DD.MM.YYYY (with 1- or 2-digit day/month) -> a JS Date at midnight local time.
+// Returns null if the string doesn't parse. Used for choosing the current
+// puzzle (weekly cadence: latest with date <= today).
+function _parsePuzzleDate(s) {
+  if (!s) return null;
+  const m = String(s).match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+  if (!m) return null;
+  return new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1]));
+}
+
 async function loadPuzzles() {
-  const res = await fetch('puzzles.json');
+  // Bust HTTP cache so a newly-exported puzzle appears immediately, not on
+  // the next day when the cache entry finally expires.
+  const res = await fetch('puzzles.json?_=' + Date.now(), { cache: 'no-store' });
   const data = await res.json();
   const idParam = new URLSearchParams(window.location.search).get('id');
   if (idParam !== null) {
@@ -54,8 +66,17 @@ async function loadPuzzles() {
       return;
     }
   }
-  const today = getTodayDDMMYYYY();
-  puzzles = (data.puzzles || []).filter(p => p.date === today);
+  // Weekly cadence: show the most-recent puzzle whose date is on or before
+  // today. That way Sunday's puzzle stays live all week until the next one
+  // drops. Falls back to today's exact-match (legacy daily behavior) if the
+  // date format on any puzzle can't be parsed.
+  const now = new Date();
+  const todayMs = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  const eligible = (data.puzzles || [])
+    .map(p => ({ p, d: _parsePuzzleDate(p.date) }))
+    .filter(({ d }) => d && d.getTime() <= todayMs)
+    .sort((a, b) => b.d.getTime() - a.d.getTime());
+  puzzles = eligible.length > 0 ? [eligible[0].p] : [];
 }
 
 // ------------------ STORAGE KEYS ------------------
@@ -63,10 +84,16 @@ async function loadPuzzles() {
 const STORAGE_KEY_PREFIX = 'grooped-puzzle-';
 const STATE_KEY_PREFIX = 'grooped-state-';
 
+// Storage keys are scoped by the LOADED PUZZLE's own date (not today's date)
+// so a solve on Sunday remains "solved" through Saturday under the weekly
+// cadence. Fallback to today's date only if the loaded puzzle has none.
+function _puzzleDateForKey() {
+  return puzzles[0]?.date || getTodayDDMMYYYY();
+}
+
 function getTodayKey() {
-  const today = getTodayDDMMYYYY();
   const puzzleId = puzzles[0]?.id;
-  return `${STORAGE_KEY_PREFIX}${today}-${puzzleId}`;
+  return `${STORAGE_KEY_PREFIX}${_puzzleDateForKey()}-${puzzleId}`;
 }
 
 function isTodayPuzzleLocked() {
@@ -80,9 +107,8 @@ function lockTodayPuzzle() {
 }
 
 function getTodayStateKey() {
-  const today = getTodayDDMMYYYY();
   const puzzleId = puzzles[0]?.id;
-  return `${STATE_KEY_PREFIX}${today}-${puzzleId}`;
+  return `${STATE_KEY_PREFIX}${_puzzleDateForKey()}-${puzzleId}`;
 }
 
 function saveFinalState(state) {
@@ -161,9 +187,8 @@ function migrateFromOldKeys() {
 // ----- in‑progress state -----
 
 function getTodayProgressKey() {
-  const today = getTodayDDMMYYYY();
   const puzzleId = puzzles[0]?.id;
-  return `grooped-progress-${today}-${puzzleId}`;
+  return `grooped-progress-${_puzzleDateForKey()}-${puzzleId}`;
 }
 
 function saveProgressState() {
