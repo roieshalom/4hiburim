@@ -10351,6 +10351,92 @@
           "tier": 1
         }
       ]
+    },
+    {
+      "id": "196",
+      "date": "02.08.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "yellow",
+          "name": "Global dances",
+          "words": [
+            "HULA",
+            "TANGO",
+            "SAMBA",
+            "WALTZ"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WAYS_TO_VERB",
+          "difficulty": "green",
+          "name": "Leave in a hurry",
+          "words": [
+            "BOLT",
+            "DIP",
+            "JET",
+            "SPLIT"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Door hardware bits",
+          "words": [
+            "HINGE",
+            "LATCH",
+            "KNOB",
+            "CHAIN"
+          ]
+        },
+        {
+          "tier": 4,
+          "mechanic": "ACROSTIC_FIRST_LETTERS",
+          "difficulty": "purple",
+          "name": "Liquid Accompaniments",
+          "words": [
+            "SALSA",
+            "SPREAD",
+            "SAUCE",
+            "GRAVY"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "Leave in a hurry",
+          "category_b": "Door hardware bits",
+          "reason_a": "Bolt means to dash off quickly.",
+          "reason_b": "A bolt is also a common door fastener, tempting a mis-sort.",
+          "word": "BOLT"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "SUFFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "WAYS_TO_VERB",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "TAXONOMY",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "HIDDEN_WORD_INSIDE",
+          "result": "shipped",
+          "tier": 3,
+          "verification": "ALONE→ONE, TWOFOLD→TWO, INTENT→TEN, FEMININE→NINE all appear as consecutive letters"
+        }
+      ]
     }
   ]
 }
