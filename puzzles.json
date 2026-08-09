@@ -10437,6 +10437,76 @@
           "verification": "ALONE→ONE, TWOFOLD→TWO, INTENT→TEN, FEMININE→NINE all appear as consecutive letters"
         }
       ]
+    },
+    {
+      "id": "197",
+      "date": "16.08.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "SYNONYMS",
+          "difficulty": "yellow",
+          "name": "Filter",
+          "words": [
+            "SIEVE",
+            "SIFT",
+            "REFINE",
+            "STRAIN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "THINGS_THAT_VERB",
+          "difficulty": "green",
+          "name": "Things that glow",
+          "words": [
+            "LAMP",
+            "EMBERS",
+            "FIREFLY",
+            "SCREEN"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "TAXONOMY",
+          "difficulty": "blue",
+          "name": "Used to operate a computer",
+          "words": [
+            "TRACKBALL",
+            "KEYBOARD",
+            "TRACKPAD",
+            "JOYSTICK"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "IDIOM_COMPLETION",
+          "difficulty": "purple",
+          "name": "___ TRAP",
+          "words": [
+            "BEAR",
+            "MOUSE",
+            "BOOBY",
+            "THIRST"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "NIGHT ___",
+          "category_b": "Things that glow",
+          "reason_a": "Night light is a common phrase completing the stem.",
+          "reason_b": "LIGHT strongly suggests illumination, tempting a move into the glowing set.",
+          "word": "LIGHT"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "MIXED_SET",
+          "result": "shipped",
+          "tier": 0
+        }
+      ]
     }
   ]
 }
