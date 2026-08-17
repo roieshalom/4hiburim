@@ -10613,6 +10613,98 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "199",
+      "date": "23.08.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "Purple things",
+          "words": [
+            "PRINCE",
+            "BARNEY",
+            "AMETHYST",
+            "LAVENDER"
+          ]
+        },
+        {
+          "tier": 1,
+          "mechanic": "PREFIX_BLANK",
+          "difficulty": "green",
+          "name": "How I met your mother",
+          "words": [
+            "TED",
+            "ROBIN",
+            "LILY",
+            "THE CAPTAIN"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "CAN_BE_VERBED",
+          "difficulty": "blue",
+          "name": "_____ Talk",
+          "words": [
+            "BABY",
+            "BACK",
+            "SMALL",
+            "TABLE"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "purple",
+          "name": "Things that turn",
+          "words": [
+            "DOORKNOB",
+            "TORNADO",
+            "SUNFLOWER",
+            "TOP"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "PULL THE ___",
+          "category_b": "Likely to be unplugged",
+          "reason_a": "Forms the idiom 'pull the plug' (to cancel/end something).",
+          "reason_b": "Looks like it belongs with items you unplug.",
+          "word": "PLUG"
+        },
+        {
+          "category_a": "POWER ___",
+          "category_b": "PULL THE ___",
+          "reason_a": "POWER CORD is a standard phrase.",
+          "reason_b": "Solvers may think 'pull the cord' fits the idiom pattern.",
+          "word": "CORD"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "FOUND_IN_SCENE",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "PREFIX_BLANK",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "CAN_BE_VERBED",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "IDIOM_COMPLETION",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
