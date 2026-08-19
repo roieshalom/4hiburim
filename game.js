@@ -366,7 +366,7 @@ function updateDisplayV2() {
     if (introPending) {
       const row = Math.floor(i / 4);
       tile.style.setProperty('--tile-delay', (i * 90 + row * 130) + 'ms');
-      tile.classList.add('intro-in');
+      tile.classList.add('intro-armed'); // hidden; animation armed after paint
     }
 
     // keep selection visual state in sync
@@ -442,6 +442,31 @@ function updateDisplayV2() {
   if (introPending) {
     introPending = false;
     try { localStorage.setItem(getTodayIntroSeenKey(), '1'); } catch (e) {}
+
+    // Start the wave only after web fonts have loaded and the browser has
+    // painted a frame — otherwise the animation clock starts on insertion
+    // while first paint is still blocked by font loading, so the user sees
+    // the board already mid-animation. If the tab is in the background
+    // (rAF is paused there), wait until it's visible so the intro plays
+    // from the start when the user actually looks at it.
+    const armed = board.querySelectorAll('.word-tile.intro-armed');
+    const arm = () => requestAnimationFrame(() => {
+      armed.forEach(t => t.classList.add('intro-in'));
+    });
+    const armWhenVisible = () => {
+      if (document.visibilityState === 'visible') {
+        arm();
+      } else {
+        const onVisible = () => {
+          if (document.visibilityState !== 'visible') return;
+          document.removeEventListener('visibilitychange', onVisible);
+          arm();
+        };
+        document.addEventListener('visibilitychange', onVisible);
+      }
+    };
+    const fontsReady = (document.fonts && document.fonts.ready) || Promise.resolve();
+    fontsReady.then(armWhenVisible);
   }
 
   document.getElementById('submit-btn').disabled = selectedWords.length !== 4;

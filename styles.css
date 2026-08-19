@@ -338,9 +338,15 @@ h1 {
    --tile-delay (set in game.js, row-by-row) creates a gentle wave that
    sweeps down the board. Applied only on the first view of a week's
    puzzle; see introPending in game.js. */
-.word-tile.intro-in {
+/* Hidden starting state, applied while the board is built so the first
+   painted frame shows the tiles before the wave begins (not mid-way). */
+.word-tile.intro-armed {
   opacity: 0;
   transform: translateY(10px) scale(0.82);
+}
+/* Added only after fonts are ready + one paint, so the animation clock
+   starts when the user can actually see the board (see game.js). */
+.word-tile.intro-in {
   animation: groopedIntroPop 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: var(--tile-delay, 0s);
 }
@@ -350,6 +356,7 @@ h1 {
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 @media (prefers-reduced-motion: reduce) {
+  .word-tile.intro-armed,
   .word-tile.intro-in {
     animation: none;
     opacity: 1;
