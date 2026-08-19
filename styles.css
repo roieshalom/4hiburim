@@ -333,6 +333,30 @@ h1 {
   }
 }
 
+/* ── First-view board intro ─────────────────────────────────────────────
+   Tiles rise + fade in with a barely-there overshoot. The per-tile
+   --tile-delay (set in game.js, row-by-row) creates a gentle wave that
+   sweeps down the board. Applied only on the first view of a week's
+   puzzle; see introPending in game.js. */
+.word-tile.intro-in {
+  opacity: 0;
+  transform: translateY(10px) scale(0.82);
+  animation: groopedIntroPop 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--tile-delay, 0s);
+}
+@keyframes groopedIntroPop {
+  0%   { opacity: 0; transform: translateY(10px) scale(0.82); }
+  70%  { opacity: 1; transform: translateY(-1px) scale(1.012); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-tile.intro-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .word-tile:hover {
     border-color: oklch(0.85 0.008 60);

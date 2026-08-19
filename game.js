@@ -11,6 +11,10 @@ let solvedCategories = [];
 let remainingWords = [];
 let triedCombinations = new Set();
 
+// True only while rendering the first view of a week's puzzle, so the board
+// tiles animate in once. Reset after the first render (see updateDisplayV2).
+let introPending = false;
+
 // ------------------ CLARITY HELPERS ------------------
 
 function trackPuzzleEvent(eventName, extra = {}) {
@@ -191,6 +195,13 @@ function getTodayProgressKey() {
   return `grooped-progress-${_puzzleDateForKey()}-${puzzleId}`;
 }
 
+// Marks whether this device has already seen the intro animation for the
+// current week's puzzle, so it plays on the genuine first view only.
+function getTodayIntroSeenKey() {
+  const puzzleId = puzzles[0]?.id;
+  return `grooped-intro-seen-${_puzzleDateForKey()}-${puzzleId}`;
+}
+
 function saveProgressState() {
   const key = getTodayProgressKey();
   const state = {
@@ -247,6 +258,8 @@ function incrementTrophyCount() {
 function initGame() {
   currentPuzzle = puzzles[currentPuzzleIndex];
 
+  introPending = false; // default: no intro (resumed games, locked puzzles)
+
   const saved = loadProgressState();
   if (saved) {
     mistakes = saved.mistakes || 0;
@@ -271,6 +284,12 @@ function initGame() {
     })),
   );
   shuffleArray(remainingWords);
+
+  // Fresh puzzle: play the intro once, the first time this device sees this
+  // week's puzzle (and never when the user prefers reduced motion).
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  introPending = !reduceMotion && !localStorage.getItem(getTodayIntroSeenKey());
+
   updateDisplayV2();
 }
 
@@ -338,9 +357,17 @@ function updateDisplayV2() {
   const board = document.getElementById('game-board');
   board.innerHTML = '';
 
-  remainingWords.forEach(item => {
+  remainingWords.forEach((item, i) => {
     const tile = document.createElement('div');
     tile.className = 'word-tile';
+
+    // First view only: stagger tiles row by row (4 columns) so they animate
+    // in as a gentle wave sweeping down the board.
+    if (introPending) {
+      const row = Math.floor(i / 4);
+      tile.style.setProperty('--tile-delay', (i * 90 + row * 130) + 'ms');
+      tile.classList.add('intro-in');
+    }
 
     // keep selection visual state in sync
     if (selectedWords.includes(item.word)) {
@@ -409,6 +436,13 @@ function updateDisplayV2() {
     board.appendChild(tile);
     fitWordToTile(tile);
   });
+
+  // The intro is a one-shot: mark this week's puzzle as seen and clear the
+  // flag so taps/shuffles (which re-render the board) don't replay it.
+  if (introPending) {
+    introPending = false;
+    try { localStorage.setItem(getTodayIntroSeenKey(), '1'); } catch (e) {}
+  }
 
   document.getElementById('submit-btn').disabled = selectedWords.length !== 4;
   updateDeselectButtonState();
