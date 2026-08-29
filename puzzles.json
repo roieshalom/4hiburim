@@ -10705,6 +10705,98 @@
           "tier": 2
         }
       ]
+    },
+    {
+      "id": "200",
+      "date": "30.08.2026",
+      "categories": [
+        {
+          "tier": 1,
+          "mechanic": "FOUND_IN_SCENE",
+          "difficulty": "yellow",
+          "name": "On a rainy day",
+          "words": [
+            "BOOTS",
+            "PUDDLE",
+            "RAINCOAT",
+            "WIPERS"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WORKS_BY_ONE_MAKER",
+          "difficulty": "green",
+          "name": "Rihanna's songs",
+          "words": [
+            "UMBRELLA",
+            "DIAMONDS",
+            "DISTURBIA",
+            "UNFAITHFUL"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "difficulty": "blue",
+          "name": "Things with handles",
+          "words": [
+            "MUG",
+            "PAN",
+            "SUITCASE",
+            "DOOR"
+          ]
+        },
+        {
+          "tier": 2,
+          "mechanic": "WAYS_TO_VERB",
+          "difficulty": "purple",
+          "name": "_____ Door",
+          "words": [
+            "FIRE",
+            "BACK",
+            "STORM",
+            "POCKET"
+          ]
+        }
+      ],
+      "decoys": [
+        {
+          "category_a": "On a rainy day",
+          "category_b": "Things with handles",
+          "reason_a": "A go-to item when it’s raining.",
+          "reason_b": "An umbrella literally has a handle, tempting a misgroup.",
+          "word": "UMBRELLA"
+        },
+        {
+          "category_a": "Ways to say “maybe”",
+          "category_b": "Ways to blow someone off",
+          "reason_a": "Direct synonym of “maybe.”",
+          "reason_b": "A noncommittal “possibly” can feel like a brush-off, luring it into that set.",
+          "word": "POSSIBLY"
+        }
+      ],
+      "attempt_log": [
+        {
+          "mechanic": "FOUND_IN_SCENE",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "SYNONYMS",
+          "result": "shipped",
+          "tier": 1
+        },
+        {
+          "mechanic": "SHARED_HIDDEN_PROPERTY",
+          "result": "shipped",
+          "tier": 2
+        },
+        {
+          "mechanic": "WAYS_TO_VERB",
+          "result": "shipped",
+          "tier": 2
+        }
+      ]
     }
   ]
 }
